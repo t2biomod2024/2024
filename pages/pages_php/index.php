@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="UTF-8">
         <title>TeamTokyoTech / Home</title>
         <link rel="shortcut icon" href="../../pics/EnemyBlack.png">
         <link rel="stylesheet" href="../../css/reset.css">
