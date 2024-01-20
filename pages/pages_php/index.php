@@ -9,13 +9,13 @@
         <link rel="stylesheet" href="../../css/index.css">
     </head>
     <body>
-        <header>
+        <header style="height: 100px; width: 100%">
             <?php include "../../page_parts/header.html" ?>
         </header>
         <main>
             <?php include "../pages_html/index_sub.html" ?>
         </main>
-        <footer>
+        <footer style="height: 100px; width: 100%">
             <?php include "../../page_parts/footer.html" ?>
         </footer>
     </body>
