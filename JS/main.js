@@ -7,9 +7,7 @@ fetch("https://t2biomod2024.github.io/2024/page_parts/footer.html")
     .then((data) => document.querySelector("body").insertAdjacentHTML('afterend', data));
 
 
-//===============================================================
-// debounce関数
-//===============================================================
+// Debounce
 function debounce(func, wait) {
     var timeout;
     return function() {
@@ -119,31 +117,22 @@ $('.ddmenu').on('touchstart', function(e) {
 });
 
 
-//===============================================================
-// 小さなメニューが開いている際のみ、body要素のスクロールを禁止。
-//===============================================================
+//Menu-scroll-stop
 $(function() {
   function toggleBodyScroll() {
-    // 条件をチェック
     if ($('#menubar_hdr').hasClass('ham') && !$('#menubar_hdr').hasClass('display-none')) {
-      // #menubar_hdr が 'ham' クラスを持ち、かつ 'display-none' クラスを持たない場合、スクロールを禁止
       $('body').css({
         overflow: 'hidden',
         height: '100%'
       });
     } else {
-      // その他の場合、スクロールを再び可能に
       $('body').css({
         overflow: '',
         height: ''
       });
     }
   }
-
-  // 初期ロード時にチェックを実行
   toggleBodyScroll();
-
-  // クラスが動的に変更されることを想定して、MutationObserverを使用
   const observer = new MutationObserver(toggleBodyScroll);
   observer.observe(document.getElementById('menubar_hdr'), { attributes: true, attributeFilter: ['class'] });
 });
