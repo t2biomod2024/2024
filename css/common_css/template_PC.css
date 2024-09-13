@@ -173,7 +173,6 @@ header {
 	margin-top: 0.4rem;
 }
 
-
 .small-screen #menubar.display-block {
 	position: fixed;overflow: auto;z-index: 100;
 	left: 0px;top: 0px;
@@ -184,22 +183,20 @@ header {
 	animation: animation1 0.2s both;
 }
 
-/*メニュー１個あたりの設定*/
 .small-screen #menubar nav ul li {
-	border: 1px solid #ccc;	/*枠線の幅、線種、色*/
-	margin: 1rem;			/*メニューの外側に空けるスペース*/
-	border-radius: 5px;		/*角を丸くする指定*/
-	padding: 0 2rem;		/*メニュー内の余白。上下、左右へ。*/
+	border: 1px solid #ccc;
+	margin: 1rem;
+	border-radius: 5px;
+	padding: 0 2rem;
 }
 
 .small-screen #menubar a {
-	padding: 1rem;	/*メニュー内の余白*/
+	padding: 1rem;
 }
 
 .small-screen #menubar, .small-screen #menubar a {
 	color: #fff;
 }
-
 
 #menubar .sh {
 	font-weight: normal;
@@ -257,11 +254,11 @@ main h2 {
 	font-family: "Reddit Sans", "Noto Sans JP", sans-serif;
 	font-size: 3rem;
 	letter-spacing: 0.1em;
-	color: var(--primary-text-color);
+	color: var(--text-color);
 }
 
 .bg1 h2 {
-	color: var(--text-color);
+	color: var(--primary-text-color);
 }
 
 main h2 .hosoku {
@@ -382,16 +379,11 @@ footer {
 footer a {color: inherit;text-decoration: none;}
 
 
-/*テキストのフェードイン設定
----------------------------------------------------------------------------*/
-/* 初期状態でテキストを非表示にする */
+/*fadeIn*/
 .fade-in-text {
     visibility: hidden;
 }
 
-/* アニメーションを適用するクラス。
-animationの行の「0.05s」が文字の出現のなめらかさで、大きいほどなめらかに出てきます。
-１文字ずつの出現する際の時差は、js/main.jsの「テキストのフェードイン効果」の中にある「0.2」で調整できます。*/
 .char {
     display: inline-block;
     opacity: 0;
@@ -399,48 +391,39 @@ animationの行の「0.05s」が文字の出現のなめらかさで、大きい
 }
 
 
-/*お知らせブロック
----------------------------------------------------------------------------*/
-/*記事の下に空ける余白*/
+/*News*/
 .new dd {
 	padding-bottom: 1rem;
 }
 
-/*ブロック内のspan。日付の横のアイコン的な部分の共通設定*/
 .new dt span {
 	display: inline-block;
 	text-align: center;
-	line-height: 1.8;		/*行間（アイコンの高さ）*/
-	border-radius: 3px;		/*角を丸くする指定*/
-	width: 8rem;			/*幅。６文字分。*/
-	transform: scale(0.8);	/*80%のサイズに縮小*/
-	background: #fff;		/*背景色*/
-	color:#777;				/*文字色*/
+	line-height: 1.8;
+	border-radius: 3px;
+	width: 8rem;
+	transform: scale(0.8);
+	background: #fff;
+	color:#777;
 	border: 1px solid #333;
 }
 
-/*icon-bg1*/
 .new .icon-bg1 {
-	background: #333;	/*背景色*/
-	color: #fff;		/*文字色*/
+	background: #333;
+	color: #fff;
 }
 
-/*icon-bg2*/
 .new .icon-bg2 {
-	background: #ff0000;	/*背景色*/
-	color: #fff;			/*文字色*/
+	background: #ff0000;
+	color: #fff;
 }
 
-	/*画面幅700px以上の追加指定*/
 	@media screen and (min-width:700px) {
-
-	/*ブロック全体*/
 	.new {
-		display: grid;	/*gridを使う指定*/
-		grid-template-columns: auto 1fr;	/*横並びの指定。日付とアイコン部分の幅は自動で、内容が入るブロックは残り幅一杯とる。*/
+		display: grid;
+		grid-template-columns: auto 1fr;
 	}
-
-	}/*追加指定ここまで*/
+	}
 
 
 /*list-grid1
@@ -538,7 +521,6 @@ animationの行の「0.05s」が文字の出現のなめらかさで、大きい
 	padding-bottom: 5vw;
 	margin-top: 10vw;
 	margin-bottom: 10vw;
-	/*以下は変更不要*/
 	margin-left: calc(-1 * var(--global-space));
 	margin-right: calc(-1 * var(--global-space));
 	padding-left: var(--global-space);
