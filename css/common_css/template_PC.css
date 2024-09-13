@@ -16,12 +16,10 @@
 	100% {left: 0px;}
 }
 
-
 @keyframes opa1 {
 	0% {opacity: 0;}
 	100% {opacity: 1;}
 }
-
 
 @keyframes fadeIn {
 	0% {opacity: 0;transform: scale(0.8);}
@@ -40,7 +38,6 @@ html,body {
 		html, body {font-size: 16px;}
     }
 
-
 body {
 	margin: 0;padding:0;
 	font-family: "Noto Sans JP", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", Meiryo, "メイリオ", "Osaka", "MS PGothic", "ＭＳ Ｐゴシック", sans-serif;	/*フォント種類（ゴシック）*/
@@ -51,30 +48,23 @@ body {
 	line-height: 2;
 }
 
-
 table {border-collapse:collapse;}
-
 
 img {border: none;max-width: 100%;height: auto;vertical-align: middle;}
 
-
 video {max-width: 100%;}
 
-
 iframe {width: 100%;}
-
 
 input {font-size: 1rem;}
 section + section {
 	margin-top: 3rem;
 }
 
-
 a {
 	color: var(--text-color);
 	transition: 0.3s;
 }
-
 
 a:hover {
 	text-decoration: none;
@@ -117,7 +107,6 @@ header {
     z-index: 1;
     width: 100%;
 }
-
 
 	@media screen and (min-width:900px) {
 	header {position: fixed;}
