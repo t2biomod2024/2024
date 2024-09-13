@@ -452,12 +452,12 @@ footer a {color: inherit;text-decoration: none;}
 /* .bg2 */
 .bg2::before {
     top: -5vw;
-    clip-path: polygon(100% 0, 0 0, 100% 100%);
+    clip-path: polygon(0 0, 0 100%, 0 100%);
 }
 
 .bg2::after {
     bottom: -5vw;
-    clip-path: polygon(0 0, 100% 100%, 0 100%);
+    clip-path: polygon(0 100%, 0 100%, 100% 100%);
 }
 
 
