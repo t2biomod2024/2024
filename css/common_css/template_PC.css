@@ -126,10 +126,6 @@ header {
 .large-screen #menubar {display: block;}
 .small-screen #menubar.display-block {display: block;}
 
-	@media screen and (min-width: 900px) {
-		#menubar_hdr {display: none;}
-  	}  
-
 .ddmenu ul {display: none;}
 
 .ddmenu:hover ul {display: block;}
