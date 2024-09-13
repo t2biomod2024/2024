@@ -114,52 +114,40 @@ header {
 	width: 300px;
 }
 
-/*メニューブロック初期設定
----------------------------------------------------------------------------*/
-/*メニューをデフォルトで非表示*/
+/*menu*/
 #menubar {display: none;}
 #menubar ul {list-style: none;margin: 0;padding: 0;}
 #menubar a {display: block;text-decoration: none;}
 
-/*上で非表示にしたメニューを表示させる為の設定*/
 .large-screen #menubar {display: block;}
 .small-screen #menubar.display-block {display: block;}
 
-/*3本バーをデフォルトで非表示*/
 #menubar_hdr.display-none {display: none;}
 
-/*ドロップダウンをデフォルトで非表示*/
 .ddmenu_parent ul {display: none;}
 
-/*ドロップダウンの親メニューのカーソル表示を変更*/
 a.ddmenu {cursor: default;}
 
-/*ddmenuを指定しているメニューに矢印アイコンをつける設定*/
 a.ddmenu::before {
-	font-family: "Font Awesome 6 Free";	/*Font Awesomeを使う指示*/
-	content: "\f078";		/*使いたいアイコン名（Font Awesome）をここで指定*/
-	font-weight: bold;		/*この手の設定がないとアイコンが出ない場合があります*/
-	margin-right: 0.5em;	/*アイコンとテキストとの間に空けるスペース*/
+	font-family: "Font Awesome 6 Free";
+	content: "\f078";
+	font-weight: bold;
+	margin-right: 0.5em;
 }
 
-/*大きな端末用のメニューブロック設定
----------------------------------------------------------------------------*/
-/*メニューブロック全体の設定*/
 .large-screen #menubar > nav > ul {
-	display: flex;		/*横並びにする*/
-	font-size: 0.85rem;	/*文字サイズ。85%。*/
-	gap: 0.5rem;		/*メニュー同士の間に空けるマージン的な要素*/
+	display: flex;
+	font-size: 0.85rem;
+	gap: 0.5rem;
 }
 
-/*メニュー１個あたりの設定*/
 .large-screen #menubar li a {
-	border-radius: 100px;	/*角を丸くする指定。適当に大きければOKです。*/
-	padding: 0.2rem 1rem;	/*上下、左右へのメニュー内の余白*/
+	border-radius: 100px;
+	padding: 0.2rem 1rem;
 }
 
-/*マウスオン時*/
 .large-screen #menubar li a:hover {
-	background: #fff;		/*背景色*/
+	background: #fff;
 }
 
 
