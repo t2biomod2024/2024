@@ -1,103 +1,88 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css");
 
-/*CSSカスタムプロパティ（サイト全体を一括管理する為の設定）
----------------------------------------------------------------------------*/
+
+/*root*/
 :root {
-	--text-color: #303030;				/*テキストカラー*/
-	--primary-color: #1C3177;		/*テンプレートのメインとなる色*/
-	--primary-text-color: #eeeeee;		/*メインカラーの上で使うテキスト色*/
-	--global-space: 5vw;			/*サイト内の左右へとる余白を一括管理しています。画面幅100%＝100vwです。*/
+	--text-color: #303030;
+	--primary-color: #1C3177;
+	--primary-text-color: #eeeeee;
+	--global-space: 5vw;
 }
 
 
-/*animation1のキーフレーム設定（開閉ブロックのアニメーションに使用）
----------------------------------------------------------------------------*/
+/*keyframes*/
 @keyframes animation1 {
 	0% {left: -200px;}
 	100% {left: 0px;}
 }
 
 
-/*opa1のキーフレーム設定（汎用的）
----------------------------------------------------------------------------*/
 @keyframes opa1 {
 	0% {opacity: 0;}
 	100% {opacity: 1;}
 }
 
 
-/*fadeInのキーフレーム設定（テキストのフェードインに使用）
----------------------------------------------------------------------------*/
 @keyframes fadeIn {
 	0% {opacity: 0;transform: scale(0.8);}
 	100% {opacity: 1;transform: scale(1);}
 }
 
 
-/*全体の設定
----------------------------------------------------------------------------*/
+/*common*/
 body * {box-sizing: border-box;}
 html,body {
 	height: 100%;
-	font-size: 13px;	/*基準となるフォントサイズ。*/
+	font-size: 13px;
 }
 
-	/*画面幅900px以上の追加指定*/
 	@media screen and (min-width:900px) {
-
-		html, body {
-			font-size: 16px;	/*基準となるフォントサイズ。*/
-		}
-
-	}/*追加指定ここまで*/
+		html, body {font-size: 16px;}
+    }
 
 
 body {
 	margin: 0;padding:0;
 	font-family: "Noto Sans JP", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", Meiryo, "メイリオ", "Osaka", "MS PGothic", "ＭＳ Ｐゴシック", sans-serif;	/*フォント種類（ゴシック）*/
 	font-optical-sizing: auto;
-	/*font-weight: 300;*/
 	-webkit-text-size-adjust: none;
-	background: #eeeeee;	/*背景色*/
-	color: var(--text-color);	/*文字色。css冒頭で指定しているtext-colorを読み込みます*/
-	line-height: 2;		/*行間*/
+	background: #eeeeee;
+	color: var(--text-color);
+	line-height: 2;
 }
 
-/*table全般の設定*/
+
 table {border-collapse:collapse;}
 
-/*画像全般の設定*/
+
 img {border: none;max-width: 100%;height: auto;vertical-align: middle;}
 
-/*videoタグ*/
+
 video {max-width: 100%;}
 
-/*iframeタグ*/
+
 iframe {width: 100%;}
 
-/*他*/
+
 input {font-size: 1rem;}
 section + section {
 	margin-top: 3rem;
 }
 
 
-/*リンクテキスト全般の設定
----------------------------------------------------------------------------*/
 a {
-	color: var(--text-color);	/*文字色。css冒頭で指定しているtext-colorを読み込みます*/
-	transition: 0.3s;	/*hoverまでにかける時間。0.3秒。*/
+	color: var(--text-color);
+	transition: 0.3s;
 }
 
-/*マウスオン時*/
+
 a:hover {
-	text-decoration: none;	/*下線を消す*/
-	color: var(--primary-color);	/*文字色。css冒頭で指定しているprimary-colorを読み込みます*/
+	text-decoration: none;
+	color: var(--primary-color);
 }
 
 
-/*コンテナー（サイト全体を囲むブロック）
----------------------------------------------------------------------------*/
+/*container*/
 body:not(.home) #container {
 	height: 100%;
 	display: flex;
@@ -106,32 +91,24 @@ body:not(.home) #container {
 }
 
 
-/*コンテンツ（フッター関連「以外」を囲むブロック）
----------------------------------------------------------------------------*/
+/*content*/
 #contents {
 	flex: 1;
-	padding: var(--global-space);	/*コンテンツ内の余白。css冒頭で指定しているglobal-spaceを読み込みます。*/
+	padding: var(--global-space);
 }
 
-	/*画面幅600px以下の追加指定*/
 	@media screen and (max-width:600px) {
-
-	#contents {
-		padding-top: 80px;	/*コンテンツ内の上の余白だけ上書き*/
+	#contents {padding-top: 80px;}
 	}
 
-	}/*追加指定ここまで*/
 
-
-/*header（ロゴが入った最上段のブロック）
----------------------------------------------------------------------------*/
-/*ヘッダーブロック*/
+/*header*/
 header {
-	display: flex;					/*flexボックスを使う指定*/
-	align-items: center;			/*垂直揃えの指定。天地中央に配置されるように。*/
+	display: flex;
+	align-items: center;
 	justify-content: space-between;
-	height: 70px;					/*ヘッダーの高さ*/
-	padding: 1vw 3vw;				/*ヘッダー内の余白。上下、左右への順番。*/
+	height: 70px;
+	padding: 1vw 3vw;
 	font-family: "Reddit Sans", "Noto Sans JP", sans-serif;
 	font-optical-sizing: auto;
 	font-weight: 700;
@@ -141,20 +118,15 @@ header {
     width: 100%;
 }
 
-	/*画面幅900px以上の追加指定*/
+
 	@media screen and (min-width:900px) {
-	
-	/*ヘッダーブロック*/
-	header {
-		position: fixed;	/*スクロールしても動かないようにする指定。*/
-	}
-	
+	header {position: fixed;}
 	}
 
-/*ロゴ（※画像にする場合）*/
+/*logo*/
 #logo img {
 	display: block;
-	width: 300px;	/*ロゴ画像の幅*/
+	width: 300px;
 }
 
 /*ロゴ（テキストにする場合）*/
@@ -165,35 +137,19 @@ header {
 }
 
 
-/*メニューブロック初期設定
----------------------------------------------------------------------------*/
-/*メニューをデフォルトで非表示*/
+/*menu*/
 #menubar {display: none;}
 #menubar ul {list-style: none;margin: 0;padding: 0;}
 #menubar a {display: block;text-decoration: none;}
 
-/*上で非表示にしたメニューを表示させる為の設定*/
 .large-screen #menubar {display: block;}
 .small-screen #menubar.display-block {display: block;}
 
-/*3本バーをデフォルトで非表示*/
 #menubar_hdr.display-none {display: none;}
 
-/*ドロップダウンをデフォルトで非表示*/
 .ddmenu ul {display: none;}
 
 .ddmenu:hover ul {display: block;}
-
-/*ドロップダウンの親メニューのカーソル表示を変更*/
-a.ddmenu {cursor: default;}
-
-/*ddmenuを指定しているメニューに矢印アイコンをつける設定*/
-a.ddmenu::before {
-	font-family: "Font Awesome 6 Free";	/*Font Awesomeを使う指示*/
-	content: "\f078";		/*使いたいアイコン名（Font Awesome）をここで指定*/
-	font-weight: bold;		/*この手の設定がないとアイコンが出ない場合があります*/
-	margin-right: 0.5em;	/*アイコンとテキストとの間に空けるスペース*/
-}
 
 
 /*大きな端末用のメニューブロック設定
@@ -764,8 +720,7 @@ animationの行の「0.05s」が文字の出現のなめらかさで、大きい
 }
 
 
-/*その他
----------------------------------------------------------------------------*/
+/*Other*/
 .clearfix::after {content: "";display: block;clear: both;}
 .color-check, .color-check a {color: #ff0000 !important;}
 .l {text-align: left !important;}
@@ -782,11 +737,9 @@ animationの行の「0.05s」が文字の出現のなめらかさで、大きい
 .dn {display: none !important;}
 .block {display: block !important;}
 
-/*画面幅900px以上の追加指定*/
-@media screen and (min-width:900px) {
 
+@media screen and (min-width:900px) {
 .ws {width: 48%;display: inline;}
 .sh {display: none;}
 .pc {display: block;}
-
-}/*追加指定ここまで*/
+}
