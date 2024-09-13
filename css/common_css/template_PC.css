@@ -5,7 +5,7 @@
 :root {
 	--text-color: #303030;				/*テキストカラー*/
 	--primary-color: #1C3177;		/*テンプレートのメインとなる色*/
-	--primary-text-color: #303030;		/*メインカラーの上で使うテキスト色*/
+	--primary-text-color: #eeeeee;		/*メインカラーの上で使うテキスト色*/
 	--global-space: 5vw;			/*サイト内の左右へとる余白を一括管理しています。画面幅100%＝100vwです。*/
 }
 
