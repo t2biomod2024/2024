@@ -1,23 +1,3 @@
-// commonlize
-document.addEventListener('DOMContentLoaded', async function() {
-    try {
-        const headerResponse = await fetch("https://t2biomod2024.github.io/2024/page_parts/header.html");
-        const headerData = await headerResponse.text();
-        document.querySelector("#container").insertAdjacentHTML('afterbegin', headerData);
-
-        const footerResponse = await fetch("https://t2biomod2024.github.io/2024/page_parts/footer.html");
-        const footerData = await footerResponse.text();
-        document.querySelector("#container").insertAdjacentHTML('beforeend', footerData);
-
-        const buttonResponse = await fetch("https://t2biomod2024.github.io/2024/page_parts/button.html");
-        const buttonData = await buttonResponse.text();
-        document.querySelector("body").insertAdjacentHTML('beforeend', buttonData);
-    } catch (error) {
-        console.error('Error loading HTML parts:', error);
-    }
-});
-
-
 //===============================================================
 // debounce関数
 //===============================================================
@@ -296,34 +276,4 @@ $(function() {
 		slides.eq(nextIndex).css('opacity', 1).addClass('active');
 		currentIndex = nextIndex;
 	}, 4000); // 4秒ごとにスライドを切り替える
-});
-
-
-
-
-
-document.addEventListener('DOMContentLoaded', function() {
-    function updateMenuVisibility() {
-        // スクリーンサイズに応じてメニューの表示を切り替える
-        const isLargeScreen = window.matchMedia('(min-width: 1024px)').matches;
-        
-        const menubar = document.getElementById('menubar');
-        const menubarHdr = document.getElementById('menubar_hdr');
-        
-        if (isLargeScreen) {
-            // 大きな画面の場合
-            menubar.style.display = 'block';
-            menubarHdr.style.display = 'none';
-        } else {
-            // 小さな画面の場合
-            menubar.style.display = 'none';
-            menubarHdr.style.display = 'block';
-        }
-    }
-
-    // 初期設定
-    updateMenuVisibility();
-    
-    // ウィンドウサイズ変更時に再実行
-    window.addEventListener('resize', updateMenuVisibility);
 });
