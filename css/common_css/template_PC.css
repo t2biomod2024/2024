@@ -154,7 +154,7 @@ header {
 /*ロゴ（※画像にする場合）*/
 #logo img {
 	display: block;
-	width: 160px;	/*ロゴ画像の幅*/
+	width: 300px;	/*ロゴ画像の幅*/
 }
 
 /*ロゴ（テキストにする場合）*/
