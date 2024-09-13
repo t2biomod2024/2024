@@ -150,12 +150,14 @@ $(function() {
 
   // クラスが動的に変更されることを想定して、MutationObserverを使用
   const menubarHdrElement = document.getElementById('menubar_hdr');
-  if (menubarHdrElement) {
-      const observer = new MutationObserver(toggleBodyScroll);
-      observer.observe(menubarHdrElement, { attributes: true, attributeFilter: ['class'] });
-  } else {
-      console.error("menubar_hdr 要素が見つかりませんでした。");
-  }  
+    if (menubarHdrElement) {
+        const observer = new MutationObserver(function() {
+            toggleBodyScroll();
+        });
+        observer.observe(menubarHdrElement, { attributes: true, attributeFilter: ['class'] });
+    } else {
+        console.error("menubar_hdr 要素が見つかりませんでした。");
+    }
 });
 
 
