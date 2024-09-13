@@ -780,11 +780,11 @@ animationの行の「0.05s」が文字の出現のなめらかさで、大きい
 .dn {display: none !important;}
 .block {display: block !important;}
 
-	/*画面幅900px以上の追加指定*/
-	@media screen and (min-width:900px) {
+/*画面幅900px以上の追加指定*/
+@media screen and (min-width:900px) {
 
-	.ws {width: 48%;display: inline;}
-	.sh {display: none;}
-	.pc {display: block;}
+.ws {width: 48%;display: inline;}
+.sh {display: none;}
+.pc {display: block;}
 
-	}/*追加指定ここまで*/
+}/*追加指定ここまで*/
