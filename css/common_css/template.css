@@ -249,9 +249,11 @@ main h2 {
 	color: var(--text-color);
 }
 
-.bg1 h2 {
+.bg1 h2,
+.bg2 h2 {
 	color: var(--primary-text-color);
 }
+
 
 main h2 .hosoku {
 	display: block;font-weight: normal;
@@ -263,7 +265,8 @@ main h3 {
 	border-bottom: 3px solid var(--text-color);
 }
 
-.bg1 h3 {
+.bg1 h3,
+.bg2 h3 {
 	display: inline-block;
 	border-bottom: 3px solid var(--primary-text-color);
 }
