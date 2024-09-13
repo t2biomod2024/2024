@@ -41,8 +41,7 @@ $(window).on("load resize", debounce(function() {
         $('body').addClass('large-screen').removeClass('small-screen');
         $menubar.addClass('display-block').removeClass('display-none');
         $menubarHdr.removeClass('display-block').addClass('display-none');
-
-        $('.ddmenu_parent > ul').hide();
+        $('.ddmenu > ul').hide();
     }
 }, 10));
 
@@ -65,8 +64,8 @@ $(function() {
 		return false;
 	});
 
-    $menubar.find('li:has(ul)').addClass('ddmenu_parent');
-    $('.ddmenu_parent > a').addClass('ddmenu');
+    $menubar.find('li:has(ul)').addClass('ddmenu');
+    $('.ddmenu > a').addClass('ddmenu');
 
 var touchStartY = 0;
 
@@ -89,14 +88,14 @@ $('.ddmenu').on('touchstart', function(e) {
     }
 });
 
-    $('.ddmenu_parent').hover(function() {
+    $('.ddmenu').hover(function() {
         $(this).children('ul').stop().show();
     }, function() {
         $(this).children('ul').stop().hide();
     });
 
-    $('.ddmenu_parent ul a').click(function() {
-        $('.ddmenu_parent > ul').hide();
+    $('.ddmenu ul a').click(function() {
+        $('.ddmenu > ul').hide();
     });
 
 });
