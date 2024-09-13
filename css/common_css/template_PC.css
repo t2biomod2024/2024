@@ -180,7 +180,7 @@ header {
 #menubar_hdr.display-none {display: none;}
 
 /*ドロップダウンをデフォルトで非表示*/
-.ddmenu_parent ul {display: none;}
+.ddmenu ul {display: none;}
 
 /*ドロップダウンの親メニューのカーソル表示を変更*/
 a.ddmenu {cursor: default;}
