@@ -86,8 +86,8 @@ a:hover {
 body:not(.home) #container {
 	height: 100%;
 	display: flex;
-	flex-direction: column;	/*子要素を縦並びにする*/
-	justify-content: space-between;	/*並びかたの種類の指定*/
+	flex-direction: column;
+	justify-content: space-between;
 }
 
 
@@ -272,47 +272,6 @@ main h3 {
 }
 
 
-/*2カラム
----------------------------------------------------------------------------*/
-.main-contents {
-	margin-bottom: 5rem;	/*ボックスの下に空けるスペース。subとの間の余白です。5文字分。*/
-}
-
-	/*画面幅900px以上の追加指定*/
-	@media screen and (min-width:900px) {
-
-	/*カラムで使う為の指定*/
-	main.column {
-		display: flex;					/*横並びにする*/
-		justify-content: space-between;	/*並びかたの種類の指定*/
-		gap: 2rem;						/*main-contentsとsub-contentsの間のマージン的な隙間*/
-	}
-	
-	/*main-contentsブロック*/
-	.main-contents {
-		margin-bottom: 0;
-		order: 2;		/*並び順。数字の小さい順番に表示されます。*/
-		flex: 1;
-	}
-	
-	/*sub-contentsブロック共通*/
-	.sub-contents {
-		width: 230px;	/*幅*/
-	}
-	
-	/*1つ目のsub-contents*/
-	.sub-contents:nth-child(2) {
-		order: 1;	/*並び順。数字の小さい順番に表示されます。*/
-	}
-	
-	/*2つ目のsub-contents*/
-	.sub-contents:nth-child(3) {
-		order: 3;	/*並び順。数字の小さい順番に表示されます。３番目という意味なので一番右側に表示されます。*/
-	}
-	
-	}/*追加指定ここまで*/
-
-
 /*sub-contents*/
 .sub-contents h3 {
 	display: block;
@@ -320,35 +279,31 @@ main h3 {
 	text-align: center;
 	border-radius: 5px 5px 0px 0px;
 	border: 1px solid #ccc;
-	background: linear-gradient(transparent, rgba(0,0,0,0.03));/*背景グラデーション。transparentは透明の事。0,0,0は黒の事で0.03は色が3%出た状態。*/
-	padding: 0.5rem 0;	/*上下、左右への見出し内の余白*/
+	background: linear-gradient(transparent, rgba(0,0,0,0.03));
+	padding: 0.5rem 0;
 }
 
 
 /*submenu*/
 .submenu {
 	padding: 0;
-	margin: 0 0 1rem;	/*上、左右、下へのマージン*/
+	margin: 0 0 1rem;
 }
 
-/*メニュー１個あたり*/
 .submenu a {
 	display: block;text-decoration: none;
-	padding: 0.2rem 1rem;	/*上下、左右へのメニュー内の余白*/
+	padding: 0.2rem 1rem;
 }
 
-/*メニュー１個あたり（子メニュー以外）*/
 .submenu > li {
-	border: 1px solid #ccc;	/*枠線の幅、線種、色*/
-	border-top: none;		/*上の線だけなくす*/
+	border: 1px solid #ccc;
+	border-top: none;
 }
 
-/*子メニュー*/
 .submenu li li a {
-	padding-left: 2rem;	/*左に余白を空ける*/
+	padding-left: 2rem;
 }
 
-/*h3見出しの下にサブメニューが続く場合にメニューの上の線をなくす*/
 .sub-contents h3 + nav .submenu {
 	border-top: none;
 }
@@ -426,64 +381,47 @@ footer a {color: inherit;text-decoration: none;}
 	}
 
 
-/*list-grid1
----------------------------------------------------------------------------*/
-/*listブロック全体を囲むブロック*/
+/*list-grid1*/
 .list-grid1 {
 	display: grid;
-	color: #555;	/*文字色*/
+	color: #555;
 }
 
-/*ボックス１個あたり*/
 .list-grid1 .list {
     display: grid;
 }
 
-/*list内の全ての要素のmarginとpaddingを一旦リセット*/
 .list-grid1 .list * {
 	margin: 0;padding: 0;
 }
 
-/*ボックス内のp要素*/
 .list-grid1 .list p {
-	font-size: 0.85rem;	/*文字サイズを85%に*/
+	font-size: 0.85rem;
 }
 
-	/*画面幅500px以上の追加指定*/
 	@media screen and (min-width:500px) {
-
-	/*listブロック全体を囲むブロック*/
 	.list-grid1 {
-		grid-template-columns: repeat(2, 1fr);	/*2列にする指定。4列にしたければrepeat(4, 1fr)とする。*/
-		gap: 1rem;	/*ブロックの間に空けるマージン的な指定*/
+		grid-template-columns: repeat(2, 1fr);
+		gap: 1rem;
+	}
 	}
 
-	}/*追加指定ここまで*/
-
-
-	/*画面幅800px以上の追加指定*/
 	@media screen and (min-width:800px) {
-
-	/*listブロック全体を囲むブロック*/
 	.list-grid1 {
-		grid-template-columns: repeat(3, 1fr);	/*3列にする指定。4列にしたければrepeat(4, 1fr)とする。*/
-		gap: 1rem;	/*ブロックの間に空けるマージン的な指定*/
+		grid-template-columns: repeat(3, 1fr);
+		gap: 1rem;
+	}
 	}
 
-	}/*追加指定ここまで*/
-
-
-/*ボックス１個あたり*/
 .list-grid1 .list {
-	padding: 1rem;			/*ボックス内の余白*/
-	background: #fff;		/*背景色*/
-    grid-template-rows: auto 1fr;	/*１つ目（この場合はfigure要素のサイズ）は自動に、２つ目（この場合はtextブロック））を残った幅で使う*/
-	box-shadow: 5px 5px 20px rgba(0,0,0,0.1);	/*ボックスの影。右へ、下へ、ぼかし幅、0,0,0は黒の事で0.1は色が10%出た状態。*/
+	padding: 1rem;
+	background: #fff;
+    grid-template-rows: auto 1fr;
+	box-shadow: 5px 5px 20px rgba(0,0,0,0.1);
 }
 
-/*ボックス内のfigure画像*/
 .list-grid1 .list figure img {
-	margin-bottom: 0.5rem;	/*画像の下に空けるスペース*/
+	margin-bottom: 0.5rem;
 }
 
 
@@ -526,106 +464,91 @@ footer a {color: inherit;text-decoration: none;}
 	padding-left: var(--global-space);
 	padding-right: var(--global-space);
 }
+
 .bg1 a {
 	color: inherit;
 }
 
-/*以下のheightの行が傾斜の角度です。vwという単位は画面幅に対してで、画面幅100%＝100vwになります。
-つまり、画面幅に対して常に同じ傾斜具合になります。1pxの数字は時々隙間が発生するのでそれを防ぐ為の措置です。
-傾斜（height）を変更したい場合は、下にある「.bg1::before」のtopと「.bg1::after」のbottomの数字も変更。*/
 .bg1::before, .bg1::after {
 	content: "";
 	position: absolute;
 	left: 0;
 	width: 100%;
 	height: calc(5vw + 1px);
-	background: var(--primary-color);	/*背景色。css冒頭で指定しているprimary-colorを読み込みます*/
+	background: var(--primary-color);
 }
 
 .bg1::before {
-	top: -5vw;	/*上の、heightの「5vw」と数字を揃えて先頭にマイナスをつける*/
-	clip-path: polygon(0 100%, 100% 0, 100% 100%);	/*三角形の形を作っています*/
+	top: -5vw;
+	clip-path: polygon(0 100%, 100% 0, 100% 100%);
 }
 
 .bg1::after {
-	bottom: -5vw;	/*上の、heightの「5vw」と数字を揃えて先頭にマイナスをつける*/
-	clip-path: polygon(0 0, 100% 0, 0 100%);	/*三角形の形を作っています*/
+	bottom: -5vw;
+	clip-path: polygon(0 0, 100% 0, 0 100%);
 }
 
 
-/*詳細ページのサムネイル切り替えブロック
----------------------------------------------------------------------------*/
-/*大きな画像が表示されるブロック*/
+/*thumbnail*/
 .thumbnail-view-parts {
-	max-width: 1000px;		/*最大幅*/
-	margin: 0 auto 1rem;	/*ブロック要素を中央に配置。下に1文字分のマージンをとる。*/
-	text-align: center;		/*画像が小さい場合でもセンタリングされるように*/
+	max-width: 1000px;
+	margin: 0 auto 1rem;
+	text-align: center;
 }
 
-/*サムネイル全体を囲むブロック*/
 .thumbnail-parts {
-	display: flex;				/*flexを使う指定*/
-	justify-content: center;	/*並びかたの種類の指定。これはセンタリングする指定。*/
-	margin-bottom: 2rem;		/*下に空けるスペース。２文字分。*/
+	display: flex;
+	justify-content: center;
+	margin-bottom: 2rem;
 }
 
-/*サムネイル画像*/
 .thumbnail-parts img {
-	width: 100px;		/*サムネイルの幅*/
-	margin: 2px;		/*サムネイル間のスペース*/
-	cursor: pointer;	/*リンクタグではないが、クリックできる事をわかりやすくする為にリンクと同じポインターにしておきます。*/
-	transition: 0.3s;	/*マウスオンまでにかける時間。3秒。*/
+	width: 100px;
+	margin: 2px;
+	cursor: pointer;
+	transition: 0.3s;
 }
+
 .thumbnail-parts img:hover {
-	opacity: 0.8;	/*マウスオン時に80%だけ色を出す。つまり薄くなります。*/
+	opacity: 0.8;
 }
 
 
-/*テーブル（ta1）
----------------------------------------------------------------------------*/
-/*テーブル１行目に入った見出し部分（※caption）*/
+/*table*/
 .ta1 caption {
-	font-weight: bold;		/*太字に*/
-	padding: 0.5rem 1rem;	/*ボックス内の余白*/
-	background: var(--primary-color);		/*背景色*/
-	margin-bottom: 1rem;	/*下に空けるスペース*/
-	border-radius: 5px;		/*角を丸くする指定*/
+	font-weight: bold;
+	padding: 0.5rem 1rem;
+	background: var(--primary-color);
+	margin-bottom: 1rem;
+	border-radius: 5px;
 }
 
-/*ta1テーブルブロック設定*/
 .ta1 {
 	table-layout: fixed;
-	border-top: 1px solid #ccc;	/*テーブルの一番上の線。幅、線種、色*/
-	width: 100%;				/*幅*/
-	margin-bottom: 5rem;		/*テーブルの下に空けるスペース。5文字分。*/
+	border-top: 1px solid #ccc;
+	width: 100%;
+	margin-bottom: 5rem;
 }
 
-/*tr（１行分）タグ設定*/
 .ta1 tr {
-	border-bottom: 1px solid #ccc;	/*テーブルの下線。幅、線種、色*/
+	border-bottom: 1px solid #ccc;
 }
 
-/*th（左側）、td（右側）の共通設定*/
 .ta1 th, .ta1 td {
-	padding: 1rem;		/*ボックス内の余白*/
-	word-break: break-all;	/*英語などのテキストを改行で自動的に折り返す設定。これがないと、テーブルを突き抜けて表示される場合があります。*/
+	padding: 1rem;
+	word-break: break-all;
 }
 
-/*th（左側）のみの設定*/
 .ta1 th {
-	width: 30%;			/*幅*/
-	text-align: left;	/*左よせにする*/
+	width: 30%;
+	text-align: left;
 }
 
-	/*画面幅900px以上の追加指定*/
 	@media screen and (min-width:900px) {
-
-		/*th（左側）のみの設定*/
 		.ta1 th {
-			width: 20%;		/*幅*/
+			width: 20%;
 		}
-
-	}/*追加指定ここまで*/
+	}
 
 
 /*PAGE TOP*/
