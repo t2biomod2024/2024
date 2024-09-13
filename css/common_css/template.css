@@ -6,7 +6,6 @@
 	--global-space: 5vw;
 }
 
-
 /*keyframes*/
 @keyframes animation1 {
 	0% {left: -200px;}
@@ -37,7 +36,7 @@ html,body {
 
 body {
 	margin: 0;padding:0;
-	font-family: "Noto Sans JP", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", Meiryo, "メイリオ", "Osaka", "MS PGothic", "ＭＳ Ｐゴシック", sans-serif;	/*フォント種類（ゴシック）*/
+	font-family: "Sorts Mill Goudy", "Noto Sans JP",sans-serif;	/*フォント種類（ゴシック）*/
 	font-optical-sizing: auto;
 	-webkit-text-size-adjust: none;
 	background: #eeeeee;
@@ -96,7 +95,7 @@ header {
 	justify-content: space-between;
 	height: 70px;
 	padding: 1vw 3vw;
-	font-family: "Reddit Sans", "Noto Sans JP", sans-serif;
+	font-family: "Sorts Mill Goudy", "Noto Sans JP", sans-serif;
 	font-optical-sizing: auto;
 	font-weight: 700;
 	font-style: normal;
@@ -256,7 +255,7 @@ a.ddmenu::before {
 
 /*main*/
 main h2 {
-	font-family: "Reddit Sans", "Noto Sans JP", sans-serif;
+	font-family: "Sorts Mill Goudy", "Noto Sans JP", sans-serif;
 	font-size: 3rem;
 	letter-spacing: 0.1em;
 	color: var(--text-color);
