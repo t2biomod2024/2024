@@ -61,12 +61,6 @@ body {
 	line-height: 2;		/*行間*/
 }
 
-/*リセット*/
-figure {margin: 0;}
-dd {margin: 0;}
-nav,ul,li,ol {margin: 0;padding: 0;}
-nav ul {list-style: none;}
-
 /*table全般の設定*/
 table {border-collapse:collapse;}
 
