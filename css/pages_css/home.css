@@ -61,10 +61,11 @@
 .video-container {
     position: relative;
     width: 80vw;
+	max-width: 800px;
     padding-bottom: 45%;
     height: 0;
     overflow: hidden;
-	min-height: 300px;
+	margin: 0 auto;
 }
 
 .video-container iframe {
