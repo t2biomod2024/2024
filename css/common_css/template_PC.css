@@ -3,9 +3,9 @@
 /*CSSカスタムプロパティ（サイト全体を一括管理する為の設定）
 ---------------------------------------------------------------------------*/
 :root {
-	--text-color: #eee;				/*テキストカラー*/
-	--primary-color: #02354e;		/*テンプレートのメインとなる色*/
-	--primary-text-color: #eee;		/*メインカラーの上で使うテキスト色*/
+	--text-color: #303030;				/*テキストカラー*/
+	--primary-color: #1C3177;		/*テンプレートのメインとなる色*/
+	--primary-text-color: #303030;		/*メインカラーの上で使うテキスト色*/
 	--global-space: 5vw;			/*サイト内の左右へとる余白を一括管理しています。画面幅100%＝100vwです。*/
 }
 
@@ -58,7 +58,7 @@ body {
 	font-optical-sizing: auto;
 	/*font-weight: 300;*/
 	-webkit-text-size-adjust: none;
-	background: #000;	/*背景色*/
+	background: #eeeeee;	/*背景色*/
 	color: var(--text-color);	/*文字色。css冒頭で指定しているtext-colorを読み込みます*/
 	line-height: 2;		/*行間*/
 }
