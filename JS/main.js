@@ -10,6 +10,7 @@ fetch("https://t2biomod2024.github.io/2024/page_parts/button.html")
     .then((data) => document.querySelector("body").insertAdjacentHTML('beforeend', data));
 
 
+
 //===============================================================
 // debounce関数
 //===============================================================
@@ -147,8 +148,13 @@ $(function() {
   toggleBodyScroll();
 
   // クラスが動的に変更されることを想定して、MutationObserverを使用
-  const observer = new MutationObserver(toggleBodyScroll);
-  observer.observe(document.getElementById('menubar_hdr'), { attributes: true, attributeFilter: ['class'] });
+  const menubarHdrElement = document.getElementById('menubar_hdr');
+  if (menubarHdrElement) {
+      const observer = new MutationObserver(toggleBodyScroll);
+      observer.observe(menubarHdrElement, { attributes: true, attributeFilter: ['class'] });
+  } else {
+      console.error("menubar_hdr 要素が見つかりませんでした。");
+  }  
 });
 
 
