@@ -405,22 +405,22 @@ footer a {color: inherit;text-decoration: none;}
 
 .bg1::before {
 	top: -5vw;
-	clip-path: polygon(0 80%, 80% 0, 80% 80%);
+	clip-path: polygon(0 100%, 80% 0, 100% 100%);
 }
 
 .bg1::after {
 	bottom: -5vw;
-	clip-path: polygon(0 0, 80% 0, 0 80%);
+	clip-path: polygon(0 0, 80% 0, 0 100%);
 }
 
 .bg2::before {
 	top: -5vw;
-	clip-path: polygon(0 80%, 0 0, 80% 80%);
+	clip-path: polygon(0 100%, 0 20%, 100% 100%);
 }
 
 .bg2::after {
 	bottom: -5vw;
-	clip-path: polygon(80% 0, 0 0, 80% 80%);
+	clip-path: polygon(100% 0, 0 0, 100% 80%);
 }
 
 /*thumbnail*/
