@@ -272,7 +272,6 @@ main h3 {
 
 /*footermenu*/
 #footermenu {
-	background: #888;
 	margin: 0 !important;
 	padding: 20px;
 	text-align: center;
@@ -288,7 +287,6 @@ main h3 {
 /*footer*/
 footer small {font-size: 100%;}
 footer {
-	background: #666;
 	font-size: 0.9rem;
 	text-align: center;
 	padding: 20px;
