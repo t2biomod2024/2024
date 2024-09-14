@@ -419,7 +419,7 @@ footer a {color: inherit;text-decoration: none;}
 /*background2*/
 .bg2 {
 	position: relative;
-	background: var(#f53e72);
+	background: #f53e72;
 	color: var(--primary-text-color);
 	padding-top: 5vw;
 	padding-bottom: 5vw;
@@ -441,7 +441,7 @@ footer a {color: inherit;text-decoration: none;}
 	left: 0;
 	width: 100%;
 	height: calc(5vw + 1px);
-	background: var(#ff0000);
+	background: #ff0000;
 }
 
 .bg2::before {
