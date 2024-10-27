@@ -12,6 +12,10 @@ function debounce(func, wait) {
     };
 }
 
+// loading
+window.addEventListener('load', function() {
+    document.getElementById('loading-screen').style.display = 'none';
+});
 
 //menu
 var $menubar = $('#menubar');
