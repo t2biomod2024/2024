@@ -40,7 +40,7 @@
         <aside id="mainimg">
         <div class="slide slide1">
         <div>
-        <h1><span class="fade-in-text">Nano Pill Bug</span></h1>
+        <h1><span class="fade-in-text">Nano&nbsp;Pill&nbsp;Bug</span></h1>
         <h2><span class="fade-in-text">miRNAを捕まえ保護するマシン</span></h2>
         <p class="btn-border-radius"><a href="#"><i class="fas fa-caret-right"></i>&nbsp;More Deteils</a></p>
         </div>
@@ -50,19 +50,50 @@
         <div id="contents">
         <main>
             <section class="bg3">
-
                 <h3><span class="fade-in-text">ABSTRACT</span></h3>
                 <p>RNaseから守る<br>
-                    
                     ↓<br>
-                    
                     非修飾miRNAのさらなる研究が進めば、よりガンの早期診断などに応用できる<br></p>
-                
             </section>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+        <script>
+            const scene = new THREE.Scene();
+            const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+            const renderer = new THREE.WebGLRenderer();
+            renderer.setSize(window.innerWidth, window.innerHeight);
+            document.body.appendChild(renderer.domElement);
+
+            // ダンゴムシのボディ
+            const bodyGeometry = new THREE.SphereGeometry(1, 16, 16);
+            const bodyMaterial = new THREE.MeshBasicMaterial({ color: 0x8B4513 }); // 茶色
+            const body = new THREE.Mesh(bodyGeometry, bodyMaterial);
+            scene.add(body);
+
+            // ダンゴムシの足
+            const legGeometry = new THREE.CylinderGeometry(0.1, 0.1, 1, 8);
+            const legMaterial = new THREE.MeshBasicMaterial({ color: 0x000000 }); // 黒
+            for (let i = 0; i < 14; i++) {
+                const leg = new THREE.Mesh(legGeometry, legMaterial);
+                leg.rotation.z = Math.PI / 2;
+                leg.position.set(1.2 * Math.cos(i * Math.PI / 7), 1.2 * Math.sin(i * Math.PI / 7), -0.5);
+                body.add(leg);
+            }
+
+            camera.position.z = 5;
+
+            function animate() {
+                requestAnimationFrame(animate);
+                body.rotation.y += 0.01; // 回転
+                renderer.render(scene, camera);
+            }
+
+            animate();
+        </script>
+
+
             <section class="bg1">
-            
-                <h2 class="c"><span class="fade-in-text">Our YouTube</span><span class="hosoku">Project video</span></h2>
                 
+                <h2 class="c"><span class="fade-in-text">Our&nbsp;YouTube</span><span class="hosoku">Project&nbsp;video</span></h2>    
                 <div class="video-container">
                     <iframe src="https://www.youtube.com/embed/dR31pBvMUV8?si=JDiVBSjtaKbsU35u" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
