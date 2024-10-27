@@ -40,11 +40,11 @@ body {
 	font-optical-sizing: auto;
 	-webkit-text-size-adjust: none;
 	background-image: url("path/to/your/texture.jpg");
-    background-size: cover; /* 画面全体を覆う */
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    background-color: #eeeeee; /* 淡い紙色 */
-    background-blend-mode: multiply; /* ブレンドモード */
+    background-color: #eeeeee;
+    background-blend-mode: multiply;
 	color: var(--text-color);
 	line-height: 2;
 }
