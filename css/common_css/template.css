@@ -67,6 +67,16 @@ a:hover {
 	color: var(--primary-color);
 }
 
+/*mainimg*/
+#mainimg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
 
 /*container*/
 body:not(.home) #container {
