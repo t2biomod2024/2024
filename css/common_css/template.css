@@ -41,7 +41,7 @@ body {
 	-webkit-text-size-adjust: none;
 	background-image: url("https://t2biomod2024.github.io/2024/pics/texture.jpg");
     background-size: cover;
-    background-repeat: no-repeat;
+    /*background-repeat: no-repeat;*/
     background-position: center;
     background-color: #eeeeee;
     background-blend-mode: multiply;
