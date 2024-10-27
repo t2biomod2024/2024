@@ -470,15 +470,15 @@ footer a {color: inherit;text-decoration: none;}
 	display: inline-block;
 	padding: 0.5rem 2rem !important;
 	border-radius: 100px;
-	background: #038e8e !important;
+	background: #1C3177 !important;
 }
 
 
 /*background*/
 .bg1, .bg2, .bg3 {
 	position: relative;
-	background: var(--primary-color);
-	/*color: var(--primary-text-color);*/
+	/*background: var(--primary-color);*/
+	color: var(--primary-text-color);
 	padding-top: 5vw;
 	padding-bottom: 5vw;
 	padding-left: var(--global-space);
