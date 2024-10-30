@@ -65,10 +65,10 @@ section + section {
 a {
 	color: var(--text-color);
 	transition: 0.3s;
+	text-decoration: none;
 }
 
 a:hover {
-	text-decoration: none;
 	color: var(--primary-color);
 }
 
