@@ -383,6 +383,10 @@ main h3 {
 	display: inline-block;
 	margin-bottom: 2rem;
 }
+
+.footer__address {
+	margin-bottom: 2rem;
+}
   
 .footer__navi li {
 	margin-bottom: 0.75rem;
