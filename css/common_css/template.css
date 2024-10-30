@@ -72,6 +72,11 @@ a:hover {
 	color: var(--primary-color);
 }
 
+ul {
+	padding: 0;
+	list-style: none;
+}
+
  /* Loading */
 #loading-screen {
     position: fixed;
