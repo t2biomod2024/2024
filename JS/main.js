@@ -92,7 +92,7 @@ $('.ddmenu').on('touchstart', function(e) {
 window.addEventListener("scroll", () => {
     const header = document.querySelector("header");
     const scrollY = window.scrollY;
-    const opacity = Math.min(scrollY / 300, 1);
+    const opacity = Math.min(scrollY / 300, 0.8);
     header.style.backgroundColor = `rgba(238, 238, 238, ${opacity})`;
 });
 
