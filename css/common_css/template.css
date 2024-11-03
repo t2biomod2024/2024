@@ -306,6 +306,22 @@ main h3 {
 	background: #1C3177 !important;
 }
 
+/* FancyArea */
+.fancyArea {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	max-width: 1024px;
+	margin: 0 auto;
+	padding: 0 20px;
+  }
+  .fancyArea a {
+	width: 32%;
+  }
+  .fancyArea a img {
+	max-width: 100%;
+	height: auto;
+  }
 
 /*background*/
 .bg1, .bg2, .bg3 {
