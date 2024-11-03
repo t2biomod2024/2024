@@ -436,6 +436,7 @@ main h3 {
     left: 0;
 }
 
+
 /*Other*/
 .clearfix::after {content: "";display: block;clear: both;}
 .color-check, .color-check a {color: #ff0000 !important;}
