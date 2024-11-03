@@ -45,13 +45,10 @@ a.ddmenu::before {
 	gap: 0.5rem;
 }
 
-.large-screen #menubar li {
-    background: #eee;
-}
-
 .large-screen #menubar li a {
 	border-radius: 100px;
 	padding: 0.2rem 1rem;
+    background: #eee;
 }
 
 .large-screen #menubar li a:hover {
