@@ -187,6 +187,33 @@ $(function() {
 });
 
 
+// accordion
+$(function(){
+    $('.s_06 .accordion_one .accordion_header').click(function(){
+      $(this).next('.accordion_inner').slideToggle();
+      $(this).toggleClass("open");
+      $('.s_06 .accordion_one .accordion_header').not($(this)).next('.accordion_one .accordion_inner').slideUp();
+      $('.s_06 .accordion_one .accordion_header').not($(this)).removeClass("open");
+    });
+    $('a.close_btn').click(function () {
+      $(this).parents('.s_06 .accordion_one .accordion_inner').slideUp();
+      $('.s_06 .accordion_one .accordion_header').removeClass("open");
+    });
+  });
+
+  $(function(){
+    $('.s_06 a.close_btn').click(function() {
+      var adjust = 0;
+      var speed = 500;
+      var href= $(this).attr("href");
+      var target = $(href == "#" || href == "" ? 'html' : href);
+      var position = target.offset().top - adjust;
+      $('body,html').animate({scrollTop:position}, speed, 'swing');
+      return false;
+    });
+  });  
+
+
 //thumbnail
 $(function() {
     $(".thumbnail-view-parts").each(function() {
