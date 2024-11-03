@@ -100,9 +100,11 @@
 	border-right: 2px solid #1c85d8;
 	border-bottom: 2px solid #1c85d8;
   }
-  .s_06 .accordion_one .accordion_inner .box_one {
+  
+  /*.s_06 .accordion_one .accordion_inner .box_one {
 	height: 300px;
-  }
+  }*/
+
   .s_06 .accordion_one .accordion_inner p.txt_a_ac {
 	margin: 0;
   }
