@@ -187,6 +187,25 @@ $(function() {
 });
 
 
+//image
+$(document).ready(function() {
+    $('[data-fancybox="images_buttons"]').fancybox({
+      buttons : [ 
+        "zoom",
+        "share",
+        "slideShow",
+        "fullScreen",
+        "download",
+        "thumbs",
+        "close"
+      ],
+      thumbs : {
+        autoStart : false
+      }
+    });
+  });
+
+
 // accordion
 $(function(){
     $('.s_06 .accordion_one .accordion_header').click(function(){
