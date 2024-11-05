@@ -393,6 +393,7 @@ main h3 {
     list-style: none;
     display: flex;
     gap: 15px;
+	justify-content: center; 
 }
 .ca-icon{
     color: #c5e4f4;
