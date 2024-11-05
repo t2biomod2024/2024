@@ -138,52 +138,6 @@ ul {
 }
 
 
-/* Scroll down */
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&display=swap');
-
-.scroll_down{
-  position:absolute;
-  bottom: 0px;
-  left: 50%;
-}
-
-.scroll_down a{
-  position: absolute;
-  left: 10px;
-  bottom: 87px;
-  color: #000;
-  font-size: 14px;
-  letter-spacing: .2em;
-  writing-mode: vertical-lr;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-
-.scroll_down:before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: -4px;
-  width: 11px;
-  height: 11px;
-  border-radius: 50%;
-  background:#000;
-  animation:
-    circlemove 1.6s ease-in-out infinite,
-    cirlemovehide 1.6s ease-out infinite;
-}
-
-.scroll_down:after{
-  content:"";
-  position: absolute;
-  bottom:0;
-  left:0;
-  width:2px;
-  height: 160px;
-  background:#000;
-}
-
-
 /*mainimg*/
 #mainimg {
 	background-image: url('https://t2biomod2024.github.io/2024/pics/title.gif');
