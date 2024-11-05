@@ -368,7 +368,7 @@ main h3 {
     transition: all 300ms linear;
 }
 .ca-menu li:last-child{
-    margin-bottom: 0px;
+    margin-right: 0px;
 }
 .ca-menu li a{
     text-align: left;
