@@ -414,9 +414,8 @@ main h3 {
     top: 50%;
 }
 .ca-main{
-    font-family: 'Bangers', cursive;
     font-size: 30px;
-    color: #1C3177;
+    color: #303030;
     opacity: 0.8;
     text-align: center;
     transition: all 200ms linear;
