@@ -368,11 +368,12 @@ main h3 {
 }
 .ca-main{
     font-size: 30px;
+	color: #333;
     transition: all 300ms linear;
 }
 .ca-sub{
     font-size: 14px;
-    color: #666;
+    color: #333;
     transition: all 300ms linear; 
 }
 .ca-menu li:hover{
