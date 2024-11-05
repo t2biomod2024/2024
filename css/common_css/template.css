@@ -336,7 +336,30 @@ main h3 {
         transform: translateY(0%);
     }
 }
-
+@keyframes moveFromLeft{
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0%);
+    }
+}
+@keyframes moveFromLeftRotate{
+    from {
+        transform: translateX(-100%) rotate(-90deg);
+    }
+    to {
+        transform: translateX(0%) rotate(0deg);
+    }
+}
+@keyframes smallToBig{
+    from {
+        transform: scale(0.1);
+    }
+    to {
+        transform: scale(1);
+    }
+}
 .ca-menu{
     padding: 0;
     margin: 20px auto;
@@ -399,22 +422,25 @@ main h3 {
     color: #666;
     line-height: 40px;
     opacity: 0.8;
+    position: absolute;
+    bottom: 0;
+    width: 100%; 
     transition: all 200ms linear;
 }
 .ca-menu li:hover{
-    background-color: #fff;
+    background-color: #000;
 }
 .ca-menu li:hover .ca-icon{
-    text-shadow: 0px 0px 20px #c5e4f4;
-    color: transparent;
-    animation: moveFromTop 400ms ease;
+    color: #ff2020;
+    animation: moveFromBottom 300ms ease;
 }
 .ca-menu li:hover .ca-main{
-    color: #000;
-    animation: moveFromTop 300ms ease;
+    color: #ff2020;
+    animation: smallToBig 300ms ease;
 }
 .ca-menu li:hover .ca-sub{
     color: #000;
+    background-color: #ff2020;
     animation: moveFromBottom 500ms ease;
 }
 
