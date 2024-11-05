@@ -396,9 +396,8 @@ main h3 {
 	justify-content: center; 
 }
 .ca-icon{
-    color: #c5e4f4;
-    font-size: 90px;
-    text-shadow: 1px 0px 1px rgba(255,255,255,0.7);
+    color: #000;
+    font-size: 100px;
     line-height: 150px;
     position: absolute;
     width: 100%;
@@ -409,6 +408,7 @@ main h3 {
     transition: all 200ms linear;
 }
 .ca-content{
+	font-family: 'Bangers', cursive;
     position: absolute;
     left: 0px;
     width: 100%;
