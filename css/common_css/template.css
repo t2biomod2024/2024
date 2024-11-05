@@ -432,7 +432,7 @@ main h3 {
     transition: all 200ms linear;
 }
 .ca-menu li{
-    width: 300px;
+    width: 250px;
     height: 350px;
     overflow: hidden;
     position: relative;
