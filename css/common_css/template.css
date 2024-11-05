@@ -316,6 +316,27 @@ main h3 {
     font-weight: normal;
     font-style: normal;
 }
+@keyframes moveFromBottom {
+    from {
+        opacity: 0;
+        transform: translateY(200%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+@keyframes moveFromTop {
+    from {
+        opacity: 0;
+        transform: translateY(-200%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
 .ca-menu{
     padding: 0;
     margin: 20px auto;
@@ -372,21 +393,22 @@ main h3 {
     transition: all 300ms linear; 
 }
 .ca-menu li:hover{
-    border-color: #fff004;
-    background: #000;
+    background: #e1f0fa;
 }
 .ca-menu li:hover .ca-icon{
-    color: #fff004;
-    text-shadow: 0px 0px 1px #fff004;
-    font-size: 50px;
+    font-size: 40px;
+    color: #259add;
+    opacity: 0.8;
+    text-shadow: 0px 0px 13px #fff;
 }
 .ca-menu li:hover .ca-main{
-    color: #fff004;
-    font-size: 14px;
+    opacity: 1;
+    color:#2676ac;
+    animation: moveFromTop 300ms ease-in-out;
 }
 .ca-menu li:hover .ca-sub{
-    color: #fff;
-    font-size: 30px;
+    opacity: 1;
+    animation: moveFromBottom 300ms ease-in-out;
 }
 
 
