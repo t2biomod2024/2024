@@ -39,12 +39,6 @@ body {
 	font-family: "Noto Sans", "Noto Sans JP",sans-serif;
 	font-optical-sizing: auto;
 	-webkit-text-size-adjust: none;
-	background-image: url("https://t2biomod2024.github.io/2024/pics/texture.jpg");
-    background-size: cover;
-    /*background-repeat: no-repeat;*/
-    background-position: center;
-    background-color: #eeeeee;
-    background-blend-mode: multiply;
 	color: var(--text-color);
 	line-height: 2;
 }
@@ -65,11 +59,16 @@ section + section {
 a {
 	color: var(--text-color);
 	transition: 0.3s;
+	text-decoration: none;
 }
 
 a:hover {
-	text-decoration: none;
 	color: var(--primary-color);
+}
+
+ul {
+	padding: 0;
+	list-style: none;
 }
 
  /* Loading */
@@ -158,14 +157,17 @@ a:hover {
 
 /*mainimg*/
 #mainimg {
+	background-image: url('https://t2biomod2024.github.io/2024/pics/title-1.png');
+    background-size: cover;
+    background-position: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100vw;
     height: 100vh;
     background-size: cover;
     background-position: center;
 }
+
 
 /*container*/
 body:not(.home) #container {
@@ -180,6 +182,11 @@ body:not(.home) #container {
 #contents {
 	flex: 1;
 	padding: var(--global-space);
+	background-image: url("https://t2biomod2024.github.io/2024/pics/texture.jpg");
+    background-size: cover;
+    background-position: center;
+    background-color: #eeeeee;
+    background-blend-mode: multiply;
 }
 
 	@media screen and (max-width:600px) {
@@ -187,156 +194,10 @@ body:not(.home) #container {
 	}
 
 
-/*header*/
-header {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	height: 70px;
-	padding: 1vw 3vw;
-	font-family: "Noto Sans", "Noto Sans JP", sans-serif;
-	font-optical-sizing: auto;
-	font-weight: 700;
-	font-style: normal;
-    position: absolute;
-    z-index: 1;
-    width: 100%;
-}
-
-	@media screen and (min-width:900px) {
-	header {position: fixed;}
-	}
-
 /*logo*/
 #logo img {
 	display: block;
 	width: 300px;
-}
-
-/*menu*/
-#menubar {display: none;}
-#menubar ul {list-style: none;margin: 0;padding: 0;}
-#menubar a {display: block;text-decoration: none;}
-
-.large-screen #menubar {display: block;}
-.small-screen #menubar.display-block {display: block;}
-
-#menubar_hdr.display-none {display: none;}
-
-.ddmenu_parent ul {display: none;}
-
-a.ddmenu {cursor: default;}
-
-a.ddmenu::before {
-	font-family: "Font Awesome 6 Free";
-	content: "\f078";
-	font-weight: bold;
-	margin-right: 0.5em;
-}
-
-.large-screen #menubar > nav > ul {
-	display: flex;
-	font-size: 0.85rem;
-	gap: 0.5rem;
-}
-
-.large-screen #menubar li a {
-	border-radius: 100px;
-	padding: 0.2rem 1rem;
-}
-
-.large-screen #menubar li a:hover {
-	background: #fff;
-}
-
-
-/*ddmenu*/
-.large-screen #menubar ul ul,
-.small-screen #menubar ul ul {
-	animation: opa1 0.5s 0.1s both;
-}
-
-.large-screen #menubar ul ul {
-	position: absolute;z-index: 100;
-}
-
-.large-screen #menubar ul ul a {
-	margin-top: 0.4rem;
-}
-
-.small-screen #menubar.display-block {
-	position: fixed;overflow: auto;z-index: 100;
-	left: 0px;top: 0px;
-	width: 100%;
-	height: 100%;
-	padding-top: 90px;
-	background: rgba(0,0,0,0.9);
-	animation: animation1 0.2s both;
-}
-
-.small-screen #menubar nav ul li {
-	border: 1px solid #ccc;
-	margin: 1rem;
-	border-radius: 5px;
-	padding: 0 2rem;
-}
-
-.small-screen #menubar a {
-	padding: 1rem;
-}
-
-.small-screen #menubar, .small-screen #menubar a {
-	color: #fff;
-}
-
-#menubar .sh {
-	font-weight: normal;
-	padding: 1rem 2rem 2rem;
-}
-
-
-/*hdr-menu*/
-#menubar_hdr {
-	animation: opa1 0s 0.2s both;
-	position: fixed;z-index: 101;
-	cursor: pointer;
-	right: 3vw;
-	top: 1vw;
-	padding: 16px 14px;
-	width: 46px;
-	height: 46px;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-}
-
-#menubar_hdr span {
-	display: block;
-	transition: 0.3s;
-	border-top: 1.5px solid #333;
-}
-
-#menubar_hdr.ham {
-	background: #ff0000;
-}
-
-#menubar_hdr.ham span:nth-of-type(1),
-#menubar_hdr.ham span:nth-of-type(3) {
-	transform-origin: center center;
-	width: 20px;
-	border-color: #fff;
-}
-
-#menubar_hdr.ham span:nth-of-type(1){
-	transform: rotate(45deg) translate(3.8px, 5px);
-}
-
-#menubar_hdr.ham span:nth-of-type(2){
-	display: none;
-}
-
-#menubar_hdr.ham span:nth-of-type(3){
-	transform: rotate(-45deg) translate(3.8px, -5px);
 }
 
 
@@ -366,32 +227,6 @@ main h3 {
 	display: inline-block;
 	border-bottom: 3px solid var(--primary-text-color);
 }
-
-
-/*footermenu*/
-#footermenu {
-	margin: 0 !important;
-	padding: 20px;
-	text-align: center;
-	font-size: 0.8rem;
-}
-
-#footermenu li {
-	display: inline-block;
-	padding: 0 10px;
-}
-
-
-/*footer*/
-footer small {font-size: 100%;}
-footer {
-	font-size: 0.9rem;
-	text-align: center;
-	padding: 20px;
-	background: #cdc;
-}
-
-footer a {color: inherit;text-decoration: none;}
 
 
 /*fadeIn*/
@@ -473,6 +308,22 @@ footer a {color: inherit;text-decoration: none;}
 	background: #1C3177 !important;
 }
 
+/* FancyArea */
+.fancyArea {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	max-width: 1024px;
+	margin: 0 auto;
+	padding: 0 20px;
+  }
+  .fancyArea a {
+	width: 32%;
+  }
+  .fancyArea a img {
+	max-width: 100%;
+	height: auto;
+  }
 
 /*background*/
 .bg1, .bg2, .bg3 {
@@ -587,22 +438,7 @@ footer a {color: inherit;text-decoration: none;}
 	}
 
 
-/*PAGE TOP*/
-.pagetop-show {display: block;}
-
-.pagetop a {
-	display: block;text-decoration: none;text-align: center;z-index: 99;
-	position: fixed;
-	right: 20px;
-	bottom: 20px;
-	color: #fff;
-	font-size: 1.5rem;
-	background: rgba(0,0,0,0.2);
-	width: 60px;
-	line-height: 60px;
-	border-radius: 50%;
-}
-
+/* VIDEO */
 .video-container {
     width: 50%;
     max-width: 800px;
@@ -618,6 +454,7 @@ footer a {color: inherit;text-decoration: none;}
     top: 0;
     left: 0;
 }
+
 
 /*Other*/
 .clearfix::after {content: "";display: block;clear: both;}
