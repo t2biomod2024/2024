@@ -304,6 +304,58 @@ main h3 {
 }
 
 
+/*background*/
+.bg1, .bg2, .bg3 {
+	position: relative;
+	background: var(--primary-color);
+	color: var(--primary-text-color);
+	padding-top: 5vw;
+	padding-bottom: 5vw;
+	padding-left: var(--global-space);
+	padding-right: var(--global-space);
+}
+
+.bg1, .bg2 .bg3{
+	margin-top: 10vw;
+	margin-bottom: 10vw;
+	margin-left: calc(-1 * var(--global-space));
+	margin-right: calc(-1 * var(--global-space));
+}
+
+.bg1 a, .bg2 a, .bg3 a{
+	color: inherit;
+}
+
+.bg1::before, .bg1::after, .bg2::before, .bg2::after{
+	content: "";
+	position: absolute;
+	left: 0;
+	width: 100%;
+	height: calc(5vw + 1px);
+	background: var(--primary-color);
+}
+
+.bg1::before {
+	top: -5vw;
+	clip-path: polygon(0 100%, 100% 20%, 100% 100%);
+}
+
+.bg1::after {
+	bottom: -5vw;
+	clip-path: polygon(0 0, 100% 0, 0 80%);
+}
+
+.bg2::before {
+	top: -5vw;
+	clip-path: polygon(0 100%, 0 20%, 100% 100%);
+}
+
+.bg2::after {
+	bottom: -5vw;
+	clip-path: polygon(100% 0, 0 0, 100% 80%);
+}
+
+
 /*ca-menu*/
 @font-face {
     font-family: 'WebSymbolsRegular';
@@ -443,57 +495,6 @@ main h3 {
     animation: moveFromBottom 500ms ease;
 }
 
-
-/*background*/
-.bg1, .bg2, .bg3 {
-	position: relative;
-	background: var(--primary-color);
-	color: var(--primary-text-color);
-	padding-top: 5vw;
-	padding-bottom: 5vw;
-	padding-left: var(--global-space);
-	padding-right: var(--global-space);
-}
-
-.bg1, .bg2 .bg3{
-	margin-top: 10vw;
-	margin-bottom: 10vw;
-	margin-left: calc(-1 * var(--global-space));
-	margin-right: calc(-1 * var(--global-space));
-}
-
-.bg1 a, .bg2 a, .bg3 a{
-	color: inherit;
-}
-
-.bg1::before, .bg1::after, .bg2::before, .bg2::after{
-	content: "";
-	position: absolute;
-	left: 0;
-	width: 100%;
-	height: calc(5vw + 1px);
-	background: var(--primary-color);
-}
-
-.bg1::before {
-	top: -5vw;
-	clip-path: polygon(0 100%, 100% 20%, 100% 100%);
-}
-
-.bg1::after {
-	bottom: -5vw;
-	clip-path: polygon(0 0, 100% 0, 0 80%);
-}
-
-.bg2::before {
-	top: -5vw;
-	clip-path: polygon(0 100%, 0 20%, 100% 100%);
-}
-
-.bg2::after {
-	bottom: -5vw;
-	clip-path: polygon(100% 0, 0 0, 100% 80%);
-}
 
 /*thumbnail*/
 .thumbnail-view-parts {
