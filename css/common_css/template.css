@@ -240,6 +240,7 @@ main h3 {
     animation: fadeIn 0.05s linear both;
 }
 
+
 /*list-grid1*/
 .list-grid1 {
 	display: grid;
@@ -308,22 +309,71 @@ main h3 {
 	background: #1C3177 !important;
 }
 
-/* FancyArea */
-.fancyArea {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	max-width: 1024px;
-	margin: 0 auto;
-	padding: 0 20px;
-  }
-  .fancyArea a {
-	width: 32%;
-  }
-  .fancyArea a img {
-	max-width: 100%;
-	height: auto;
-  }
+
+/*ca-menu*/
+.ca-menu{
+    padding: 0;
+    margin: 20px auto;
+    width: 500px;
+}
+.ca-menu li:hover{
+    background-color: #000;
+    z-index:999;   
+    transform: scale(1.1);  
+}
+.ca-menu li:hover .ca-icon{
+    color: #ccff00;
+    font-size: 90px;
+    opacity:0.3;
+}
+.ca-menu li:hover .ca-icon#heart{
+    animation: smallToBig 900ms alternate infinite ease;
+}
+.ca-menu li:hover .ca-main{
+    color: #ccff00;
+    animation: smallToBig 300ms ease;
+}
+.ca-menu li:hover .ca-sub{
+    color: #ccff00;
+    animation: moveFromBottom 500ms ease;
+}
+.ca-content{
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    height: 50%;
+    top: 50%;
+}
+.ca-main{
+    font-size: 30px;
+    color: #005382;
+    opacity: 0.8;
+    text-align: center;
+    transition: all 200ms linear;
+}
+.ca-sub{
+    text-align:center;
+    font-size: 14px;
+    color: #666;
+    line-height: 40px;
+    opacity: 0.8;
+    transition: all 200ms linear;
+}
+.ca-icon{
+    font-family: 'WebSymbolsRegular', cursive;
+    color: #c5e4f4;
+    font-size: 90px;
+    text-shadow: 1px 0px 1px rgba(255,255,255,0.7);
+    line-height: 150px;
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    left: 0px;
+    top: 0px;
+    text-align: center;
+    transition: all 200ms linear;
+}
+
 
 /*background*/
 .bg1, .bg2, .bg3 {
