@@ -140,8 +140,8 @@ ul {
 
 /*mainimg*/
 #mainimg {
-	background-image: url('https://t2biomod2024.github.io/2024/pics/title-2.png'), url('https://t2biomod2024.github.io/2024/pics/title-1.gif');
-    background-size: cover;
+    background-image: url('https://t2biomod2024.github.io/2024/pics/title-2.png'), url('https://t2biomod2024.github.io/2024/pics/title-1.gif');
+    background-size: cover, 50%;
     background-position: center;
     background-color: #7f96c2;
     background-blend-mode: overlay, normal;
@@ -149,8 +149,6 @@ ul {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-size: cover;
-    background-position: center;
 }
 
 
