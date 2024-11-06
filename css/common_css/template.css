@@ -427,6 +427,7 @@ main h3 {
 #sec ul li {
 	padding: 40px;
 	width: 320px;
+	border-radius: 3%;
 	transition: box-shadow 0.3s;
 }
 #sec ul li:hover {
