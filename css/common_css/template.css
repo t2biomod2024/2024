@@ -412,11 +412,10 @@ main h3 {
 /* card-menu */
 #sec {
 	padding: 0;
-	background: #fff;
+	background: #eee;
 	text-align: center;
 	word-wrap: break-word;
 }
-  
 #sec ul {
 	margin: 0;
 	display: flex;
@@ -445,23 +444,23 @@ main h3 {
 #sec ul li:hover .title01:after {
 	width: 25px;
 }
-#sec ul li span {
+#sec ul li a span {
 	font-size: 2.6em;
 	display: block;
 	transition: color 0.3s;
 	color: #A2A2A2;
 }
-#sec ul li span:before, #sec ul li span:after {
+#sec ul li a span:before, #sec ul li a span:after {
 	position: static;
 }
-#sec ul li .title01 {
+#sec ul li a .title01 {
 	color: #6f6f6f;
 	display: inline-block;
 	font-size: 24px;
 	font-weight: 100;
 	transition: color 0.3s;
 }
-#sec ul li .title01:after {
+#sec ul li a .title01:after {
 	content: "";
 	position: relative;
 	left: 50%;
@@ -473,7 +472,7 @@ main h3 {
 	background: #6f6f6f;
 	transition: width 0.3s;
 }
-#sec ul li p {
+#sec ul li a p {
 	color: #A2A2A2;
 	text-align: left;
 	text-indent: 1em;
@@ -569,10 +568,10 @@ main h3 {
 	display: block;text-decoration: none;
 	font-size: 1rem;
 	text-align: center;
-	background: var(--primary-color) !important;
-	color: var(--primary-text-color) !important;
-	padding: 0.5rem !important;
-	margin-top: 1rem !important;
+	background: var(--primary-color);
+	color: var(--primary-text-color);
+	padding: 0.5rem;
+	margin-top: 1rem;
 }
 
 .btn a:hover,
@@ -582,9 +581,9 @@ main h3 {
 
 .btn-border-radius a {
 	display: inline-block;
-	padding: 0.5rem 2rem !important;
+	padding: 0.5rem 2rem;
 	border-radius: 100px;
-	background: #1C3177 !important;
+	background: #1C3177;
 }
 
 .button-53 {
