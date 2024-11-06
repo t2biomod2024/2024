@@ -142,7 +142,7 @@ ul {
 #mainimg {
     background-image: url('https://t2biomod2024.github.io/2024/pics/title-2.png'), url('https://t2biomod2024.github.io/2024/pics/title-1.gif');
     background-size: cover, 50%;
-    background-position: center, right 3%;
+    background-position: center, top 50% right 47%;
     background-color: #7f96c2;
 	background-blend-mode: normal;
 	background-repeat: no-repeat;
