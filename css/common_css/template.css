@@ -326,7 +326,7 @@ body:not(.home) #container {
 	content:'';
 	font-family:'shape divider from ShapeDividers.com';
 	position: absolute;
-	z-index: 3;
+	z-index: -1;
 	pointer-events: none;
 	background-repeat: no-repeat;
 	bottom: -0.1vw;
@@ -364,7 +364,7 @@ body:not(.home) #container {
 	left: -1px;
 	right: -1px;
 	top: -1px;
-	z-index: 3;
+	z-index: -1;
 	pointer-events: none;
 	background-repeat: no-repeat; 
 	background-size: 100% 40px;
