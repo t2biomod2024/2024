@@ -415,8 +415,8 @@ main h3 {
     width: 70%;
     height: 50vh;
 	margin: 0 auto;
-	display: block;
-	border-radius: 12px;
+	display: flex;
+	border-radius: 15px;
 	overflow: hidden;
 	cursor: pointer;
 }
