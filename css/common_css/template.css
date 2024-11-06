@@ -561,6 +561,20 @@ main h3 {
     width: 100%;
 }
 
+/* slide container */
+.slide-container {
+	position: relative;
+    width: 70%;
+    height: auto;
+	margin: 0 auto;
+	display: flex;
+	overflow: hidden;
+	cursor: pointer;
+}
+.img-container img {
+    width: 100%;
+}
+
 
 /* card-menu */
 #sec {
