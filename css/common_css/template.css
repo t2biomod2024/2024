@@ -265,14 +265,12 @@ body:not(.home) #container {
 	padding-top: 30%;
 	position: relative;
 }
-  
 .field {
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
 	width: 300px;
-}
-  
+} 
 .arrow {
 	width: 0;
 	height: 40px;
@@ -322,6 +320,7 @@ body:not(.home) #container {
 	overflow:hidden;
 	position:relative;
 	height: 120px;
+	background-color: transparent;
 }
 .shapedividers_com-4002::before{ 
 	content:'';
