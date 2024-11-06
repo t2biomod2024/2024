@@ -416,6 +416,8 @@ main h3 {
     border-radius: 15px;
     overflow: hidden;
     margin: 0 auto;
+	padding: 10px;
+	color: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -427,9 +429,9 @@ main h3 {
 }
 .img-container .caption {
 	font-size:		130%;
-	text-align: 		center;
-	padding-top:		80px;
-	color:			#fff;
+	text-align: 	center;
+	padding-top:	80px;
+	color:	#fff;
 }
 .img-container .mask {
 	width:			100%;
