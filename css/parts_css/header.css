@@ -48,7 +48,10 @@ a.ddmenu::before {
 .large-screen #menubar li a {
 	border-radius: 100px;
 	padding: 0.2rem 1rem;
-    background: #eee;
+}
+
+.large-screen #menubar li ul li a {
+	background: #eee;
 }
 
 .large-screen #menubar li a:hover {
