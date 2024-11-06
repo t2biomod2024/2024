@@ -321,6 +321,7 @@ body:not(.home) #container {
 	overflow:hidden;
 	position:relative;
 	background-color: transparent;
+	height: 120px;
 }
 .shapedividers_com-4002::before{ 
 	content:'';
@@ -355,6 +356,7 @@ body:not(.home) #container {
 .shapedividers_com-7541{
 	overflow:hidden;
 	position:relative;
+	height: 100px;
 }
 .shapedividers_com-7541::before{
 	content:'';
