@@ -504,7 +504,6 @@ main h3 {
 	position: relative;
 	background: var(--primary-color);
 	color: var(--primary-text-color);
-	padding-top: 5vw;
 	padding-bottom: 5vw;
 	padding-left: var(--global-space);
 	padding-right: var(--global-space);
@@ -513,6 +512,7 @@ main h3 {
 }
 
 .bg1, .bg3{
+	padding-top: 5vw;
 	margin-top: 10vw;
 	margin-bottom: 10vw;
 
