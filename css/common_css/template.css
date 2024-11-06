@@ -259,7 +259,6 @@ body:not(.home) #container {
 .scroll-container {
 	width: 100%;
 	height: 100%;
-	background-color: #c9d6df;
 	display: flex;
 	align-items: center;
 	justify-content: center;
