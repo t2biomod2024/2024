@@ -511,6 +511,10 @@ main h3 {
 	margin-right: calc(-1 * var(--global-space));
 }
 
+.bg2{
+	padding-top: 0;
+}
+
 .bg1, .bg3{
 	padding-top: 5vw;
 	margin-top: 10vw;
