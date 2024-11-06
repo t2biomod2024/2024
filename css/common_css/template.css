@@ -408,6 +408,24 @@ main h3 {
 	clip-path: polygon(100% 0, 0 0, 100% 80%);
 }
 
+/* image container */
+.img-container {
+    width: 70%;
+    height: 50vh;
+    border-radius: 15px;
+    overflow: hidden;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
 
 /* card-menu */
 #sec {
