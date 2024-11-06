@@ -320,7 +320,7 @@ body:not(.home) #container {
 .shapedividers_com-4002{
 	overflow:hidden;
 	position:relative;
-	background-color: transparent;
+    background-color: #eeeeee;
 	height: 120px;
 }
 .shapedividers_com-4002::before{ 
