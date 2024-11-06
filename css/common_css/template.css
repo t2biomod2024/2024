@@ -144,7 +144,7 @@ ul {
     background-size: cover;
     background-position: center;
     background-color: #7f96c2;
-    background-blend-mode: overlay, multiply;
+    background-blend-mode: overlay, normal;
     display: flex;
     justify-content: center;
     align-items: center;
