@@ -358,84 +358,6 @@ main h3 {
 }
 
 
-/*button*/
-.btn a,
-.btn-border-radius a {
-	display: block;text-decoration: none;
-	font-size: 1rem;
-	text-align: center;
-	background: var(--primary-color) !important;
-	color: var(--primary-text-color) !important;
-	padding: 0.5rem !important;
-	margin-top: 1rem !important;
-}
-
-.btn a:hover,
-.btn-border-radius a:hover {
-	filter: brightness(1.2);
-}
-
-.btn-border-radius a {
-	display: inline-block;
-	padding: 0.5rem 2rem !important;
-	border-radius: 100px;
-	background: #1C3177 !important;
-}
-
-/* button */
-.button-53 {
-  background-color: #1C3177;
-  border: 0 solid #eeeeee;
-  box-sizing: border-box;
-  color: #fff;
-  display: flex;
-  font-family: ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
-  font-size: 1rem;
-  font-weight: 700;
-  justify-content: center;
-  line-height: 1.75rem;
-  padding: .75rem 1.65rem;
-  position: relative;
-  text-align: center;
-  text-decoration: none #fff solid;
-  text-decoration-thickness: auto;
-  width: 100%;
-  max-width: 460px;
-  position: relative;
-  cursor: pointer;
-  transform: rotate(-2deg);
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-}
-
-.button-53:focus {
-  outline: 0;
-}
-
-.button-53:after {
-  content: '';
-  position: absolute;
-  border: 1px solid #fff;
-  bottom: 4px;
-  left: 4px;
-  width: calc(100% - 1px);
-  height: calc(100% - 1px);
-}
-
-.button-53:hover:after {
-  bottom: 2px;
-  left: 2px;
-}
-
-@media (min-width: 768px) {
-  .button-53 {
-    padding: .75rem 3rem;
-    font-size: 1.25rem;
-  }
-}
-
-
 /*background*/
 .bg1, .bg2, .bg3 {
 	position: relative;
@@ -648,6 +570,83 @@ main h3 {
     position: absolute;
     top: 0;
     left: 0;
+}
+
+
+/*button*/
+.btn a,
+.btn-border-radius a {
+	display: block;text-decoration: none;
+	font-size: 1rem;
+	text-align: center;
+	background: var(--primary-color) !important;
+	color: var(--primary-text-color) !important;
+	padding: 0.5rem !important;
+	margin-top: 1rem !important;
+}
+
+.btn a:hover,
+.btn-border-radius a:hover {
+	filter: brightness(1.2);
+}
+
+.btn-border-radius a {
+	display: inline-block;
+	padding: 0.5rem 2rem !important;
+	border-radius: 100px;
+	background: #1C3177 !important;
+}
+
+.button-53 {
+  background-color: #1C3177;
+  border: 0 solid #eeeeee;
+  box-sizing: border-box;
+  color: #fff;
+  display: flex;
+  font-family: ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-size: 1rem;
+  font-weight: 700;
+  justify-content: center;
+  line-height: 1.75rem;
+  padding: .75rem 1.65rem;
+  position: relative;
+  text-align: center;
+  text-decoration: none #fff solid;
+  text-decoration-thickness: auto;
+  width: 100%;
+  max-width: 460px;
+  position: relative;
+  cursor: pointer;
+  transform: rotate(-2deg);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-53:focus {
+  outline: 0;
+}
+
+.button-53:after {
+  content: '';
+  position: absolute;
+  border: 1px solid #fff;
+  bottom: 4px;
+  left: 4px;
+  width: calc(100% - 1px);
+  height: calc(100% - 1px);
+}
+
+.button-53:hover:after {
+  bottom: 2px;
+  left: 2px;
+}
+
+@media (min-width: 768px) {
+  .button-53 {
+    padding: .75rem 3rem;
+    font-size: 1.25rem;
+  }
 }
 
 
