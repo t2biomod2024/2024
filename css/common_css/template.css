@@ -369,6 +369,7 @@ body:not(.home) #container {
 }
 
 
+/* logo */
 #logo img {
 	display: block;
 	width: 300px;
