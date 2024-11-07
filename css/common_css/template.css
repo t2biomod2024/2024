@@ -327,7 +327,7 @@ ul {
 
 
 /* container */
-body:not(.home) .main-container {
+body:not(.home) #container {
 	height: 100%;
 	display: flex;
 	flex-direction: column;
