@@ -835,26 +835,6 @@ main h3 {
 }
 
 
-/* heading */
-.heading-25 {
-    position: relative;
-    padding-top: .75em;
-    color: #333333;
-}
-
-.heading-25::before {
-    position: absolute;
-    bottom: .5em;
-    left: 0;
-    z-index: -1;
-    color: #d9f4ff;
-    font-size: 1.5em;
-    line-height: 1;
-    content: attr(data-word);
-    pointer-events: none;
-}
-
-
 /*button*/
 .btn a,
 .btn-border-radius a {
