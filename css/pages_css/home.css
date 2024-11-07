@@ -128,7 +128,6 @@
 	position: relative;
     width: 70%;
     height: 50vh;
-	display: flex;
 	border-radius: 20px;
 	cursor: pointer;
 }
