@@ -232,7 +232,6 @@ $(function(){
     });
   });  
 
-
 //thumbnail
 $(function() {
     $(".thumbnail-view-parts").each(function() {
