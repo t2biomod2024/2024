@@ -755,7 +755,7 @@ main h3 {
 }
 
 
-/*thumbnail*/
+/*thumbnail
 .thumbnail-view-parts {
 	max-width: 1000px;
 	margin: 0 auto 1rem;
@@ -777,7 +777,7 @@ main h3 {
 
 .thumbnail-parts img:hover {
 	opacity: 0.8;
-}
+}*/
 
 
 /*table*/
