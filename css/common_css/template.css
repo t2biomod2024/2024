@@ -300,7 +300,10 @@ ul {
 	padding-top: 5vw;
 	margin-top: 10vw;
 	margin-bottom: 10vw;
+}
 
+.bg3{
+	margin: 0 auto;
 }
 
 .bg1 a, .bg2 a, .bg3 a{
