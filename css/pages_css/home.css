@@ -166,3 +166,9 @@
 .img-container:hover p {
     opacity: 1;
 }
+
+/* bg2-container */
+.bg2-container {
+	border-radius: 20px;
+	padding-top: 50px;
+  }
