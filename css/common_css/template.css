@@ -755,31 +755,6 @@ main h3 {
 }
 
 
-/*thumbnail
-.thumbnail-view-parts {
-	max-width: 1000px;
-	margin: 0 auto 1rem;
-	text-align: center;
-}
-
-.thumbnail-parts {
-	display: flex;
-	justify-content: center;
-	margin-bottom: 2rem;
-}
-
-.thumbnail-parts img {
-	width: 100px;
-	margin: 2px;
-	cursor: pointer;
-	transition: 0.3s;
-}
-
-.thumbnail-parts img:hover {
-	opacity: 0.8;
-}*/
-
-
 /*table*/
 .ta1 caption {
 	font-weight: bold;
@@ -922,31 +897,7 @@ main h3 {
 
 /*---------------------------------------
   SECTION               
------------------------------------------*/
-.section-padding {
-	padding-top: 100px;
-	padding-bottom: 100px;
-  }
-  
-  .section-bg {
-	background-color: var(--section-bg-color);
-  }
-  
-  .section-overlay {
-	background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
-	position: absolute;
-	top: 0;
-	left: 0;
-	pointer-events: none;
-	width: 100%;
-	height: 100%;
-	opacity: 0.85;
-  }
-  
-  .section-overlay + .container {
-	position: relative;
-  }
-  
+-----------------------------------------*/  
   .tab-content {
 	background-color: var(--white-color);
 	border-radius: var(--border-radius-medium);
@@ -985,30 +936,7 @@ main h3 {
 
   /*---------------------------------------
   TOPICS               
------------------------------------------*/
-.topics-detail-block {
-	border-radius: var(--border-radius-medium);
-	position: relative;
-	overflow: hidden;
-  }
-  
-  .topics-detail-block-image {
-	display: block;
-	border-radius: var(--border-radius-medium);
-  }
-  
-  blockquote {
-	background-color: var(--section-bg-color);
-	border-radius: var(--border-radius-small);
-	font-family: var(--title-font-family);
-	font-size: var(--h4-font-size);
-	font-weight: var(--font-weight-bold);
-	display: inline-block;
-	text-align: center;
-	margin: 30px;
-	padding: 40px;
-  }
-  
+-----------------------------------------*/  
   .topics-listing-page .site-header {
 	padding-bottom: 65px;
   }
