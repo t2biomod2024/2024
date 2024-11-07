@@ -151,7 +151,7 @@
 .img-container:hover::after {
     opacity: 1;
 }
-.img-container p {
+.img-contain {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -163,7 +163,7 @@
     text-align: center;
 }
 
-.img-container:hover p {
+.img-contain:hover {
     opacity: 1;
 }
 
