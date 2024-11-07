@@ -163,7 +163,7 @@
     text-align: center;
 }
 
-.img-contain:hover {
+.img-container:hover .img-contain {
     opacity: 1;
 }
 
