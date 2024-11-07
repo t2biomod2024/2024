@@ -915,7 +915,6 @@ main h3 {
 	border-right: 0;
 	border-left: 0;
 	color: var(--p-color);
-	font-family: var(--title-font-family);
 	font-size: var(--btn-font-size);
 	font-weight: var(--font-weight-medium);
 	padding: 15px 25px;
