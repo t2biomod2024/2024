@@ -2,7 +2,7 @@
   TIMELINE              
 -----------------------------------------*/
 .timeline-section {
-	background-image: url('../images/colleagues-working-cozy-office-medium-shot.jpg');
+	background-image: url('https://t2biomod2024.github.io/2024/pics/gan.png');
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
@@ -101,7 +101,7 @@
 	background-color: var(--primary-color);
   }  
 
-  
+
 /* VIDEO */
 .video-container {
     width: 50%;
