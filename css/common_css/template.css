@@ -900,7 +900,7 @@ main h3 {
 -----------------------------------------*/  
   .tab-content {
 	background-color: var(--white-color);
-	border-radius: var(--border-radius-medium);
+	border-radius: 20px;
   }
   
   .nav-tabs {
