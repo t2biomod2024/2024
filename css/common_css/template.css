@@ -602,6 +602,7 @@ body:not(.home) #container {
 /* logo */
 #logo img {
 	display: block;
+	margin-top: 20px;
 	width: 300px;
 }
 
