@@ -445,25 +445,6 @@ body:not(.home) #container {
 	}
 }
 
-/* heading */
-.heading-25 {
-    position: relative;
-    padding-top: .75em;
-    color: #333333;
-}
-
-.heading-25::before {
-    position: absolute;
-    bottom: .5em;
-    left: 0;
-    z-index: -1;
-    color: #d9f4ff;
-    font-size: 1.5em;
-    line-height: 1;
-    content: attr(data-word);
-    pointer-events: none;
-}
-
 /* TEAM */
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,600);
 .snip1344 {
@@ -851,6 +832,26 @@ main h3 {
     position: absolute;
     top: 0;
     left: 0;
+}
+
+
+/* heading */
+.heading-25 {
+    position: relative;
+    padding-top: .75em;
+    color: #333333;
+}
+
+.heading-25::before {
+    position: absolute;
+    bottom: .5em;
+    left: 0;
+    z-index: -1;
+    color: #d9f4ff;
+    font-size: 1.5em;
+    line-height: 1;
+    content: attr(data-word);
+    pointer-events: none;
 }
 
 
