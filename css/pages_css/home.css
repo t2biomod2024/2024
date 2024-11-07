@@ -8,7 +8,7 @@
 	background-size: cover;
 	position: relative;
 	border-radius: 20px;
-	padding-top: 20px;
+	padding-top: 50px;
   }
   
   .timeline-container .vertical-scrollable-timeline {
@@ -23,7 +23,7 @@
 	background-color: var(--primary-color);
 	position: absolute;
 	left: 52px;
-	top: 0;
+	top: 10px;
 	overflow: hidden;
   }
   
