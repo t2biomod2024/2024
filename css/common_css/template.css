@@ -328,7 +328,7 @@ ul {
 
 
 /* container */
-body:not(.home) #container {
+body:not(.home) .main-container {
 	height: 100%;
 	display: flex;
 	flex-direction: column;
@@ -932,7 +932,6 @@ main h3 {
 /*---------------------------------------
   SECTION               
 -----------------------------------------*/ 
-
 	.section-overlay {
 	background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
 	position: absolute;
