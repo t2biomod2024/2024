@@ -984,31 +984,3 @@ main h3 {
   .custom-block-topics-listing .custom-block-image {
 	width: 200px;
   }
-
-/*---------------------------------------
-  SITE HEADER              
------------------------------------------*/
-.site-header {
-	background-image: linear-gradient(15deg, #1C3177 0%, #7f96c2 100%);
-	padding-top: 120px;
-	padding-bottom: 60px;
-  }
-  
-  .site-header .siteheader-container {
-	height: 100%;
-  }
-  
-  .breadcrumb-item+.breadcrumb-item::before,
-  .breadcrumb-item a:hover,
-  .breadcrumb-item.active {
-	color: var(--white-color);
-  }
-  
-  .site-header .custom-icon {
-	color: var(--white-color);
-	font-size: var(--h4-font-size);
-  }
-  
-  .site-header .custom-icon:hover {
-	color: var(--secondary-color);
-  }
