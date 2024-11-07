@@ -684,22 +684,6 @@ main h3 {
 }
 
 
-/* image container */
-.img-container {
-	position: relative;
-    width: 70%;
-    height: 50vh;
-	margin: 0 auto;
-	display: flex;
-	border-radius: 15px;
-	overflow: hidden;
-	cursor: pointer;
-}
-.img-container img {
-    width: 100%;
-}
-
-
 /* card-menu */
 #sec {
 	padding: 0;
