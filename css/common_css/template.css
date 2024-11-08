@@ -1078,3 +1078,15 @@ main h3 {
 	line-height: 26px;
 	transition: color 0.3s;
 }
+
+.tx-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.tx-container span, .tx-container p {
+    text-align: left;
+    margin: 0;
+    padding: 0;
+}
