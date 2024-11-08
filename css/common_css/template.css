@@ -294,6 +294,7 @@ ul {
 
 .bg1{
 	margin-bottom: 10vw;
+	margin-top: 10vw;
 }
 
 .bg2{
@@ -302,7 +303,6 @@ ul {
 
 .bg1, .bg3{
 	padding-top: 5vw;
-	margin-top: 10vw;
 }
 
 
