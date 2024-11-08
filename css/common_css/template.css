@@ -292,7 +292,7 @@ ul {
 	margin-right: calc(-1 * var(--global-space));
 }
 
-.bg1, .bg2{
+.bg1, .bg2, .bg3{
 	margin-bottom: 10vw;
 	margin-top: 10vw;
 }
@@ -303,10 +303,6 @@ ul {
 
 .bg1, .bg3{
 	padding-top: 5vw;
-}
-
-.bg3 {
-	padding-bottom: 0vw;
 }
 
 .bg1 a, .bg2 a, .bg3 a{
