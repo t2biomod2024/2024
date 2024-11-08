@@ -172,7 +172,7 @@
 /* bg2-container */
 .bg2-container {
 	margin: 0 auto 10vh;
-	padding-top: 50px;
+	padding-top: 100px;
 	width: 70%;
 }
 
@@ -355,7 +355,7 @@
 	}
 } 
 
-
+/* whatwedo */
 .whatwedo-container {
 	background-color: var(--primary-color);
 	color: #eee;
