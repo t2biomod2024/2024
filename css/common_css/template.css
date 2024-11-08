@@ -757,6 +757,32 @@ main h3 {
 }
 
 
+/* titleA */
+#marketing-tab-pane .titleA{
+	color: #6f6f6f;
+	display: inline-block;
+	font-size: 24px;
+	font-weight: 100;
+	transition: color 0.3s;
+}
+
+#marketing-tab-pane .titleA:after {
+	content: "";
+	position: relative;
+	left: 50%;
+	top: 20px;
+	transform: translateX(-50%);
+	display: block;
+	width: 40px;
+	height: 1px;
+	background: #6f6f6f;
+	transition: width 0.3s;
+}
+
+#marketing-tab-pane :hover .titleA:after {
+	width: 25px;
+}
+
 /*table*/
 .ta1 caption {
 	font-weight: bold;

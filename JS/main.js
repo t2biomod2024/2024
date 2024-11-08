@@ -187,25 +187,6 @@ $(function() {
 });
 
 
-//image
-$(document).ready(function() {
-    $('[data-fancybox="images_buttons"]').fancybox({
-      buttons : [ 
-        "zoom",
-        "share",
-        "slideShow",
-        "fullScreen",
-        "download",
-        "thumbs",
-        "close"
-      ],
-      thumbs : {
-        autoStart : false
-      }
-    });
-  });
-
-
 // accordion
 $(function(){
     $('.s_06 .accordion_one .accordion_header').click(function(){
@@ -231,27 +212,6 @@ $(function(){
       return false;
     });
   });  
-
-//thumbnail
-$(function() {
-    $(".thumbnail-view-parts").each(function() {
-        var firstThumbnailSrc = $(this).next(".thumbnail-parts").find("img:first").attr("src");
-        var defaultImage = $("<img>").attr("src", firstThumbnailSrc);
-        $(this).append(defaultImage);
-    });
-
-    $(".thumbnail-parts img").click(function() {
-        var imgSrc = $(this).attr("src");
-        var newImage = $("<img>").attr("src", imgSrc).hide();
-
-        var targetPhoto = $(this).parent(".thumbnail-parts").prev(".thumbnail-view-parts");
-
-        targetPhoto.find("img").fadeOut(400, function() {
-            targetPhoto.empty().append(newImage);
-            newImage.fadeIn(400);
-        });
-    });
-});
 
 
 //slide-show
