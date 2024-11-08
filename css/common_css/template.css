@@ -301,10 +301,6 @@ ul {
 	padding-top: 0;
 }
 
-.bg3::after {
-	bottom: -5vw;
-}
-
 .bg1, .bg3{
 	padding-top: 5vw;
 }
