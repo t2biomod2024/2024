@@ -985,8 +985,25 @@ main h3 {
 	width: 200px;
   }
 
-  /* titleA */
-  .custom-block .titleA{
+
+/* custom-block */
+
+.custom-block {
+	border-radius: var(--border-radius-medium);
+	position: relative;
+	overflow: hidden;
+	height: 100%;
+	display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+	border-radius: 3%;
+	transition: box-shadow 0.3s;
+	word-wrap: break-word;
+}
+
+.custom-block .titleA{
 	color: #6f6f6f;
 	display: inline-block;
 	font-size: 24px;
@@ -1009,21 +1026,6 @@ main h3 {
 
 .custom-block:hover .titleA:after {
 	width: 25px;
-}
-
-.custom-block {
-	border-radius: var(--border-radius-medium);
-	position: relative;
-	overflow: hidden;
-	height: 100%;
-	display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px;
-	border-radius: 3%;
-	transition: box-shadow 0.3s;
-	word-wrap: break-word;
 }
 
 .custom-block div {
