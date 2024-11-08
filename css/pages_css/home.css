@@ -305,7 +305,7 @@
 	margin-right: calc(-1 * var(--global-space));
 	height: 100px;
 	}
-	.shapedividers_com-2587::before{ 
+	.shapedividers_com-2587::after{ 
 	content:'';
 	position: absolute;
 	z-index: 3;
@@ -320,7 +320,7 @@
 	}
 	
 	@media (min-width:2100px){
-	.shapedividers_com-2587::before{
+	.shapedividers_com-2587::after{
 	background-size: 100% calc(2vw + 90px);
 	}
 }
