@@ -271,6 +271,7 @@
 
 /*　section　*/
 .shapedividers_com-2149{
+	background: #eee;
 	overflow:hidden;
 	position:relative;
 	margin-left: calc(-1 * var(--global-space));
