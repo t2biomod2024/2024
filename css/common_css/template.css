@@ -1016,16 +1016,50 @@ main h3 {
 	border-radius: var(--border-radius-medium);
 	position: relative;
 	overflow: hidden;
-	padding: 30px;
-	transition: all 0.3s ease;
 	height: 100%;
-  }
+	padding: 40px;
+	width: 320px;
+	border-radius: 3%;
+	transition: box-shadow 0.3s;
+	word-wrap: break-word;
+	text-align: center;
+}
   
-  .custom-block:hover {
+.custom-block:hover {
 	background-color: var(--secondary-color);
+	box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 	transform: translateY(-3px);
-  }
+}
   
-  .custom-block > a {
+.custom-block > a {
 	width: 100%;
-  }
+}
+
+.custom-block:hover span {
+	color: #63B7E6;
+}
+.custom-block:hover p {
+	color: #555;
+}
+.custom-block:hover .title01 {
+	color: #63B7E6;
+}
+
+.custom-block span {
+	font-size: 2.6em;
+	display: block;
+	transition: color 0.3s;
+	color: #A2A2A2;
+}
+.custom-block span:before, .custom-block span:after {
+	position: static;
+}
+
+.custom-block p {
+	color: #A2A2A2;
+	text-align: left;
+	text-indent: 1em;
+	font-size: 16px;
+	line-height: 26px;
+	transition: color 0.3s;
+}
