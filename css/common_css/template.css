@@ -987,7 +987,6 @@ main h3 {
 
 
 /* custom-block */
-
 .custom-block {
 	border-radius: var(--border-radius-medium);
 	position: relative;
@@ -1001,6 +1000,23 @@ main h3 {
 	border-radius: 3%;
 	transition: box-shadow 0.3s;
 	word-wrap: break-word;
+}
+
+.custom-block:hover .titleA:after {
+	width: 25px;
+}
+
+.custom-block div {
+    flex: 1;
+}
+
+.custom-block img {
+    flex-shrink: 0;
+    width: 100px;
+    height: auto;
+    margin-left: 20px;
+    border-radius: 5%;
+	background: #fff;
 }
 
 .custom-block .titleA{
@@ -1022,22 +1038,6 @@ main h3 {
 	height: 1px;
 	background: #6f6f6f;
 	transition: width 0.3s;
-}
-
-.custom-block:hover .titleA:after {
-	width: 25px;
-}
-
-.custom-block div {
-    flex: 1;
-}
-
-.custom-block img {
-    flex-shrink: 0;
-    width: 100px;
-    height: auto;
-    margin-left: 20px;
-    border-radius: 5%;
 }
 
 .custom-block:hover {
