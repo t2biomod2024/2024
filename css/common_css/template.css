@@ -292,6 +292,10 @@ ul {
 	margin-right: calc(-1 * var(--global-space));
 }
 
+.bg1{
+	margin-bottom: 10vw;
+}
+
 .bg2{
 	padding-top: 0;
 }
@@ -299,8 +303,9 @@ ul {
 .bg1, .bg3{
 	padding-top: 5vw;
 	margin-top: 10vw;
-	margin-bottom: 10vw;
 }
+
+
 
 .bg1 a, .bg2 a, .bg3 a{
 	color: inherit;
