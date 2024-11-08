@@ -170,7 +170,7 @@
 
 /* bg2-container */
 .bg2-container {
-	border-radius: 20px;
+	margin: 0 auto;
 	padding-top: 50px;
 	width: 70%;
 }
