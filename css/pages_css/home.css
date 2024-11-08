@@ -209,10 +209,8 @@
 }
 
 .custom-block img {
-    flex-shrink: 0;
-    width: 100px;
-    height: auto;
-    margin-left: 20px;
+    width: auto;
+    height: 200px;
     border-radius: 5%;
 	background: #fff;
 }
@@ -234,7 +232,6 @@
 	display: block;
 	width: 40px;
 	height: 1px;
-	background: #6f6f6f;
 	transition: width 0.3s;
 }
 
