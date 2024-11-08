@@ -304,6 +304,7 @@
 	position:relative;
 	margin-left: calc(-1 * var(--global-space));
 	margin-right: calc(-1 * var(--global-space));
+	margin-bottom: var(--global-space);
 	height: 100px;
 	}
 	.shapedividers_com-2587::after{ 
@@ -331,6 +332,7 @@
 	position:relative;
 	margin-left: calc(-1 * var(--global-space));
 	margin-right: calc(-1 * var(--global-space));
+	margin-top: var(--global-space);
 	height: 100px;
 	}
 	.shapedividers_com-4959::before{ 
