@@ -402,6 +402,7 @@ body:not(.home) #container {
 #contents {
 	flex: 1;
 	padding: var(--global-space);
+	padding-bottom: 0;
     background-size: cover;
     background-position: center;
     background-color: #eeeeee;
