@@ -179,7 +179,7 @@
 .ProjectArea-section {
 	background-size: cover;
 	width: 60%;
-	margin: 0 auto;
+	margin: 0 auto 10vh;
 	border-radius: 20px;
 	padding-top: 50px;
 }
