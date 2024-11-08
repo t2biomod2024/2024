@@ -177,7 +177,6 @@
 
 /* PA */
 .ProjectArea-section {
-    background-color: var(--secondary-color);
 	background-size: cover;
 	position: relative;
 	border-radius: 20px;
@@ -186,6 +185,7 @@
 
 /* custom-block */
 .custom-block {
+	background-color: rgba(255, 255, 255, 0.8);
 	border-radius: var(--border-radius-medium);
 	position: relative;
 	overflow: hidden;
