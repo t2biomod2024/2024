@@ -997,7 +997,7 @@ main h3 {
     align-items: center;
     justify-content: space-between;
     padding: 20px;
-	border-radius: 3%;
+	border-radius: 20px;
 	transition: box-shadow 0.3s;
 	word-wrap: break-word;
 }
