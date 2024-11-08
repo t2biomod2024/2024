@@ -292,7 +292,7 @@ ul {
 	margin-right: calc(-1 * var(--global-space));
 }
 
-.bg1{
+.bg1, .bg2{
 	margin-bottom: 10vw;
 	margin-top: 10vw;
 }
