@@ -305,6 +305,10 @@ ul {
 	padding-top: 5vw;
 }
 
+.bg3 {
+	padding-bottom: 0vw;
+}
+
 .bg1 a, .bg2 a, .bg3 a{
 	color: inherit;
 }
