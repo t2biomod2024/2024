@@ -1018,7 +1018,6 @@ main h3 {
 	overflow: hidden;
 	height: 100%;
 	padding: 40px;
-	width: 320px;
 	display: flex;
 	border-radius: 3%;
 	transition: box-shadow 0.3s;
