@@ -227,7 +227,7 @@
 	content: "";
 	position: relative;
 	left: 50%;
-	top: 50px;
+	top: 16px;
 	transform: translateX(-50%);
 	display: block;
 	width: 40px;
