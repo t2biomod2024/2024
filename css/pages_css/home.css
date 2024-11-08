@@ -169,11 +169,11 @@
     opacity: 1;
 }
 
-/* bg2-container */
-.bg2-container {
+/* solution-container */
+.solution-container {
 	margin: 0 auto 10vh;
 	padding-top: 100px;
-	width: 70%;
+	width: 84%;
 }
 
 /* PA */
