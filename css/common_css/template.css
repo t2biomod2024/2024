@@ -287,7 +287,7 @@ ul {
 	padding-top: 10vw;
     padding-left: var(--global-space);
 	padding-right: var(--global-space);
-	padding-bottom: -10vw;
+	margin-bottom: -10vw;
     height: 50vh;
 }
 
