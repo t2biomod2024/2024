@@ -292,13 +292,17 @@ ul {
 	margin-right: calc(-1 * var(--global-space));
 }
 
-.bg1, .bg2, .bg3{
+.bg1, .bg2{
 	margin-bottom: 10vw;
 	margin-top: 10vw;
 }
 
 .bg2{
 	padding-top: 0;
+}
+
+.bg3::after {
+	bottom: -5vw;
 }
 
 .bg1, .bg3{
