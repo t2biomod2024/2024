@@ -178,11 +178,10 @@
 /* PA */
 .ProjectArea-section {
 	background-size: cover;
-	position: absolute;
-    left: 50%;
+	width: 60%;
+	margin: 0 auto;
 	border-radius: 20px;
 	padding-top: 50px;
-	width: 60%;
 }
 
 /* custom-block */
