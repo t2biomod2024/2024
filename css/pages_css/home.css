@@ -355,7 +355,7 @@
 
 
 .whatwedo-container {
-	background-color: #606060;
+	background-color: var(--primary-color);
 	color: #eee;
 }
 	 
