@@ -178,7 +178,8 @@
 /* PA */
 .ProjectArea-section {
 	background-size: cover;
-	position: relative;
+	position: absolute;
+    left: 50%;
 	border-radius: 20px;
 	padding-top: 50px;
 	width: 60%;
