@@ -328,6 +328,9 @@
 .shapedividers_com-4959{
 	overflow:hidden;
 	position:relative;
+	margin-left: calc(-1 * var(--global-space));
+	margin-right: calc(-1 * var(--global-space));
+	height: 100px;
 	}
 	.shapedividers_com-4959::before{ 
 	content:'';
