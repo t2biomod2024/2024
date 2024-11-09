@@ -830,8 +830,8 @@ main h3 {
 	 
 
 .f-img {
-	text-align: center;
-	justify-content: center;
+	position: absolute;
+	left: 50%;
 	width: 40%;
 	height: auto;
 }
