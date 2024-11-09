@@ -284,8 +284,8 @@ ul {
 #sub-mainimg {
     background-color: #1C3177;
 	color: #fff;
-	padding-top: 3vw;
-	padding-bottom: 11vw;
+	padding-top: 10vw;
+	padding-bottom: 5vw;
     padding-left: var(--global-space);
 	padding-right: var(--global-space);
 	margin-bottom: -5vw;
