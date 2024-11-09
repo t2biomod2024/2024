@@ -285,8 +285,8 @@ ul {
     background-color: #1C3177;
 	color: #fff;
     display: flex;
-	padding-top: 6vw;
-	padding-bottom: 10vw;
+	padding-top: 3vw;
+	padding-bottom: 11vw;
     padding-left: var(--global-space);
 	padding-right: var(--global-space);
 	margin-bottom: -5vw;
