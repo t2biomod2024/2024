@@ -789,7 +789,6 @@ main h3 {
 	position:relative;
 	margin-left: calc(-1 * var(--global-space));
 	margin-right: calc(-1 * var(--global-space));
-	margin-bottom: var(--global-space);
 	margin-top: var(--global-space);
 	height: 100px;
 	}
