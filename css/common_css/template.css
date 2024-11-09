@@ -828,3 +828,14 @@ main h3 {
 	}
 	}
 	 
+
+.f-img {
+	text-align: center;
+	justify-content: center;
+	width: 40%;
+	height: auto;
+}
+
+.f-img img{
+	width: 100%;
+}
