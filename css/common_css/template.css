@@ -789,8 +789,10 @@ main h3 {
 	position:relative;
 	margin-left: calc(-1 * var(--global-space));
 	margin-right: calc(-1 * var(--global-space));
-	margin-top: var(--global-space);
+	margin-top: 18vh;
+	padding-top: 18vh;
 	height: 100px;
+	background-color: #eee;
 	}
 	.shapedividers_com-1753::before{
 	content:'';
