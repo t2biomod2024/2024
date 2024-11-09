@@ -358,10 +358,12 @@ ul {
 .topic-section {
 	background-color: #fff;
 	background-size: cover;
-	width: 80%;
-	margin: 0 auto 10vh;
+	width: 90%;
+	margin: 10vh auto 10vh;
 	border-radius: 20px;
 	padding-top: 50px;
+	padding-right: 10vw;
+	padding-left: 10vw;
 	box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.5);
 }
 
