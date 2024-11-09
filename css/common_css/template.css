@@ -355,11 +355,13 @@ ul {
 }
 
 .topic-section {
+	background-color: #fff;
 	background-size: cover;
 	width: 80%;
 	margin: 0 auto 10vh;
 	border-radius: 20px;
 	padding-top: 50px;
+	box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.5);
 }
 
 
