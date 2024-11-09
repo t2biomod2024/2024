@@ -292,6 +292,19 @@ ul {
     height: 30vh;
 	z-index: 3;
 }
+#sub-mainimg h2 {
+	font-size: 3rem;
+	letter-spacing: 0.1em;
+	color: var(--text-color);
+}
+#sub-mainimg h2 .hosoku {
+	display: block;font-weight: normal;
+	font-size: 0.3em;
+}
+#sub-mainimg h3 {
+	display: inline-block;
+	border-bottom: 3px solid var(--text-color);
+}
 
 /*background*/
 .bg1, .bg2, .bg3 {
