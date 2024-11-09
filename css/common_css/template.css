@@ -113,7 +113,7 @@ body {
 	font-optical-sizing: auto;
 	-webkit-text-size-adjust: none;
 	color: var(--text-color);
-	line-height: 3em;
+	line-height: 2;
 }
 
 table {border-collapse:collapse;}
