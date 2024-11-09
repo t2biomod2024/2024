@@ -354,6 +354,14 @@ ul {
 	clip-path: polygon(0 0, 100% 0, 0 80%);
 }
 
+.topic-section {
+	background-size: cover;
+	width: 80%;
+	margin: 0 auto 10vh;
+	border-radius: 20px;
+	padding-top: 50px;
+}
+
 
 /* container */
 body:not(.home) #container {
