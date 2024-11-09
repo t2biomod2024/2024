@@ -32,11 +32,6 @@
 	--border-radius-large:          100px;
 	--border-radius-medium:         20px;
 	--border-radius-small:          10px;
-  
-	--font-weight-normal:           400;
-	--font-weight-medium:           500;
-	--font-weight-semibold:         600;
-	--font-weight-bold:             700;
 }
 
 /*keyframes*/
@@ -118,7 +113,7 @@ body {
 	font-optical-sizing: auto;
 	-webkit-text-size-adjust: none;
 	color: var(--text-color);
-	line-height: 2;
+	line-height: 2em;
 }
 
 table {border-collapse:collapse;}
