@@ -283,7 +283,6 @@ ul {
 /*sub-mainimg*/
 #sub-mainimg {
     background-color: #1C3177;
-	color: #fff;
     display: flex;
 	padding-top: 6vw;
 	padding-bottom: 10vw;
@@ -296,15 +295,7 @@ ul {
 #sub-mainimg h2 {
 	font-size: 3rem;
 	letter-spacing: 0.1em;
-	color: var(--text-color);
-}
-#sub-mainimg h2 .hosoku {
-	display: block;font-weight: normal;
-	font-size: 0.3em;
-}
-#sub-mainimg h3 {
-	display: inline-block;
-	border-bottom: 3px solid var(--text-color);
+	color: #fff;
 }
 
 /*background*/
