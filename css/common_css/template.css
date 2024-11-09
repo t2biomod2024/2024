@@ -284,7 +284,6 @@ ul {
 #sub-mainimg {
     background-color: #1C3177;
 	color: #fff;
-    display: flex;
 	padding-top: 3vw;
 	padding-bottom: 11vw;
     padding-left: var(--global-space);
@@ -292,6 +291,7 @@ ul {
 	margin-bottom: -5vw;
     height: 30vh;
 	z-index: 3;
+	text-align: center;
 }
 #sub-mainimg h2 {
 	font-size: 3rem;
@@ -350,6 +350,7 @@ ul {
 	background-color: #fff;
 	background-size: cover;
 	width: 90%;
+	line-height: 1em;
 	margin: 10vh auto 10vh;
 	border-radius: 20px;
 	padding: 5vw 10vw;
