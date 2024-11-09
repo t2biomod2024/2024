@@ -282,14 +282,14 @@ ul {
 
 /*sub-mainimg*/
 #sub-mainimg {
-    background-color: #7f96c2;
+    background: linear-gradient(15deg, #1C3177 0%, #7f96c2 100%);
     display: flex;
 	padding-top: 10vw;
 	padding-bottom: 10vw;
     padding-left: var(--global-space);
 	padding-right: var(--global-space);
 	margin-bottom: -5vw;
-    height: 50vh;
+    height: 30vh;
 	z-index: 3;
 }
 
