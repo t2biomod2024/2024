@@ -408,7 +408,7 @@ main h2 {
 	letter-spacing: 0.1em;
 	color: var(--text-color);
 }
-.bg1 h2, .bg2 h2, .bg3 h2 {
+.bg2 h2, .bg3 h2 {
 	color: var(--primary-text-color);
 }
 main h2 .hosoku {
@@ -419,7 +419,7 @@ main h3 {
 	display: inline-block;
 	border-bottom: 3px solid var(--text-color);
 }
-.bg1 h3, .bg2 h3,.bg3 h3 {
+.bg2 h3,.bg3 h3 {
 	display: inline-block;
 	border-bottom: 3px solid var(--primary-text-color);
 }
