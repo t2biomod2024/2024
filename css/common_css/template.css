@@ -349,8 +349,8 @@ body:not(.home) #container {
 }
 
 
-/* scroll down */
-.scroll-container {
+/* Scrolldown Arrow */
+.scrolldown-arrow {
 	width: 100%;
 	height: 100%;
 	display: flex;
@@ -359,7 +359,7 @@ body:not(.home) #container {
 	padding-top: 35%;
 	position: relative;
 }
-.field {
+.arrow-field {
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
