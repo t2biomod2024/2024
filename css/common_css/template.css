@@ -252,12 +252,12 @@ main h3 {
 	font-weight: 500;
 }
 .topic-section h3{
-	line-height: 2.5;
 	color: var(--primary-color);
 }
 .topic-title{
 	width: 100%;
 	border-bottom: dashed 2px var(--secondary-color);
+	margin-bottom: 10px;
 }
 
 /*---------------------------------------
