@@ -195,7 +195,7 @@ main h3 {
 	border-bottom: 3px solid var(--white-color);
 }
 
-/*sub-mainimg*/
+/* Sub-mainimg */
 #sub-mainimg {
     background-color: var(--primary-color);
 	color: #fff;
@@ -217,7 +217,7 @@ main h3 {
 .topic-section {
 	background-color: #fff;
 	background-size: cover;
-	font-size: 	1.3em;
+	font-size: 	0.9em;
 	width: 80%;
 	margin: 2vh auto 10vh;
 	border-radius: 20px;
@@ -231,7 +231,9 @@ main h3 {
 	line-height: 2.5;
 }
 
-/* Scrolldown Arrow */
+/*---------------------------------------
+  Scrolldown Arrow           
+-----------------------------------------*/
 .scrolldown-arrow {
 	width: 100%;
 	height: 100%;
