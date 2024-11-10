@@ -1,7 +1,6 @@
 //commonlize
 //非同期型の上のコードの方がレスポンスが早いが，読み込み前に他のコードが進行してしまい，表示がバグる．共通化をやめれば早くなるが面倒．最後にそれぞれに書き出すかも．
 
-
 //非同期型
 //fetch("https://t2biomod2024.github.io/2024/page_parts/header.html")
 //    .then((response) => response.text())
@@ -17,7 +16,7 @@
 //同期型
 function fetchAndInsertSync(url, position) {
     var xhr = new XMLHttpRequest();
-    xhr.open('GET', url, false); // 第3引数にfalseを設定すると同期リクエストになります
+    xhr.open('GET', url, false);
     xhr.send();
     
     if (xhr.status === 200) {

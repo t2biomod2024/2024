@@ -88,14 +88,14 @@ $('.ddmenu').on('touchstart', function(e) {
 
 });
 
+
 //scroll-header
 window.addEventListener("scroll", () => {
     const header = document.querySelector("header");
     const scrollY = window.scrollY;
-    const opacity = Math.min(scrollY / 300, 0.9);
+    const opacity = Math.min(scrollY / 200, 0.9);
     header.style.backgroundColor = `rgba(238, 238, 238, ${opacity})`;
 });
-
 
 
 //scroll-stop
@@ -187,25 +187,6 @@ $(function() {
 });
 
 
-//image
-$(document).ready(function() {
-    $('[data-fancybox="images_buttons"]').fancybox({
-      buttons : [ 
-        "zoom",
-        "share",
-        "slideShow",
-        "fullScreen",
-        "download",
-        "thumbs",
-        "close"
-      ],
-      thumbs : {
-        autoStart : false
-      }
-    });
-  });
-
-
 // accordion
 $(function(){
     $('.s_06 .accordion_one .accordion_header').click(function(){
@@ -230,43 +211,40 @@ $(function(){
       $('body,html').animate({scrollTop:position}, speed, 'swing');
       return false;
     });
-  });  
+  });
 
+var demoButtons;
 
-//thumbnail
-$(function() {
-    $(".thumbnail-view-parts").each(function() {
-        var firstThumbnailSrc = $(this).next(".thumbnail-parts").find("img:first").attr("src");
-        var defaultImage = $("<img>").attr("src", firstThumbnailSrc);
-        $(this).append(defaultImage);
-    });
+function start () {
 
-    $(".thumbnail-parts img").click(function() {
-        var imgSrc = $(this).attr("src");
-        var newImage = $("<img>").attr("src", imgSrc).hide();
+  demoButtons = document.querySelectorAll ('.js-modify');
+  for (var i = 0; i < demoButtons.length; i++) {
+    demoButtons[i].addEventListener ('click', toggleEffect);
+  }
 
-        var targetPhoto = $(this).parent(".thumbnail-parts").prev(".thumbnail-view-parts");
+  var saveButtons = document.querySelectorAll ('.js-save');
+  for (var i = 0; i < saveButtons.length; i++) {
+    saveButtons[i].addEventListener ('click', toggleActive);
+  }
+  
+}
 
-        targetPhoto.find("img").fadeOut(400, function() {
-            targetPhoto.empty().append(newImage);
-            newImage.fadeIn(400);
-        });
-    });
-});
+// Toggle "effect" classes
+function toggleEffect () {
+  var target = document.querySelector (this.dataset.target);
+      target.dataset.effect = this.dataset.effect;
+  
+  for (var i= 0; i < demoButtons.length; i++) {
+    demoButtons[i].classList.remove ('active');
+  }
+  
+  toggleActive.call (this);
+}
 
+// Toggle "active" class
+function toggleActive () {
+  this.classList.toggle ('active');
+}
 
-//slide-show
-$(function() {
-	var slides = $('#mainimg .slide');
-	var slideCount = slides.length;
-	var currentIndex = 0;
-
-	slides.eq(currentIndex).css('opacity', 1).addClass('active');
-
-	setInterval(function() {
-		var nextIndex = (currentIndex + 1) % slideCount;
-		slides.eq(currentIndex).css('opacity', 0).removeClass('active');
-		slides.eq(nextIndex).css('opacity', 1).addClass('active');
-		currentIndex = nextIndex;
-	}, 4000);
-});
+// Invoke "start ()" function
+window.addEventListener ('load', start);

@@ -1,5 +1,6 @@
 /*header*/
 header {
+	background-color: rgba(238, 238, 238, 0.9);
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -10,7 +11,7 @@ header {
 	font-weight: 700;
 	font-style: normal;
     position: absolute;
-    z-index: 1;
+    z-index: 10;
     width: 100%;
 }
 
@@ -48,7 +49,10 @@ a.ddmenu::before {
 .large-screen #menubar li a {
 	border-radius: 100px;
 	padding: 0.2rem 1rem;
-    background: #eee;
+}
+
+.large-screen #menubar li ul li a {
+	background: #eee;
 }
 
 .large-screen #menubar li a:hover {

@@ -13,30 +13,107 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Sorts+Mill+Goudy:ital@0;1&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
     <!-- CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="https://t2biomod2024.github.io/2024/css/parts_css/header.css">
-    <link rel="stylesheet" href="https://t2biomod2024.github.io/2024/css/parts_css/footer.css">  
+    <link rel="stylesheet" href="https://t2biomod2024.github.io/2024/css/parts_css/footer.css">
+    <link rel="stylesheet" href="https://t2biomod2024.github.io/2024/css/parts_css/accordion.css">
+    <link rel="stylesheet" href="https://t2biomod2024.github.io/2024/css/common_css/loading.css">
     <link rel="stylesheet" href="https://t2biomod2024.github.io/2024/css/common_css/template.css">
-    <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.min.css">
     <!-- Icon -->
     <link rel="icon" href="https://t2biomod2024.github.io/2024/pics/logo_black.PNG">
 </head>
 
 <body>
     <div id="container">
-        <div id="contents">
-        <main>
-        <section class="bg3">
-
-        <!--=="add!!"==-->
-        <h2><span class="fade-in-text">RESULT</span><span class="hosoku">supplement</span></h2>
-        <div id="experiment">
-            <h3>EXPERIMENT</h3>
-            <p>write me!</p>
-        </div>
-        <!--=="add!!"==-->
+        <aside id="sub-mainimg">
+            <h2>RESULT</h2>
+        </aside>
         
-        </section>
-        </main>
+        <div id="contents">
+            <main>
+            <div class="shapedividers_com-1753"></div>
+            <section class="topic-section">
+                <div id="experiment">
+                    <h3>EXPERIMENT</h3>
+                        <!--<h4>Introduction</h4>
+                            <p>&nbsp;&nbsp;&nbsp;&nbsp;このプロジェクトの焦点は一枚の丸まったシート構造体の作成です。設計した曲げエネルギーにより丸まったシート構造の実現可能性を実験的に証明します。<br>
+                                実際に丸まったシートであることを証明するためにシートの中央部分を構成しているステープル鎖を外した開いたシート構造と
+                                すべてのステープル鎖をいれ丸まったシート構造それぞれを作成しそれぞれの大きさを比較しました。</p>
+
+                        <h4>アニーリング</h4>
+                            <p>&nbsp;&nbsp;&nbsp;&nbsp;フォールディングに重要な塩濃度と温度条件は元論文[1]と経験則に基づいて決定されたものを用いました。鎖の濃度については2パターン行い決定されました。
+                                アニーリング結果を観察するためにAFMとQsepを行いました。</p>
+                            <h5>鎖濃度の決定</h5>
+                                <p>&nbsp;&nbsp;&nbsp;&nbsp;A,Bはそれぞれ開いたシート構造を作成するためのアニーリングレシピです。BはAに比べ鎖濃度が3倍になっています。
+                                    A,BそれぞれのQsepの結果を比較し、よりはっきりとしたバンドが確認できるBの鎖濃度で実験を行うことにしました。</p>
+
+                        <h4>AFM</h4>
+                            <p>&nbsp;&nbsp;&nbsp;&nbsp;原子間力顕微鏡では試料をうまくマイカ基盤上に設置するために塩濃度とインキュベートする時間が重要です。インキュベート時間は30分、
+                                マグネシウムイオン濃度は12.5mMと18mMで比較し、より構造がはっきり観察できた18mMで観察しました。<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;開いたシート構造の作成により得られたサンプルでは図のようにひょうたん型の構造が観察できました。
+                                閉じたシート構造の作成により得られたサンプルでは開いたシート構造の半分程度の球状の構造が観察できました。
+                                これらの結果は私たちの設計通り一匹のNano Pill Bugが誕生していることを示しています。</p>-->
+                        
+                        <h4>Introduction</h4>
+                            <p>&nbsp;&nbsp;&nbsp;&nbsp;The focus of this project is the creation of a single rolled sheet structure. We experimentally demonstrate the feasibility of achieving a rolled sheet structure through the designed bending energy. <br>
+                            To prove that the sheet is indeed rolled, we created both an unfolded sheet structure, where the staple strands that form the central part of the sheet are removed, and a rolled sheet structure with all staple strands in place, then compared their sizes.</p>
+                                
+                        <h4>Annealing</h4>
+                            <p>&nbsp;&nbsp;&nbsp;&nbsp;The important salt concentration and temperature conditions for folding were determined based on the original paper [1] and empirical rules. Two different chain concentrations were tested to decide on the appropriate one. AFM and Qsep were conducted to observe the results of the annealing process.</p>
+                            <h5>Determining Chain Concentration</h5>
+                                <p>&nbsp;&nbsp;&nbsp;&nbsp;A and B are the annealing recipes for creating the unfolded sheet structure. B has three times the chain concentration compared to A. After comparing the Qsep results for A and B, we decided to conduct the experiment with the chain concentration of B, as clearer bands were observed.</p>
+                                
+                        <h4>AFM</h4>
+                            <p>&nbsp;&nbsp;&nbsp;&nbsp;In atomic force microscopy (AFM), it is crucial to properly place the sample on the mica substrate, and both salt concentration and incubation time are important. The incubation time was set to 30 minutes, and magnesium ion concentrations of 12.5 mM and 18 mM were compared. The structure was more clearly observed at 18 mM. <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;In the sample obtained by creating the unfolded sheet structure, a gourd-shaped structure was observed as shown in the figure. In the sample obtained by creating the rolled sheet structure, a spherical structure about half the size of the unfolded sheet structure was observed. These results indicate that a single Nano Pill Bug has been successfully created, as per our design.</p>
+                                
+
+                        <h4>Qsep</h4>
+                            <p>write me!</p>
+                            
+                        <h4>Agarose gel electrophoresis</h4>
+                            <p>write me!</p>
+                </div>
+
+                <div class="section s_06">
+                    <div class="accordion_one">
+                        <div class="accordion_header" id="ac1_b">REFERENCES<div class="i_box"><i class="one_i"></i></div></div>
+                        <div class="accordion_inner">
+                            <div class="box_one">
+        
+                                <ul>
+                                    <li>
+                                        <strong>Abdelaal, A.M., Sohal, I.S., Iyer, S., et al.</strong> 2023. A first-in-class fully modified version of miR-34a with outstanding stability, activity, and anti-tumor efficacy. Oncogene, 42, pp. 2985-2999.
+                                    </li>
+                                    <li>
+                                        <strong>Ahmed M Abdelaal, Andrea L Kasinski,</strong> Ligand-mediated delivery of RNAi-based therapeutics for the treatment of oncological diseases, NAR Cancer, Volume 3, Issue 3, September 2021, zcab030, https://doi.org/10.1093/narcan/zcab030
+                                    </li>
+                                    <li>
+                                        <strong>Kim, T. & Croce, C.M.</strong> 2023. MicroRNA: trends in clinical trials of cancer diagnosis and therapy strategies. Experimental & Molecular Medicine, 55, pp. 1314-1321.
+                                    </li>
+                                    <li>
+                                        <strong>Iorio MV, Croce CM.</strong> MicroRNAs in cancer: small molecules with a huge impact. J Clin Oncol. 2009 Dec 1;27(34):5848-56. doi: 10.1200/JCO.2009.24.0317. Epub 2009 Nov 2. PMID: 19884536; PMCID: PMC2793003.
+                                    </li>
+                                    <li>
+                                        <strong>Lee RC, Feinbaum RL, Ambros V.</strong> The C. elegans heterochronic gene lin-4 encodes small RNAs with antisense complementarity to lin-14. Cell. 1993 Dec 3;75(5):843-54. doi: 10.1016/0092-8674(93)90529-y. PMID: 8252621.
+                                    </li>
+                                    <li>
+                                        <strong>Wightman B, Ha I, Ruvkun G.</strong> Posttranscriptional regulation of the heterochronic gene lin-14 by lin-4 mediates temporal pattern formation in C. elegans. Cell. 1993 Dec 3;75(5):855-62. doi: 10.1016/0092-8674(93)90530-4. PMID: 8252622.
+                                    </li>
+                                    <li>
+                                        <strong>Pasquinelli, A.E., Reinhart, B.J., Slack, F., et al.</strong> 2000. Conservation of the sequence and temporal expression of let-7 heterochronic regulatory RNA. Nature, 408, pp. 86-89.
+                                    </li>
+                                </ul>                        
+        
+                            </div>
+                        <div class="closeArea">
+                            <div class="close_box"><a href="#ac1_b" class="close_btn">閉じる<div class="i_box"><i class="one_i"></i></div></a></div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            </main>
         </div>
     </div>
 
@@ -45,7 +122,7 @@
     <script src="https://t2biomod2024.github.io/2024/JS/common.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/protonet-jquery.inview/1.1.2/jquery.inview.min.js"></script>
     <script src="https://t2biomod2024.github.io/2024/JS/jquery_inview.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
     <script src="https://t2biomod2024.github.io/2024/JS/main.js"></script>
 </body>
 </html>

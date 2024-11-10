@@ -13,11 +13,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Sorts+Mill+Goudy:ital@0;1&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
     <!-- CSS -->
+    <link rel="stylesheet" href="https://t2biomod2024.github.io/2024/css/common_css/bootstrap.min.css">
     <link rel="stylesheet" href="https://t2biomod2024.github.io/2024/css/parts_css/header.css">
-    <link rel="stylesheet" href="https://t2biomod2024.github.io/2024/css/parts_css/footer.css">  
+    <link rel="stylesheet" href="https://t2biomod2024.github.io/2024/css/parts_css/footer.css">
+    <link rel="stylesheet" href="https://t2biomod2024.github.io/2024/css/parts_css/accordion.css">
+    <link rel="stylesheet" href="https://t2biomod2024.github.io/2024/css/common_css/loading.css">
     <link rel="stylesheet" href="https://t2biomod2024.github.io/2024/css/common_css/template.css">
-    <link rel="stylesheet" href="https://t2biomod2024.github.io/2024/css/pages_css/home.css">	
-    <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="https://t2biomod2024.github.io/2024/css/pages_css/home.css">
     <!-- Icon -->
     <link rel="icon" href="https://t2biomod2024.github.io/2024/pics/logo_black.PNG">
     <!-- OGP -->
@@ -29,87 +31,252 @@
     <meta name="twitter:card" content="summary_large_image">
 </head>
 
+
 <body class="home">
     <div id="loading-screen">
-    <div class="loader"></div>
-</div>
+        <div class="dot-spinner">
+            <div class="dot-spinner__dot"></div>
+            <div class="dot-spinner__dot"></div>
+            <div class="dot-spinner__dot"></div>
+            <div class="dot-spinner__dot"></div>
+            <div class="dot-spinner__dot"></div>
+            <div class="dot-spinner__dot"></div>
+            <div class="dot-spinner__dot"></div>
+            <div class="dot-spinner__dot"></div>
+        </div>
+    </div>
+    
     <div id="container">
-        <div class="scroll_down" id="type02">
-            <a href="#">Scroll</a>
-        </div>
-
-        <aside id="mainimg">
-        <div class="slide slide1">
-        <div>
-        <h1><span class="fade-in-text">Nano&nbsp;Pill&nbsp;Bug</span></h1>
-        <h2><span class="fade-in-text">miRNAを捕まえ保護するマシン</span></h2>
-        <p class="btn-border-radius"><a href="#"><i class="fas fa-caret-right"></i>&nbsp;Learn more</a></p>
-        </div>
-        </div>
+        <aside id="Hero-area">
+            <div class="scrolldown-arrow">
+                <div class="arrow-field">
+                    <div class="arrow"></div>
+                </div>
+            </div>
         </aside>
-        
+        <div class="Hero-area_down"></div>
+
         <div id="contents">
         <main>
-            <section class="bg3">
-                <h3><span class="fade-in-text">Introduction</span></h3>
-                <p>miRNAによる、がんの早期診断が現実味を帯びてきつつある。<br></p>
-            </section>
+            <div class="shapedividers_solution_top"></div>
+            <section class="Blue-area">
+            <div class="solution-container">
 
-            <section class="bg3">
-                <p>しかし、体内に存在するmiRNAの多くは、RNaseによって分解されてしまう。</p>
-            </section>
-
-            <section class="bg3">
-                <p>そこで、私たちはRNaseから守るデバイスとして、「Nano Pill Bug」を提案する。</p>
-            </section>
-
-            <section class="bg3">
-                <p>miRNAのさらなる研究が進めば、よりガンの早期診断などに応用できると信じている。<br></p>
-            </section>
-
-            <section class="bg1">
-                <h2><span class="fade-in-text">Learn More Details</span></h2>
-        
-                <div class="list-grid1">
-
-                    <div class="list">
-                    <figure><img src="https://t2biomod2024.github.io/2024/pics/logo_blue.PNG" alt=""></figure>
-                    <div class="text">
-                    <h4>PROJECT</h4>
-                    </div>
-                    </div>
-                    
-                    <div class="list">
-                    <figure><img src="https://t2biomod2024.github.io/2024/pics/logo_blue.PNG" alt=""></figure>
-                    <div class="text">
-                    <h4>MODELING</h4>
-                    </div>
-                    </div>
-        
-                    <div class="list">
-                    <figure><img src="https://t2biomod2024.github.io/2024/pics/logo_blue.PNG" alt=""></figure>
-                    <div class="text">
-                    <h4>RESULT</h4>
-                    </div>
-                    </div>
-                    
-                    <div class="list">
-                    <figure><img src="https://t2biomod2024.github.io/2024/pics/logo_blue.PNG" alt=""></figure>
-                    <div class="text">
-                    <h4>ELSI</h4>
-                    </div>
-                    </div>
-
+                <div class="col-12 text-center">
+                    <h2 class="mb-4">OUR&nbsp;SOLUTION<span class="hosoku">About "Nano Pill Bug"</span></h2>
                 </div>
 
+                <div class="row text-left align-items-center pt-5 pb-md-5">
+                    <div class="col-4 col-md-5">
+                        <img alt="image" class="img-fluid" src="https://t2biomod2024.github.io/2024/pics/home-1.png">
+                    </div>
+            
+                    <div class="col-12 col-md-5 m-md-auto">
+                        <h3><strong>Concept</strong></h3>
+                        <p class="lead">In recent years, early detection technologies based on the analysis of
+                            miRNA expression patterns have emerged for various diseases, including
+                            cancer. The miRNAs targeted by these methods are limited to those protected
+                            from RNases by proteins or lipids, leaving unprotected miRNAs
+                            underexplored. Here we propose a device the “Nano Pill Bug”, that focuses
+                            on protecting miRNAs from degradation by RNases. Inspired by pill bugs,
+                            this device captures miRNA and rolls up to protect it.</p>
+                        <p><a href="#">Learn More <i class="fas fa-angle-right"></i></a></p>
+                    </div>
+                </div>
+            
+                <div class="row text-left align-items-center pt-5 pb-md-5">
+                    <div class="col-4 col-md-5 m-md-auto order-md-5">
+                        <img alt="image" class="img-fluid" src="https://t2biomod2024.github.io/2024/pics/home-1.png">
+                    </div>
+            
+                    <div class="col-12 col-md-5">
+                        <h3><strong>Structure</strong></h3>
+                        <p class="lead">The structure consists of two DNA origami sheets and several stopper
+                            DNA strands connecting them. Each sheet has a two-layer structure, and its
+                            bend is formed by differences in the number of bases, creating a tube-like
+                            shape. These two bent sheets are held in place by pre-arranged stopper DNA,
+                            which maintains the flat structure by balancing the tension between the
+                            sheets. When the stopper DNA is replaced by miRNA through a strand
+                            displacement reaction, the tension in the sheets is released, and the miRNA
+                            is encapsulated within the cylindrical structure, protecting it from
+                            degradation by RNase.</p>
+                        <p><a href="#">Learn More <i class="fas fa-angle-right"></i></a></p>
+                    </div>
+                </div>
+            
+                <div class="row text-left align-items-center pt-5">
+                    <div class="col-4 col-md-5">
+                        <img alt="image" class="img-fluid" src="https://t2biomod2024.github.io/2024/pics/home-1.png">
+                    </div>
+            
+                    <div class="col-12 col-md-5 m-md-auto">
+                        <h3><strong>Future</strong></h3>
+                        <p class="lead">We are developing Nano Pill Bug, a nanorobot that protects miRNAs
+                            that are present in minute quantities as the planar structure curls up fast. By
+                            extending the functionality of the Nano Pill Bug to target small molecules
+                            such as DNA and proteins, the Nano Pill Bug has the potential for a wide
+                            range of applications.</p>
+                        <p><a href="#">Learn More <i class="fas fa-angle-right"></i></a></p>
+                    </div>
+                </div>
+            </div>
             </section>
+            <div class="shapedividers_solution_down"></div>
 
-            <section class="bg1">    
-                <h2 class="c"><span class="fade-in-text">Our&nbsp;YouTube</span><span class="hosoku">Project&nbsp;video</span></h2>    
+
+            <section class="Movie-area">  
+                <div class="col-12 text-center">
+                    <h2><span class="fade-in-text">MOVIE</span><span class="hosoku">Our&nbsp;Project&nbsp;video</span></h2>
+                </div>
                 <div class="video-container">
                     <iframe src="https://www.youtube.com/embed/dR31pBvMUV8?si=JDiVBSjtaKbsU35u" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </section>
+
+
+            <section class="Contents-area">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <h2 class="mb-4">CONTENTS</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid">
+                    <div class="row justify-content-center">
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li class="nav-item">
+                                <button class="nav-link active" id="project-tab" data-bs-toggle="tab" data-bs-target="#project-tab-pane" aria-selected="true">PROJECT</button>
+                            </li>
+                            <li class="nav-item">
+                                <button class="nav-link" id="modeling-tab" data-bs-toggle="tab" data-bs-target="#modeling-tab-pane" aria-selected="false">MODELING</button>
+                            </li>
+                            <li class="nav-item">
+                                <button class="nav-link" id="music-tab" data-bs-toggle="tab" data-bs-target="#result-tab-pane" aria-selected="false">RESULT</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="tab-content" id="myTabContent">
+                                <div class="tab-pane fade show active" id="project-tab-pane" role="tabpanel" aria-labelledby="project-tab" tabindex="0">
+                                    <div class="row">
+
+                                        <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0">
+                                            <div class="contents-block text-center">
+                                                <a href="https://t2biomod2024.github.io/2024/pages/project.html#background">
+                                                    <img src="https://t2biomod2024.github.io/2024/pics/1-1.png" class="contents-block-img img-fluid" alt="">
+                                                    <div class="contents-text-container d-flex">
+                                                            <p class="contents-title text-center mb-2"><i class="fas fa-edit"></i>&nbsp;BACKGROUND</p>
+                                                            <p class="contents-text mb-0">The background of Nano Pill Bug</p>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0">
+                                            <div class="contents-block text-center">
+                                                <a href="https://t2biomod2024.github.io/2024/pages/project.html#goals">
+                                                    <img src="https://t2biomod2024.github.io/2024/pics/1-2.png" class="contents-block-img img-fluid" alt="">
+                                                    <div class="contents-text-container d-flex">
+                                                            <p class="contents-title text-center mb-2"><i class="fas fa-tools"></i>&nbsp;GOAL</p>
+                                                            <p class="contents-text mb-0">The background of Nano Pill Bug</p>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-4 col-md-6 col-12">
+                                            <div class="contents-block text-center">
+                                                <a href="https://t2biomod2024.github.io/2024/pages/project.html#future">
+                                                    <img src="https://t2biomod2024.github.io/2024/pics/1-3.png" class="contents-block-img img-fluid" alt="">
+                                                    <div class="contents-text-container d-flex">
+                                                            <p class="contents-title text-center mb-2"><i class="fas fa-book"></i>&nbsp;FUTURE</p>
+                                                            <p class="contents-text mb-0">The background of Nano Pill Bug</p>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="tab-pane fade" id="modeling-tab-pane" role="tabpanel" aria-labelledby="modeling-tab" tabindex="0">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-6 col-12 mb-4 mb-lg-3">
+                                            <div class="contents-block text-center">
+                                                <a href="https://t2biomod2024.github.io/2024/pages/modeling.html#design">
+                                                    <img src="https://t2biomod2024.github.io/2024/pics/1-1.png" class="contents-block-img img-fluid" alt="">
+                                                    <div class="contents-text-container d-flex">
+                                                            <p class="contents-title text-center mb-2"><i class="fas fa-edit"></i>&nbsp;DESIGN</p>
+                                                            <p class="contents-text mb-0">Structure and evaluation of Nano Pill Bug</p>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-6 col-md-6 col-12">
+                                            <div class="contents-block text-center">
+                                                <a href="https://t2biomod2024.github.io/2024/pages/modeling.html#simulation">
+                                                    <img src="https://t2biomod2024.github.io/2024/pics/1-2.png" class="contents-block-img img-fluid" alt="">
+                                                    <div class="contents-text-container d-flex">
+                                                            <p class="contents-title text-center mb-2"><i class="fas fa-edit"></i>&nbsp;SIMULATION</p>
+                                                            <p class="contents-text mb-0">Structure and evaluation of Nano Pill Bug</p>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="tab-pane fade" id="result-tab-pane" role="tabpanel" aria-labelledby="result-tab" tabindex="0">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-6 col-12 mb-4 mb-lg-3">
+                                            <div class="contents-block text-center">
+                                                <a href="https://t2biomod2024.github.io/2024/pages/result.html#experiment">
+                                                    <img src="https://t2biomod2024.github.io/2024/pics/1-1.png" class="contents-block-img img-fluid" alt="">
+                                                    <div class="contents-text-container d-flex">
+                                                            <p class="contents-title text-center mb-2"><i class="fas fa-edit"></i>&nbsp;EXPERIMENT</p>
+                                                            <p class="contents-text mb-0">Results of the experiment</p>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-6 col-md-6 col-12">
+                                            <div class="contents-block text-center">
+                                                <a href="https://t2biomod2024.github.io/2024/pages/result.html#information">
+                                                    <img src="https://t2biomod2024.github.io/2024/pics/1-2.png" class="contents-block-img img-fluid" alt="">
+                                                    <div class="contents-text-container d-flex">
+                                                            <p class="contents-title text-center mb-2"><i class="fas fa-edit"></i>&nbsp;INFORMATION</p>
+                                                            <p class="contents-text mb-0">Results of the experiment</p>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="Blue-area text-center">
+                <div class="text-center">
+                    <h2><span class="fade-in-text">TEAM</span><span class="hosoku">About us</span></h2>  
+                </div>
+                <a href="https://t2biomod2024.github.io/2024/pages/team.html">
+                    <div class="img-container text-center">
+                        <div class="img-contain align-items-center">
+                            <p><a class="btn custom-btn custom-border-btn ms-3">Check TEAM TOKYOTECH</a></p>
+                        </div>
+                    </div>
+                </a>
+            </section>
+
         </main>
         </div>
     </div>
@@ -118,8 +285,8 @@
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
     <script src="https://t2biomod2024.github.io/2024/JS/common.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/protonet-jquery.inview/1.1.2/jquery.inview.min.js"></script>
-    <script type="text/javascript" src="js/jquery.fancybox.min.js"></script>
     <script src="https://t2biomod2024.github.io/2024/JS/jquery_inview.js"></script>
+    <script src="https://t2biomod2024.github.io/2024/JS/bootstrap.min.js"></script>
     <script src="https://t2biomod2024.github.io/2024/JS/main.js"></script>
 </body>
 </html>

@@ -13,58 +13,82 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Sorts+Mill+Goudy:ital@0;1&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
     <!-- CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="https://t2biomod2024.github.io/2024/css/parts_css/header.css">
-    <link rel="stylesheet" href="https://t2biomod2024.github.io/2024/css/parts_css/footer.css">  
+    <link rel="stylesheet" href="https://t2biomod2024.github.io/2024/css/parts_css/footer.css">
+    <link rel="stylesheet" href="https://t2biomod2024.github.io/2024/css/parts_css/accordion.css">
+    <link rel="stylesheet" href="https://t2biomod2024.github.io/2024/css/common_css/loading.css">
     <link rel="stylesheet" href="https://t2biomod2024.github.io/2024/css/common_css/template.css">
-    <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.min.css">
     <!-- Icon -->
     <link rel="icon" href="https://t2biomod2024.github.io/2024/pics/logo_black.PNG">
 </head>
 
 <body>
     <div id="container">
+        <aside id="sub-mainimg">
+            <h2>PROJECT</h2>
+        </aside>
         <div id="contents">
         <main>
-        <section class="bg3">
-
-        <h2><span class="fade-in-text">PROJECT</span><span class="hosoku">Explain our project "Nano Pill Bug" in more detail</span></h2>
+        <div class="shapedividers_com-1753"></div>
+        <section class="topic-section">
         <div id="background">
+            <!--<h3>BACKGROUND</h3>
+            <h4>miRNAについて</h4>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;miRNA（マイクロRNA）は、短い一本鎖の非コードRNAで、長い間生理機能はなく、不要なものだと考えられていました。
+                アンブロス教授とラブカン教授は、このようなmiRNAがタンパク質の発現を調節することによって、生体内で重要な役割を
+                果たしていることを突き止めたことにより、2024年にノーベル賞を受賞されました。<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;このブレイクスルーによって、それまでタンパク質や長鎖の核酸が中心だった生物学に大きな衝撃を与え、種々の代謝反応や機能の詳細な解明に貢献しています。
+                現在miRNAは、ほとんどの真核生物に存在し、主に転写後レベルでの遺伝子抑制を行うことで、細胞の発生、増殖、分化、死といった
+                さまざまな生理過程を制御するということが分かってきています。<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;なかでも、遺伝子と密接に関連する病気である”がん”の研究は、miRNAが大きく関わっていることが明らかになりました。
+                miRNAは腫瘍抑制遺伝子やオンコジーンとして作用し、がん細胞の増殖や転移に影響を与えます。例えば、がん細胞では特定のmiRNAが過剰に発現する一方で、
+                他のmiRNAが抑制されていることが多くあります。</p>
+
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;現在ではがんの対抗策として、miRNAの安定性や機能に基づき、以下のような医療応用が期待されています。<br>
+                診断マーカー: miRNAは血液などの体液に存在し、がんや心血管疾患などの疾患の診断マーカーとして利用されています。<br>
+                治療ターゲット: miRNAの調節機能を利用して、がんや神経疾患、感染症などの治療に応用する研究が進んでいます。<br>
+                ドラッグデリバリー: miRNAを適切に標的組織にデリバリーすることによって、特定の遺伝子発現を制御し、治療効果を得る技術も検討されています。</p>
+
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;神経疾患: アルツハイマー病やパーキンソン病といった神経変性疾患にもmiRNAの異常が関与しています。<br>
+            心血管疾患: miRNAは心筋細胞の増殖や死、さらには血管の形成にも影響を与え、心血管疾患の進行に関わることがわかっています。</p>
+
+            <h4>非修飾miRNAの重要性</h4>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;miRNAをがんの早期発見に用いる方法はいくつか考案されており、実用化に向けて更なる研究がなされています。
+                しかし、miRNAが関わる生命の機構は非常に複雑なため、まだその全容を掴めてはいません。また、miRNAの名前の通り非常に小さく微量のに加え、
+                生体内においてはmiRNAを分解するRNaseが多く存在するため、安定的に測定するためには更なる工夫が必要になります。<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;また、現在研究が行われている血中miRNAは、そのようなRNaseに対して抵抗性を持つようなものが調べられています。
+                このことから、現在の研究では"がんとmiRNAとの関連について"ではなく"がんとRNaseに抵抗性を持つmiRNAとの関連について"となっておりバイアスが
+                かかっていると考えられます。<br>
+                そこで私たちは真に"がんとmiRNAとの関連について"の研究を進めるために、RNaseに抵抗性のない非修飾miRNAに焦点を当てました。
+            </p>
+                
+            <h4>Nano Pill Bug</h4>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;私たちが提案する"Nano Pill Bug"は、非修飾miRNAの捕獲と保護を目的としたデバイスです。単に短鎖RNAをDNAorigamiで保護するだけであれば、
+                DNAboxの利用なども考えられますが、miRNAの保護という観点から見ると、捕獲までの早さが重要視されます。そこで私たちは、DNAorigamiの曲げのエネルギー
+                を利用し、鼠取りのように捕まえるというアイデアを思いつきました。
+            </p>-->
             <h3>BACKGROUND</h3>
-            <p>miRNA（マイクロRNA）は、約20〜22ヌクレオチドの短い一本鎖の非コードRNAで、遺伝子発現の調節において重要な役割を果たします。miRNAは、ほとんどの真核生物に存在し、主に転写後レベルでの遺伝子抑制を行うことで、細胞の発生、増殖、分化、死といったさまざまな生理過程を制御します。</p>
-            <h4>1. miRNAの発見と意義</h4>
-                
-            <p>miRNAは1993年に線虫（C. elegans）で初めて発見されました。最初はわずか2種類のmiRNAが知られていましたが、その後多くの生物に普遍的に存在することが明らかとなり、特にヒトでは数百種類以上のmiRNAが発見されています。ヒトの遺伝子の30%以上がmiRNAによって調節されると考えられており、これにより生体の多くのシグナル伝達経路や遺伝子発現の制御に重要な役割を果たしています。
-            
-            <h4>2. miRNAの生成プロセス</h4>
-                
-                <p>miRNAの生成は、複数の段階を経て行われます。<br>
-                    核内のプロセシング: miRNA遺伝子が転写されると、最初に「一次miRNA（pri-miRNA）」と呼ばれる前駆体が生成されます。このpri-miRNAはヘアピン構造を持っており、Droshaと呼ばれる酵素によってプロセシングされて「前駆miRNA（pre-miRNA）」になります。<br>
-                    細胞質での成熟: pre-miRNAは核から細胞質へと輸送され、Dicerと呼ばれる酵素によってさらにプロセシングされて成熟したmiRNAが生成されます。<br>
-                    RNA誘導サイレンシング複合体（RISC）への取り込み: 成熟したmiRNAはRNA誘導サイレンシング複合体（RISC）に取り込まれ、標的mRNAと結合することで転写後調節を行います。</p>
-                
-            <h4>3. miRNAの働き</h4>
-                <p>miRNAの主な役割は、mRNAと相補的な塩基配列に結合して遺伝子発現を抑制することです。具体的には次の2つの方法で働きます。<br>
-                    翻訳抑制: miRNAが標的mRNAに結合することでリボソームによるタンパク質合成が抑制されます。<br>
-                    mRNAの分解: RISC複合体に取り込まれたmiRNAが、標的mRNAを分解することで、遺伝子発現を完全に抑制します。</p>
-                
-            <h4>4. miRNAの生物学的役割</h4>
-                <p>miRNAは、以下のような重要な生理過程に関与しています。<br>
-                    細胞の増殖と分化: miRNAは細胞周期の調節や幹細胞の分化に関わり、組織や臓器の発生過程で重要な役割を果たします。<br>
-                    アポトーシス（細胞死）: 細胞が適切に死ぬように誘導するアポトーシスの経路にもmiRNAが関与しています。<br>
-                    ストレス応答: miRNAは、細胞が環境ストレス（酸化ストレスや低酸素など）に対する適応反応を起こすのを助けます。<br>
-                    免疫応答: 免疫細胞の発生や分化、さらには免疫応答全体の調節にもmiRNAが関わっています。</p>
-                
-            <h4>5. miRNAと疾患</h4>
-                <p>miRNAの異常な発現や機能不全は、多くの疾患と関連しています。<br>
-                    がん: miRNAは腫瘍抑制遺伝子やオンコジーンとして作用し、がん細胞の増殖や転移に影響を与えます。例えば、がん細胞では特定のmiRNAが過剰に発現する一方で、他のmiRNAが抑制されていることが多くあります。<br>
-                    神経疾患: アルツハイマー病やパーキンソン病といった神経変性疾患にもmiRNAの異常が関与しています。<br>
-                    心血管疾患: miRNAは心筋細胞の増殖や死、さらには血管の形成にも影響を与え、心血管疾患の進行に関わることがわかっています。</p>
-                
-            <h4>6. miRNAの医療応用</h4>
-                <p>miRNAの安定性や機能に基づき、以下のような医療応用が期待されています。<br>
-                    診断マーカー: miRNAは血液などの体液に存在し、がんや心血管疾患などの疾患の診断マーカーとして利用されています。<br>
-                    治療ターゲット: miRNAの調節機能を利用して、がんや神経疾患、感染症などの治療に応用する研究が進んでいます。<br>
-                    ドラッグデリバリー: miRNAを適切に標的組織にデリバリーすることによって、特定の遺伝子発現を制御し、治療効果を得る技術も検討されています。</p>
+                <h4>About miRNA</h4>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;miRNA (microRNA) is a short single-stranded non-coding RNA that was long considered to have no physiological function and was thought to be unnecessary. Professors Ambros and Levkan have discovered that miRNA regulates protein expression, playing a crucial role in the body, for which they were awarded the Nobel Prize in 2024.<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;This breakthrough had a significant impact on biology, which had previously focused on proteins and long-chain nucleic acids, and has contributed to the detailed understanding of various metabolic reactions and functions. It is now understood that miRNA exists in most eukaryotic organisms and regulates various physiological processes such as cell development, proliferation, differentiation, and death through post-transcriptional gene silencing.<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;Among these, the research on cancer, a disease closely related to genes, has shown that miRNA plays a significant role. miRNA acts as tumor suppressor genes or oncogenes and affects cancer cell proliferation and metastasis. For example, in cancer cells, certain miRNAs are overexpressed, while others are suppressed.</p>
+
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;Currently, based on the stability and function of miRNA, several medical applications are expected as a countermeasure against cancer:<br>
+                    Diagnostic Markers: miRNA is present in body fluids such as blood and is used as a diagnostic marker for diseases like cancer and cardiovascular diseases.<br>
+                    Therapeutic Targets: Research is underway to utilize miRNA's regulatory functions for treating cancer, neurological diseases, infections, and more.<br>
+                    Drug Delivery: Techniques are being explored to deliver miRNA to target tissues to regulate specific gene expressions and achieve therapeutic effects.</p>
+
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;Neurological Diseases: Abnormal miRNA has been implicated in neurodegenerative diseases such as Alzheimer's and Parkinson's disease.<br>
+                    Cardiovascular Diseases: miRNA affects the proliferation and death of cardiomyocytes and the formation of blood vessels, playing a role in the progression of cardiovascular diseases.</p>
+
+                <h4>Importance of Unmodified miRNA</h4>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;Several methods have been proposed for using miRNA in early cancer detection, and further research is being conducted toward practical application. However, the mechanisms involving miRNA in life are highly complex, and their full understanding has yet to be achieved. Moreover, as miRNA is very small and present in trace amounts, and given that RNases, which break down miRNA, are abundant in the body, further innovations are needed to measure miRNA stably.<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;Current research is focusing on blood miRNA that exhibits resistance to such RNases. As a result, the research is not about the relationship between cancer and miRNA itself, but rather about the relationship between cancer and miRNA that is resistant to RNase, leading to bias in the research.<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;To truly advance research on the relationship between cancer and miRNA, we have focused on unmodified miRNA, which is not resistant to RNase.</p>
+
+                <h4>Nano Pill Bug</h4>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;The "Nano Pill Bug" that we propose is a device designed to capture and protect unmodified miRNA. While DNA origami can be used to protect short-chain RNA, for the purpose of miRNA protection, the speed of capture is crucial. Therefore, we came up with the idea of using the bending energy of DNA origami to capture miRNA, much like a mouse trap.</p>
         </div>
 
         <div id="goals">
@@ -88,38 +112,51 @@
 
         <div id="future">
             <h3>FUTURE</h3>
-            <p>write me!</p>
+            <!--<p>Nano Pill Bugは、非修飾miRNAの捕獲・保護だけでなく、その場でのがんなど種々の遺伝子疾患の診断デバイスとしての利用も考えられます。
+                また、曲げ応力のエネルギーを用いて捕獲保護するというアイデアそのものはサイズを変えて応用することもでき、
+                様々な分子ロボットのパーツとしての活用が期待されます。
+            </p>-->
+            <p>The Nano Pill Bug can not only capture and protect unmodified miRNA but also be used as a diagnostic device for various genetic diseases, such as cancer, on-site. Moreover, the idea of using bending stress energy for capture and protection can be adapted to different sizes, offering potential applications as components for various molecular robots.</p>
         </div>
-        
-        </section>
 
-        <section class="bg3">
-            <h3>REFERENCES</h3>
-            <ul>
-                <li>
-                    <strong>Abdelaal, A.M., Sohal, I.S., Iyer, S., et al.</strong> 2023. A first-in-class fully modified version of miR-34a with outstanding stability, activity, and anti-tumor efficacy. Oncogene, 42, pp. 2985-2999.
-                </li>
-                <li>
-                    <strong>Ahmed M Abdelaal, Andrea L Kasinski,</strong> Ligand-mediated delivery of RNAi-based therapeutics for the treatment of oncological diseases, NAR Cancer, Volume 3, Issue 3, September 2021, zcab030, https://doi.org/10.1093/narcan/zcab030
-                </li>
-                <li>
-                    <strong>Kim, T. & Croce, C.M.</strong> 2023. MicroRNA: trends in clinical trials of cancer diagnosis and therapy strategies. Experimental & Molecular Medicine, 55, pp. 1314-1321.
-                </li>
-                <li>
-                    <strong>Iorio MV, Croce CM.</strong> MicroRNAs in cancer: small molecules with a huge impact. J Clin Oncol. 2009 Dec 1;27(34):5848-56. doi: 10.1200/JCO.2009.24.0317. Epub 2009 Nov 2. PMID: 19884536; PMCID: PMC2793003.
-                </li>
-                <li>
-                    <strong>Lee RC, Feinbaum RL, Ambros V.</strong> The C. elegans heterochronic gene lin-4 encodes small RNAs with antisense complementarity to lin-14. Cell. 1993 Dec 3;75(5):843-54. doi: 10.1016/0092-8674(93)90529-y. PMID: 8252621.
-                </li>
-                <li>
-                    <strong>Wightman B, Ha I, Ruvkun G.</strong> Posttranscriptional regulation of the heterochronic gene lin-14 by lin-4 mediates temporal pattern formation in C. elegans. Cell. 1993 Dec 3;75(5):855-62. doi: 10.1016/0092-8674(93)90530-4. PMID: 8252622.
-                </li>
-                <li>
-                    <strong>Pasquinelli, A.E., Reinhart, B.J., Slack, F., et al.</strong> 2000. Conservation of the sequence and temporal expression of let-7 heterochronic regulatory RNA. Nature, 408, pp. 86-89.
-                </li>
-            </ul>
-        </section>
+        <div class="section s_06">
+            <div class="accordion_one">
+                <div class="accordion_header" id="ac1_b">REFERENCES<div class="i_box"><i class="one_i"></i></div></div>
+                <div class="accordion_inner">
+                    <div class="box_one">
 
+                        <ul>
+                            <li>
+                                <strong>Abdelaal, A.M., Sohal, I.S., Iyer, S., et al.</strong> 2023. A first-in-class fully modified version of miR-34a with outstanding stability, activity, and anti-tumor efficacy. Oncogene, 42, pp. 2985-2999.
+                            </li>
+                            <li>
+                                <strong>Ahmed M Abdelaal, Andrea L Kasinski,</strong> Ligand-mediated delivery of RNAi-based therapeutics for the treatment of oncological diseases, NAR Cancer, Volume 3, Issue 3, September 2021, zcab030, https://doi.org/10.1093/narcan/zcab030
+                            </li>
+                            <li>
+                                <strong>Kim, T. & Croce, C.M.</strong> 2023. MicroRNA: trends in clinical trials of cancer diagnosis and therapy strategies. Experimental & Molecular Medicine, 55, pp. 1314-1321.
+                            </li>
+                            <li>
+                                <strong>Iorio MV, Croce CM.</strong> MicroRNAs in cancer: small molecules with a huge impact. J Clin Oncol. 2009 Dec 1;27(34):5848-56. doi: 10.1200/JCO.2009.24.0317. Epub 2009 Nov 2. PMID: 19884536; PMCID: PMC2793003.
+                            </li>
+                            <li>
+                                <strong>Lee RC, Feinbaum RL, Ambros V.</strong> The C. elegans heterochronic gene lin-4 encodes small RNAs with antisense complementarity to lin-14. Cell. 1993 Dec 3;75(5):843-54. doi: 10.1016/0092-8674(93)90529-y. PMID: 8252621.
+                            </li>
+                            <li>
+                                <strong>Wightman B, Ha I, Ruvkun G.</strong> Posttranscriptional regulation of the heterochronic gene lin-14 by lin-4 mediates temporal pattern formation in C. elegans. Cell. 1993 Dec 3;75(5):855-62. doi: 10.1016/0092-8674(93)90530-4. PMID: 8252622.
+                            </li>
+                            <li>
+                                <strong>Pasquinelli, A.E., Reinhart, B.J., Slack, F., et al.</strong> 2000. Conservation of the sequence and temporal expression of let-7 heterochronic regulatory RNA. Nature, 408, pp. 86-89.
+                            </li>
+                        </ul>                        
+
+                    </div>
+                <div class="closeArea">
+                    <div class="close_box"><a href="#ac1_b" class="close_btn">閉じる<div class="i_box"><i class="one_i"></i></div></a></div>
+                </div>
+                </div>
+            </div>
+        </div>
+        </section>
         </main>
         </div>
     </div>
@@ -129,7 +166,7 @@
     <script src="https://t2biomod2024.github.io/2024/JS/common.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/protonet-jquery.inview/1.1.2/jquery.inview.min.js"></script>
     <script src="https://t2biomod2024.github.io/2024/JS/jquery_inview.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
     <script src="https://t2biomod2024.github.io/2024/JS/main.js"></script>
 </body>
 </html>
