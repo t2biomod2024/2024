@@ -97,7 +97,7 @@ $('.ddmenu').on('touchstart', function(e) {
 //    header.style.backgroundColor = `rgba(238, 238, 238, ${opacity})`;
 //});
 
-if (window.location.pathname === '/index.html' || window.location.pathname === '/') {
+if (window.location.pathname === 'https://t2biomod2024.github.io/2024/index.html') {
     window.addEventListener("scroll", () => {
         const header = document.querySelector("header");
         const scrollY = window.scrollY;
