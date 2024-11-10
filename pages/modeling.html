@@ -37,14 +37,7 @@
                 <p>&nbsp;&nbsp;&nbsp;&nbsp;The "Nano Pill Bug" we are developing is a device focused on protecting unmodified miRNA from RNase. This device is inspired by pill bugs, and when it captures miRNA, it rolls up and protects it. <br>
                     &nbsp;&nbsp;&nbsp;&nbsp;This structure consists of two DNA origami sheets and several stopper DNAs that connect them. One sheet has a double-layered structure, which bends due to the difference in the number of base pairs, forming a tubular structure. <br>
                 &nbsp;&nbsp;&nbsp;&nbsp;These bent sheets are held together by pre-arranged stopper DNAs, maintaining a flat structure by balancing the tension between them. When the stopper DNA is replaced by miRNA through strand displacement, the tension in each sheet is released, and the miRNA is enclosed inside the tubular structure. <br>
-                &nbsp;&nbsp;&nbsp;&nbsp;The functionality of this structure can be extended, and by applying it to small molecules such as DNA or proteins, various applications are expected.</p>
-
-            <div class="align-items-center">
-                <div class="f-img">
-                    <img src="https://t2biomod2024.github.io/2024/pics/31.png" alt="">
-                </div>
-                                <p class="text-center">Fig.1. A</p>
-            </div>                       
+                &nbsp;&nbsp;&nbsp;&nbsp;The functionality of this structure can be extended, and by applying it to small molecules such as DNA or proteins, various applications are expected.</p>                       
         </div>
 
         <div id="principle">
@@ -57,37 +50,44 @@
 
         <div id="modeling">
             <div class="topic-title"><h3>MODELING</h3></div>
-                <p>&nbsp;&nbsp;&nbsp;&nbsp;The modeling of the Nano Pill Bug was carried out entirely using caDNAno, and its structural simulations were performed using cando and oxDNA. Additionally, simulations of the strand displacement reaction and sequence design were carried out using NUPACK.</p>
-
-                <h4>1. Modeling of the Rolled Sheet Structure</h4>
-                    <h5><i class="fa-solid fa-pen-nib"></i> Determining the Sheet Size</h5>
-                        <p>&nbsp;&nbsp;&nbsp;&nbsp;In DNA origami, when the same scaffold strand is used, the volume of the resulting structure is approximately the same. Therefore, we selected and designed the optimal radius, width, and thickness for the Nano Pill Bug to function as a robot that protects miRNA from RNase.<br>
-                          &nbsp;&nbsp;&nbsp;&nbsp;In addition to making the radius small to prevent RNase from entering the Nano Pill Bug, we designed it as a two-layer structure rather than a single layer to fill the gaps in the DNA origami. As a result, the structure has a radius of about 20 nm and a width of about 36 nm.</p>
-                        
+                <h4>1. Modeling of a Single Rolled Sheet Structure</h4>
+                    <p>The sheet structure was designed using cadnano and the structure was simulated using CanDo and oxDNA.</p>
+                    <h5>1.1. Determination of sheet size</h5>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;The Nano Pill Bug consists of a single scaffold chain and 226 staple chains (average 31 nt). The scaffold chain was designed using M13mp18 (7249 nt). (Fig.1,2,3)</p>
+                        <div class="align-items-center">
+                            <div class="f-img">
+                                <img src="https://t2biomod2024.github.io/2024/pics/cadnano_42.png" alt="">
+                            </div>
+                            <p class="text-center">Fig.1. A</p>
+                        </div>
                         <div class="d-flex">
                         <div class="align-items-center">
                             <div class="f-img">
                                 <img src="https://t2biomod2024.github.io/2024/pics/rmsf_view1.png" alt="">
                             </div>
-                            <p class="text-center">Fig.1. A</p>
+                            <p class="text-center">Fig.2. A</p>
                         </div>
                         <div class="align-items-center">
                             <div class="f-img">
                                 <img src="https://t2biomod2024.github.io/2024/pics/rmsf_view3.png" alt="">
                             </div>
-                            <p class="text-center">Fig.2. A</p>
-                        </div>
-                        </div>
-                        <div class="align-items-center">
-                            <div class="f-img">
-                                <img src="https://t2biomod2024.github.io/2024/pics/cadnano_42.png" alt="">
-                            </div>
                             <p class="text-center">Fig.3. A</p>
                         </div>
+                        </div>
 
-                    <h5><i class="fa-solid fa-pen-nib"></i> Determining the Bending Frequency</h5>
-                        <p>&nbsp;&nbsp;&nbsp;&nbsp;The optimal structure for the Nano Pill Bug that we envisioned is one where "the sheet is rolled just slightly overlapping itself once." By adopting this structure, it becomes easier to connect the ends when joining two sheets together, and compared to a more tightly wound structure, it is believed that the flat structure is more likely to be maintained. Additionally, by rolling the sheet more than once, the ends overlap, preventing RNase from entering through those areas.<br>
-                          &nbsp;&nbsp;&nbsp;&nbsp;To achieve this structure, we added skips to the inner layer and inserts to the outer layer of the sheet, placing them at appropriate intervals, which allowed us to bend the sheet as desired. Furthermore, to overlap the ends, we varied the frequency of the skips and inserts, adjusting the degree of bending to ensure that the sheet spirals inward like a coil.</p>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;In order for the Nano Pill Bug to more precisely protect miRNAs supplemented from RNase, the basic structure of the Nano Pill Bug, the sheet structure, is now a two-layer structure with 4-helix bundles arranged side by side. The aspect ratio of the rectangular sheet was also determined to protect fewer input miRNAs while keeping the radius small.<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;Finally, the sheet was determined to be 36 nm in length (18 dsDNA strands) and 68 nm in width (200 nt). (Fig.4)</p>
+                        <div class="align-items-center">
+                            <div class="f-img">
+                                <img src="https://t2biomod2024.github.io/2024/pics/31.png" alt="">
+                            </div>
+                            <p class="text-center">Fig.4. A</p>
+                        </div>
+
+                    <h5>1.2. Determine Skip/Insert frequency</h5>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;We designed the structure of the Nano Pill Bug by bending the sheets by adding a skip to one of the two designed sheets and an insert to the other, so that the ends used as the adhesive between the two sheets would not be hidden by wrapping the sheets when designing the two back-to-back structure. We also decided to “wrap the sheet around a bit” to protect the miRNAs from the RNase.<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;As a result, a total of 25 skips or inserts were added to the 200 nt long sheet to “wrap the sheet a little more than once”. Of these 25 skips or inserts, 22 were set uniformly, avoiding crossover areas in the sheet.<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;In order to design the sheet so that only one end is bent more strongly and inward at the overlap of the sheet ends, the remaining three inserts were set to overlap the three skip inserts from one end of the sheet to the other. (Fig. 5)</p>
 
                         <div class="align-items-center">
                             <div class="f-img">
@@ -102,11 +102,13 @@
                             <p class="text-center">Fig.5. A</p>
                         </div>
 
-                <h4>2. Modeling of the Two-Sheet Structure</h4>
-                    <h5><i class="fa-solid fa-pen-nib"></i> Stacking the Two Sheets</h5>
-                        <p>&nbsp;&nbsp;&nbsp;&nbsp;When creating the two-sheet structure, we stacked the two sheets "back to back" to cancel out the bending stresses of each sheet. For each sheet, we extended certain staple strands to create single-stranded DNA (ssDNA) that could be used to link the sheets together, which were then connected using ssDNA. The length and number of the ssDNA used for the connections were determined through oxDNA simulations.<br>
-                          &nbsp;&nbsp;&nbsp;&nbsp;For the purpose of capturing miRNA, it would be ideal to minimize the length and number of the input DNA strands. However, if the strand length and number are insufficient, the two sheets will not connect properly, and the two-sheet structure will collapse. Based on the simulation results, we determined the sequence for the most stable two-sheet structure.<br>
-                          &nbsp;&nbsp;&nbsp;&nbsp;For the exchange reaction that occurs when introducing the TargetDNA into the connecting parts, we simulated the reaction using NUPACK. As shown in the figure below, the addition of TargetDNA triggers a strand displacement reaction, causing the smileDNA to detach, and the TargetDNA hybridizes with hashikko1 and hashikko2. This shows that the two-sheet structure is resolved by the TargetDNA, and the sheets separate and roll up. Each separated sheet becomes a rolled-up sheet due to its own bending stress, protecting the TargetDNA.</p>
+                <h4>2. Modeling of Back-to-back Construction of Double Sheets</h4>
+                    <h5>2.1. Design of signal response mechanism using chain displacement reaction</h5>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;NUPACK was used to design the sequence of the strand displacement reaction and to simulate the strand displacement reaction.<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;The method used to join the two sheets together was to use ssDNA to join the staple strands that make up the ends of the sheets together. (Fig.6)<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;The sheets are glued back-to-back in such a way that the bending stress of each sheet cancels each other out, resulting in a two-sheet structure fixed to a flat surface. (Fig.7)<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;When miRNAs (Target) hybridize with the end of the staple chain through strand displacement reaction, the back-to-back sheets are removed from each other, and at the same time, the sheets are rounded by the bending stress of the sheets to protect the miRNAs attached to the end of the staple chain (Figure 6). The sheets are then disentangled from each other. (Fig.8)<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;The sequence of the strand displacement reaction portion was determined using NUPACK as shown below. (Fig.9)</p>
                       
                         <div class="align-items-center">
                             <div class="f-img">
@@ -132,6 +134,7 @@
                             </div>
                             <p class="text-center">Fig.9. A</p>
                         </div>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;Initially, when the target molecule is not present, the ends are held together by Smile. (Fig.10,11)</p>
                         <div class="align-items-center">
                             <div class="f-img">
                                 <img src="https://t2biomod2024.github.io/2024/pics/8.png" alt="">
@@ -144,13 +147,40 @@
                             </div>
                             <p class="text-center">Fig.11. A</p>
                         </div>
+                        <p>When a target molecule is present here, a chain displacement reaction occurs and the ends are separated from each other, thus supplementing the target molecule. (Fig.12,13)</p>
 
-                    <h5><i class="fa-solid fa-pen-nib"></i> Dynamic Simulation of the Two-Sheet Structure</h5>
-                        <p>&nbsp;&nbsp;&nbsp;&nbsp;Following the experimental procedure for creating the two-sheet structure, we performed a dynamic simulation of annealing in stages. If we tried to anneal the two sheets all at once, they would likely roll up separately, hiding the connection points, and the two-sheet structure would not form. Therefore, we decided to perform a staged annealing process for the connection points and the other parts of the structure.<br>
-                          &nbsp;&nbsp;&nbsp;&nbsp;We initially attached the two scaffolds by adding only the staple strands at the connection points, then progressively added the staples that form the sheet, starting from the shortest ones, to create the two-sheet structure.<br>
-                          &nbsp;&nbsp;&nbsp;&nbsp;*This simulation has not been performed.*</p>
-
-                <h4>Improved protection from RNase</h4>
+                    <h5>2.2. Simulation of Back-to-back Construction of Double Sheets</h5>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;We used oxDNA to simulate whether the back-to-back structure is actually achieved.<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;In the simulation, we verified the number of strands that join the two sheets together and the length of the section that joins the two sheets together. When the four corners of the sheet were joined with eight bases, the two sheets immediately fell apart, but when the ends of the sheets were joined with eight bases at 36 positions, the sheets stayed together for a longer period of time (Figures 12 and 13). (Figure 12,13) (Figure 14,15)</p>
+                        <div class="d-flex">
+                            <div class="align-items-center">
+                                <div class="f-img">
+                                    <img src="https://t2biomod2024.github.io/2024/pics/rmsf_view1.png" alt="">
+                                </div>
+                                <p class="text-center">Fig.12. A</p>
+                            </div>
+                            <div class="align-items-center">
+                                <div class="f-img">
+                                    <img src="https://t2biomod2024.github.io/2024/pics/rmsf_view3.png" alt="">
+                                </div>
+                                <p class="text-center">Fig.13. A</p>
+                            </div>
+                        </div>
+                        <div class="d-flex">
+                            <div class="align-items-center">
+                                <div class="f-img">
+                                    <img src="https://t2biomod2024.github.io/2024/pics/rmsf_view1.png" alt="">
+                                </div>
+                                <p class="text-center">Fig.14. A</p>
+                            </div>
+                            <div class="align-items-center">
+                                <div class="f-img">
+                                    <img src="https://t2biomod2024.github.io/2024/pics/rmsf_view3.png" alt="">
+                                </div>
+                                <p class="text-center">Fig.15. A</p>
+                            </div>
+                        </div>
+                <h4>3. Improved protection from RNase</h4>
                     <p>&nbsp;&nbsp;&nbsp;&nbsp;The current model has a hole on the lateral side, which does not completely prevent Rnase entry. We are therefore considering placing cholesterol-modified staple chains on the sides of the sheet structure to fill the holes and prevent RNase entry. We are also thinking of reducing the radius by stacking the sheets more to make them more airtight.<br>
                         &nbsp;&nbsp;&nbsp;&nbsp;Although we have not yet even simulated these ideas, we believe that they are effective means to make the Nano Pill Bug a more practical technology.</p>
             </div>
