@@ -600,6 +600,11 @@ main h3 {
 	border-radius: 20px;
 }
   
+.nav {
+	padding-left: auto;
+	padding-left: auto;
+  }
+
 .nav-tabs {
 	border-bottom: 1px solid #000000;
 	margin-bottom: 40px;
