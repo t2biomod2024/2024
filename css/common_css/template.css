@@ -124,6 +124,7 @@ section + section {
 	margin-top: 3rem;
 }
 a {
+	color: var(--text-color);
 	transition: 0.3s;
 	text-decoration: none;
 }
