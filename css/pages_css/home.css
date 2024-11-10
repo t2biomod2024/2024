@@ -271,7 +271,7 @@ header {
 .Movie-area {
 	position: relative;
 	background: var(--primary-color);
-	color: var(--primary-text-color);
+	color: var(--white-color);
 	padding-bottom: 5vw;
 	padding-left: var(--global-space);
 	padding-right: var(--global-space);
