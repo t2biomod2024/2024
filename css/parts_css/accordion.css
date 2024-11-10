@@ -85,9 +85,9 @@
   .s_06 .accordion_one .accordion_inner {
 	display: none;
 	padding: 30px 30px;
-	border-left: 2px solid #db0f2f;
-	border-right: 2px solid #db0f2f;
-	border-bottom: 2px solid #db0f2f;
+	border-left: 2px solid #1C3177;
+	border-right: 2px solid #1C3177;
+	border-bottom: 2px solid #1C3177;
 	box-sizing: border-box;
   }
   .s_06 .accordion_one:nth-of-type(2) .accordion_inner {
@@ -116,7 +116,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background: #db0f2f;
+	background: #1C3177;
 	padding: 15px 15px 15px 20px;
 	text-decoration: none;
 	line-height: 1.3;
