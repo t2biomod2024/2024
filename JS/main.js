@@ -88,14 +88,23 @@ $('.ddmenu').on('touchstart', function(e) {
 
 });
 
-//scroll-header
-window.addEventListener("scroll", () => {
-    const header = document.querySelector("header");
-    const scrollY = window.scrollY;
-    const opacity = Math.min(scrollY / 300, 0.9);
-    header.style.backgroundColor = `rgba(238, 238, 238, ${opacity})`;
-});
 
+//scroll-header
+//window.addEventListener("scroll", () => {
+//    const header = document.querySelector("header");
+//    const scrollY = window.scrollY;
+//    const opacity = Math.min(scrollY / 300, 0.9);
+//    header.style.backgroundColor = `rgba(238, 238, 238, ${opacity})`;
+//});
+
+if (window.location.pathname === '/index.html' || window.location.pathname === '/') {
+    window.addEventListener("scroll", () => {
+        const header = document.querySelector("header");
+        const scrollY = window.scrollY;
+        const opacity = Math.min(scrollY / 300, 0.9); 
+        header.style.backgroundColor = `rgba(238, 238, 238, ${opacity})`;
+    });
+}
 
 
 //scroll-stop
