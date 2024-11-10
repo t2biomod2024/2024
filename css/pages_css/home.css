@@ -237,6 +237,7 @@ header {
 
 .custom-block:hover p {
 	color: #555;
+	text-decoration: none;
 }
 
 .custom-block:hover .titleA {
