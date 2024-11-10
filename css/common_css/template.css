@@ -230,7 +230,7 @@ main h3 {
 	transform: translateX(-50%);
 	background-color: #eee;
 	border-radius: 2px;
-  }
+}
 
 /* Topic-area */
 .topic-section {
@@ -246,12 +246,13 @@ main h3 {
 	font-family: "Inter", sans-serif;
 }
 .topic-section h3, .topic-section h4 {
-    line-height: 2.5;
+    line-height: 1.5;
 	font-family: "Montserrat", sans-serif;
 	font-optical-sizing: auto;
 	font-weight: 500;
 }
 .topic-section h3{
+	line-height: 2.5;
 	color: var(--primary-color);
 	border-bottom: dashed 2px var(--secondary-color);
 }
