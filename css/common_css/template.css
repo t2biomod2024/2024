@@ -253,7 +253,7 @@ main h3 {
 }
 .topic-section h3{
 	color: var(--primary-color);
-	background: linear-gradient(transparent 70%, var(--secondary-color) 70%);
+	border-bottom: dashed 2px var(--secondary-color);
 }
 
 /*---------------------------------------
