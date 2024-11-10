@@ -88,14 +88,14 @@ $('.ddmenu').on('touchstart', function(e) {
 
 });
 
-
-scroll-header
+//scroll-header
 window.addEventListener("scroll", () => {
     const header = document.querySelector("header");
     const scrollY = window.scrollY;
     const opacity = Math.min(scrollY / 300, 0.9);
     header.style.backgroundColor = `rgba(238, 238, 238, ${opacity})`;
 });
+
 
 
 //scroll-stop
@@ -250,20 +250,20 @@ function start () {
 
 // Toggle "effect" classes
 function toggleEffect () {
-    var target = document.querySelector (this.dataset.target);
-        target.dataset.effect = this.dataset.effect;
-    
-    for (var i= 0; i < demoButtons.length; i++) {
-      demoButtons[i].classList.remove ('active');
-    }
-    
-    toggleActive.call (this);
+  var target = document.querySelector (this.dataset.target);
+      target.dataset.effect = this.dataset.effect;
+  
+  for (var i= 0; i < demoButtons.length; i++) {
+    demoButtons[i].classList.remove ('active');
   }
   
-  // Toggle "active" class
-  function toggleActive () {
-    this.classList.toggle ('active');
-  }
-  
-  // Invoke "start ()" function
-  window.addEventListener ('load', start);
+  toggleActive.call (this);
+}
+
+// Toggle "active" class
+function toggleActive () {
+  this.classList.toggle ('active');
+}
+
+// Invoke "start ()" function
+window.addEventListener ('load', start);
