@@ -600,7 +600,6 @@ main h3 {
   box-sizing: border-box;
   color: #eee;
   display: flex;
-  font-family: ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
   font-size: 1rem;
   font-weight: 700;
   justify-content: center;
@@ -653,7 +652,7 @@ main h3 {
 .custom-btn {
     background: var(--custom-btn-bg-color);
     border: 2px solid transparent;
-    border-radius: var(--border-radius-large);
+    border-radius: 20px;
     color: var(--white-color);
     font-size: var(--btn-font-size);
     font-weight: var(--font-weight-semibold);
@@ -664,24 +663,6 @@ main h3 {
   
   .custom-btn:hover {
     background: var(--custom-btn-bg-hover-color);
-    color: var(--white-color);
-  }
-  
-  .custom-border-btn {
-    background: transparent;
-    border: 2px solid var(--custom-btn-bg-color);
-    color: var(--custom-btn-bg-color);
-  }
-  
-  .custom-border-btn:hover {
-    background: var(--custom-btn-bg-color);
-    border-color: transparent;
-    color: var(--white-color);
-  }
-  
-  .custom-btn-bg-white {
-    border-color: var(--white-color);
-    color: var(--white-color);
   }
 
 
