@@ -242,8 +242,9 @@ ul {
 
 
 /*---------------------------------------
-  Hero-area              
+  SECTION              
 -----------------------------------------*/
+/* HERO */
 #Hero-area {
     background-image: url('https://t2biomod2024.github.io/2024/pics/title-1.gif'), url('https://t2biomod2024.github.io/2024/pics/title-2.png');
     background-size: 50%, cover;
@@ -255,6 +256,40 @@ ul {
     justify-content: center;
     align-items: center;
     height: 100vh;
+}
+
+/* MOVIE */
+.Movie-area {
+	position: relative;
+	background: var(--primary-color);
+	color: var(--primary-text-color);
+	padding-bottom: 5vw;
+	padding-left: var(--global-space);
+	padding-right: var(--global-space);
+	margin-left: calc(-1 * var(--global-space));
+	margin-right: calc(-1 * var(--global-space));
+	margin-bottom: 10vw;
+	margin-top: 10vw;
+	padding-top: 5vw;
+}
+.Movie-area::before, .Movie-area::after{
+	content: "";
+	position: absolute;
+	left: 0;
+	width: 100%;
+	height: calc(5vw + 1px);
+	background: var(--primary-color);
+}
+.Movie-area::before {
+	top: -5vw;
+	clip-path: polygon(0 100%, 100% 20%, 100% 100%);
+}
+.Movie-area::after {
+	bottom: -5vw;
+	clip-path: polygon(0 0, 100% 0, 0 80%);
+}
+.Movie-area a{
+	color: inherit;
 }
 
 /*sub-mainimg*/
@@ -275,8 +310,10 @@ ul {
 	letter-spacing: 0.1em;
 }
 
+
+
 /*background*/
-.bg1, .bg2, .bg3 {
+.bg2, .bg3 {
 	position: relative;
 	background: var(--primary-color);
 	color: var(--primary-text-color);
@@ -287,40 +324,16 @@ ul {
 	margin-right: calc(-1 * var(--global-space));
 }
 
-.bg1{
-	margin-bottom: 10vw;
-	margin-top: 10vw;
-}
-
 .bg2{
 	padding-top: 0;
 }
 
-.bg1, .bg3{
+.bg3{
 	padding-top: 5vw;
 }
 
-.bg1 a, .bg2 a, .bg3 a{
+.bg2 a, .bg3 a{
 	color: inherit;
-}
-
-.bg1::before, .bg1::after{
-	content: "";
-	position: absolute;
-	left: 0;
-	width: 100%;
-	height: calc(5vw + 1px);
-	background: var(--primary-color);
-}
-
-.bg1::before {
-	top: -5vw;
-	clip-path: polygon(0 100%, 100% 20%, 100% 100%);
-}
-
-.bg1::after {
-	bottom: -5vw;
-	clip-path: polygon(0 0, 100% 0, 0 80%);
 }
 
 .topic-section {
