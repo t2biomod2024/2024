@@ -102,6 +102,9 @@ header {
 	width: 84%;
 	color: var(--white-color);
 }
+.solution-container a {
+	color: var(--white-color);
+}
 
 /* contents-text-container */
 .contents-text-container {
