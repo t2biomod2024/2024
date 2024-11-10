@@ -248,12 +248,11 @@ ul {
 .Blue-area {
 	position: relative;
 	background: var(--primary-color);
-	color: var(--primary-text-color);
+	color: var(--white-color);
 	padding: var(--global-space);
 	margin-left: calc(-1 * var(--global-space));
 	margin-right: calc(-1 * var(--global-space));
 	padding-top: 0;
-	color: var(--white-color);
 }
 
 /*sub-mainimg*/
