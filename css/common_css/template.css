@@ -255,7 +255,7 @@ ul {
 	margin-left: calc(-1 * var(--global-space));
 	margin-right: calc(-1 * var(--global-space));
 	padding-top: 0;
-	color: inherit;
+	color: var(--white-color);
 }
 
 /*sub-mainimg*/
