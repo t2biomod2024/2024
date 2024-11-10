@@ -653,6 +653,15 @@ main h3 {
 .custom-block-topics-listing .custom-block-image {
 	width: 200px;
 }
+.custom-block {
+	justify-content: center;
+}
+.custom-block img {
+	padding: auto;
+}
+.custom-block .tx-container {
+	padding: auto;
+}
 
 
 /*section*/
