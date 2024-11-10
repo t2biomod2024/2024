@@ -710,3 +710,17 @@ main h3 {
     object-fit: cover;
     width: 100%;
 }
+
+.f-img2{
+	width: 35%;
+	height: auto;
+	border: 1px solid #ccc;
+	margin-right: auto;
+  	margin-left: auto;
+}
+
+.f-img2 img{
+    display: block;
+    object-fit: cover;
+    width: 100%;
+}
