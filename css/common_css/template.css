@@ -249,9 +249,7 @@ ul {
 	position: relative;
 	background: var(--primary-color);
 	color: var(--primary-text-color);
-	padding-bottom: 5vw;
-	padding-left: var(--global-space);
-	padding-right: var(--global-space);
+	padding: var(--global-space);
 	margin-left: calc(-1 * var(--global-space));
 	margin-right: calc(-1 * var(--global-space));
 	padding-top: 0;
