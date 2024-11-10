@@ -650,24 +650,20 @@ main h3 {
 .topics-listing-page .site-header {
 	padding-bottom: 65px;
 }
-  
-.custom-block-topics-listing-info {
-	margin: 30px 20px 20px 30px;
-}
-  
-.custom-block-topics-listing {
-	height: inherit;
-}
-  
-.custom-block-topics-listing .custom-block-image {
+
+.custom-block-image {
 	width: 200px;
+	padding: auto;
 }
+
 .custom-block {
 	justify-content: center;
 }
+
 .custom-block img {
 	padding: auto;
 }
+
 .custom-block .tx-container {
 	padding: auto;
 }
