@@ -231,17 +231,22 @@ $(function() {
 });
 
 var demoButtons;
+
 function start () {
+  
+  // Add event "click" to "demo buttons"
   demoButtons = document.querySelectorAll ('.js-modify');
   for (var i = 0; i < demoButtons.length; i++) {
     demoButtons[i].addEventListener ('click', toggleEffect);
   }
+  
+  // Add event "click" to "save buttons"
   var saveButtons = document.querySelectorAll ('.js-save');
   for (var i = 0; i < saveButtons.length; i++) {
     saveButtons[i].addEventListener ('click', toggleActive);
   }
   
-//}
+}
 
 //Toggle "effect" classes
 function toggleEffect () {
