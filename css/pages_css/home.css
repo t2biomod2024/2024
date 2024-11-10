@@ -10,15 +10,15 @@
 	border-radius: 20px;
 	padding-top: 50px;
 	margin-bottom: 5vw;
-  }
+}
   
-  .timeline-container .vertical-scrollable-timeline {
+.timeline-container .vertical-scrollable-timeline {
 	list-style-type: none;
 	position: relative;
 	padding-left: 0;
-  }
+}
   
-  .timeline-container .vertical-scrollable-timeline .list-progress {
+.timeline-container .vertical-scrollable-timeline .list-progress {
 	width: 8px;
 	height: 87%;
 	background-color: var(--primary-color);
@@ -26,35 +26,35 @@
 	left: 52px;
 	top: 10px;
 	overflow: hidden;
-  }
+}
   
-  .timeline-container .vertical-scrollable-timeline .list-progress .inner {
+.timeline-container .vertical-scrollable-timeline .list-progress .inner {
 	position: absolute;
 	right: 0;
 	bottom: 0;
 	height: 100%;
 	background-color: var(--secondary-color);
 	width: 100%;
-  }
+}
   
-  .timeline-container .vertical-scrollable-timeline li {
+.timeline-container .vertical-scrollable-timeline li {
 	position: relative;
 	padding: 20px 0px 65px 145px;
-  }
+}
   
-  .timeline-container .vertical-scrollable-timeline li:last-child {
+.timeline-container .vertical-scrollable-timeline li:last-child {
 	padding-bottom: 0;
-  }
+}
   
-  .timeline-container .vertical-scrollable-timeline li p {
+.timeline-container .vertical-scrollable-timeline li p {
 	line-height: 40px;
-  }
+}
   
-  .timeline-container .vertical-scrollable-timeline li p:last-child {
+.timeline-container .vertical-scrollable-timeline li p:last-child {
 	margin-bottom: 0;
-  }
+}
   
-  .timeline-container .vertical-scrollable-timeline li .icon-holder {
+.timeline-container .vertical-scrollable-timeline li .icon-holder {
 	position: absolute;
 	left: 0;
 	top: 0;
@@ -67,9 +67,9 @@
 	border-radius: 50%;
 	z-index: 1;
 	transition: 0.4s all;
-  }
+}
   
-  .timeline-container .vertical-scrollable-timeline li .icon-holder::before {
+.timeline-container .vertical-scrollable-timeline li .icon-holder::before {
 	content: "";
 	width: 80px;
 	height: 80px;
@@ -79,14 +79,14 @@
 	border-radius: 50%;
 	z-index: -1;
 	transition: 0.4s all;
-  }
+}
   
-  .timeline-container .vertical-scrollable-timeline li .icon-holder i {
+.timeline-container .vertical-scrollable-timeline li .icon-holder i {
 	font-size: 25px;
 	color: var(--white-color);
-  }
+}
   
-  .timeline-container .vertical-scrollable-timeline li::before {
+.timeline-container .vertical-scrollable-timeline li::before {
 	content: "";
 	position: absolute;
 	height: 100%;
@@ -94,15 +94,15 @@
 	background-color: transparent;
 	left: 52px;
 	z-index: 0;
-  }
+}
   
-  .timeline-container .vertical-scrollable-timeline li.active .icon-holder {
+.timeline-container .vertical-scrollable-timeline li.active .icon-holder {
 	background-color: var(--primary-color);
-  }
+}
   
-  .timeline-container .vertical-scrollable-timeline li.active .icon-holder::before {
+.timeline-container .vertical-scrollable-timeline li.active .icon-holder::before {
 	background-color: var(--primary-color);
-  }  
+}  
 
 
 /* VIDEO */
@@ -262,7 +262,7 @@
 	margin-right: calc(-1 * var(--global-space));
 	height: 100px;
 	}
-	.shapedividers_com-2149::before{ 
+.shapedividers_com-2149::before{ 
 	content:'';
 	position: absolute;
 	z-index: 3;
@@ -274,9 +274,9 @@
 	top: -0.1vw; 
 	background-size: 100% 90px;
 	background-position: 50% 0%;  background-image: url('data:image/svg+xml;charset=utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 381 77.25" preserveAspectRatio="none"><g fill="%237f96c2"><path d="M381 8.47L0 42.33V0h381z"/><path d="M381 33.87L0 59.27V0h381z" opacity=".33"/><path d="M381 59.27L0 77.25V0h381z" opacity=".33"/></g></svg>'); 
-	}
+}
 	
-	@media (min-width:2100px){
+@media (min-width:2100px){
 	.shapedividers_com-2149::before{
 	background-size: 100% calc(2vw + 90px);
 	}
@@ -289,8 +289,8 @@
 	margin-right: calc(-1 * var(--global-space));
 	margin-bottom: var(--global-space);
 	height: 100px;
-	}
-	.shapedividers_com-2587::after{ 
+}
+.shapedividers_com-2587::after{ 
 	content:'';
 	position: absolute;
 	z-index: 3;
@@ -302,9 +302,9 @@
 	top: -0.1vw; 
 	background-size: 100% 90px;
 	background-position: 50% 0%;  background-image: url('data:image/svg+xml;charset=utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35.278 3.527" preserveAspectRatio="none"><path d="M0 1.064v.125a82.946 82.946 0 0035.278-.007v-.125A82.783 82.783 0 010 1.064M0 .45V.7A83.105 83.105 0 0035.278.693v-.25A82.777 82.777 0 010 .45M33.252 0a82.855 82.855 0 01-31.26 0H0v.092A83.44 83.44 0 0035.278.085V0zm-10.8 0h8.84A84.249 84.249 0 013.952 0h8.839zM0 1.557v.075a82.878 82.878 0 0035.278-.007V1.55A82.771 82.771 0 010 1.557" fill="%231c3177"/></svg>'); 
-	}
+}
 	
-	@media (min-width:2100px){
+@media (min-width:2100px){
 	.shapedividers_com-2587::after{
 	background-size: 100% calc(2vw + 90px);
 	}
