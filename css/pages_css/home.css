@@ -378,7 +378,7 @@ header {
 	margin-bottom: var(--global-space);
 	height: 100px;
 }
-.sshapedividers_solution_down::after{ 
+.shapedividers_solution_down::after{ 
 	content:'';
 	position: absolute;
 	z-index: 3;

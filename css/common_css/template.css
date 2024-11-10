@@ -189,7 +189,6 @@ main h3 {
 	padding: var(--global-space);
 	margin-left: calc(-1 * var(--global-space));
 	margin-right: calc(-1 * var(--global-space));
-	padding-top: 0;
 }
 .Blue-area h3{
 	display: inline-block;
