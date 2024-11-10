@@ -244,53 +244,7 @@ ul {
 /*---------------------------------------
   SECTION              
 -----------------------------------------*/
-/* HERO */
-#Hero-area {
-    background-image: url('https://t2biomod2024.github.io/2024/pics/title-1.gif'), url('https://t2biomod2024.github.io/2024/pics/title-2.png');
-    background-size: 50%, cover;
-    background-position: top 55% right 43%, center;
-    background-color: #7f96c2;
-	background-blend-mode: normal;
-	background-repeat: no-repeat;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
 
-/* MOVIE */
-.Movie-area {
-	position: relative;
-	background: var(--primary-color);
-	color: var(--primary-text-color);
-	padding-bottom: 5vw;
-	padding-left: var(--global-space);
-	padding-right: var(--global-space);
-	margin-left: calc(-1 * var(--global-space));
-	margin-right: calc(-1 * var(--global-space));
-	margin-bottom: 10vw;
-	margin-top: 10vw;
-	padding-top: 5vw;
-}
-.Movie-area::before, .Movie-area::after{
-	content: "";
-	position: absolute;
-	left: 0;
-	width: 100%;
-	height: calc(5vw + 1px);
-	background: var(--primary-color);
-}
-.Movie-area::before {
-	top: -5vw;
-	clip-path: polygon(0 100%, 100% 20%, 100% 100%);
-}
-.Movie-area::after {
-	bottom: -5vw;
-	clip-path: polygon(0 0, 100% 0, 0 80%);
-}
-.Movie-area a{
-	color: inherit;
-}
 
 /*sub-mainimg*/
 #sub-mainimg {
