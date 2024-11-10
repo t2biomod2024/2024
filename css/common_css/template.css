@@ -124,7 +124,7 @@ section + section {
 	margin-top: 3rem;
 }
 a {
-	/*color: var(--text-color);*/
+	color: var(--text-color);
 	transition: 0.3s;
 	text-decoration: none;
 }
@@ -197,7 +197,7 @@ main h3 {
 
 /*sub-mainimg*/
 #sub-mainimg {
-    background-color: #1C3177;
+    background-color: var(--primary-color);
 	color: #fff;
 	padding-top: 10vw;
 	padding-bottom: 5vw;
@@ -250,7 +250,7 @@ main h3 {
 .arrow {
 	width: 0;
 	height: 40px;
-	border: 1px solid #1C3177;
+	border: 1px solid var(--primary-color);
 	position: relative;
 	animation: scroll 1.5s infinite;
 	-webkit-animation: scroll 1.5s infinite;
@@ -262,7 +262,7 @@ main h3 {
 	  left: -5px;
 	  width: 1px;
 	  height: 10px;
-	  border-top: 10px solid #1C3177;
+	  border-top: 10px solid var(--primary-color);
 	  border-left: 5px solid transparent;
 	  border-right: 5px solid transparent;
 	}
@@ -301,7 +301,7 @@ main h3 {
 	display: inline-block;
 	padding: 0.5rem 2rem;
 	border-radius: 100px;
-	background: #1C3177;
+	background: var(--primary-color);
 }
 
 /* custom-btn */
