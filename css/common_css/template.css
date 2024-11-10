@@ -267,7 +267,7 @@ ul {
 
 
 /*background*/
-.bg2, .bg3 {
+.bg2 {
 	position: relative;
 	background: var(--primary-color);
 	color: var(--primary-text-color);
@@ -276,17 +276,7 @@ ul {
 	padding-right: var(--global-space);
 	margin-left: calc(-1 * var(--global-space));
 	margin-right: calc(-1 * var(--global-space));
-}
-
-.bg2{
 	padding-top: 0;
-}
-
-.bg3{
-	padding-top: 5vw;
-}
-
-.bg2 a, .bg3 a{
 	color: inherit;
 }
 
