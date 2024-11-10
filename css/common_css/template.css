@@ -697,3 +697,17 @@ main h3 {
 	background-size: 100% calc(2vw + 90px);
 	}
 }
+
+.f-img{
+    display: flex;
+    justify-content: space-between;
+	width: 30%;
+	border: 1px solid #ccc;
+}
+
+.f-img img{
+    display: block;
+    height: 20vh;
+    object-fit: cover;
+    width: 100%;
+}
