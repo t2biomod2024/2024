@@ -4,6 +4,128 @@ header {
 
 
 /*---------------------------------------
+  SECTION              
+-----------------------------------------*/
+/* HERO */
+#Hero-area {
+    background-image: url('https://t2biomod2024.github.io/2024/pics/title-1.gif'), url('https://t2biomod2024.github.io/2024/pics/title-2.png');
+    background-size: 50%, cover;
+    background-position: top 55% right 43%, center;
+    background-color: #7f96c2;
+	background-blend-mode: normal;
+	background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* MOVIE */
+.Movie-area {
+	position: relative;
+	background: var(--primary-color);
+	color: var(--white-color);
+	padding: var(--global-space);
+	margin-left: calc(-1 * var(--global-space));
+	margin-right: calc(-1 * var(--global-space));
+	margin-bottom: 10vw;
+	margin-top: 10vw;
+}
+.Movie-area::before, .Movie-area::after{
+	content: "";
+	position: absolute;
+	left: 0;
+	width: 100%;
+	height: calc(5vw + 1px);
+	background: var(--primary-color);
+}
+.Movie-area::before {
+	top: -5vw;
+	clip-path: polygon(0 100%, 100% 20%, 100% 100%);
+}
+.Movie-area::after {
+	bottom: -5vw;
+	clip-path: polygon(0 0, 100% 0, 0 80%);
+}
+.Movie-area a{
+	color: inherit;
+}
+
+/* CONTENTS */
+.Contents-area {
+	background-size: cover;
+	width: 60%;
+	margin: 0 auto 10vh;
+	border-radius: 20px;
+	padding-top: 50px;
+}
+
+
+/*---------------------------------------
+  CONTAINER             
+-----------------------------------------*/
+/* img-container */
+.img-container {
+	background-image: url('https://t2biomod2024.github.io/2024/pics/team1.jpeg');
+    background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	position: relative;
+    width: 70%;
+    height: 50vh;
+	border-radius: 20px;
+	cursor: pointer;
+	display: inline-block;
+	margin: 0 auto;
+	text-align: center;
+	overflow: hidden;
+}
+.img-container::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.img-container:hover::after {
+    opacity: 1;
+}
+
+/* solution-container */
+.solution-container {
+	margin: 0 auto 10vh;
+	padding-top: 100px;
+	width: 84%;
+}
+
+/* contents-text-container */
+.contents-text-container {
+    display: flex;
+    flex-direction: column;
+}
+
+/* video-container */
+.video-container {
+    width: 50%;
+    max-width: 800px;
+    aspect-ratio: 16 / 9;
+    margin: 0 auto;
+    position: relative;
+}
+.video-container iframe {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+/*---------------------------------------
   IMG              
 -----------------------------------------*/
 .img-contain {
@@ -85,127 +207,7 @@ header {
 
 
 /*---------------------------------------
-  SECTION              
------------------------------------------*/
-/* HERO */
-#Hero-area {
-    background-image: url('https://t2biomod2024.github.io/2024/pics/title-1.gif'), url('https://t2biomod2024.github.io/2024/pics/title-2.png');
-    background-size: 50%, cover;
-    background-position: top 55% right 43%, center;
-    background-color: #7f96c2;
-	background-blend-mode: normal;
-	background-repeat: no-repeat;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
-/* MOVIE */
-.Movie-area {
-	position: relative;
-	background: var(--primary-color);
-	color: var(--white-color);
-	padding: var(--global-space);
-	margin-left: calc(-1 * var(--global-space));
-	margin-right: calc(-1 * var(--global-space));
-	margin-bottom: 10vw;
-	margin-top: 10vw;
-}
-.Movie-area::before, .Movie-area::after{
-	content: "";
-	position: absolute;
-	left: 0;
-	width: 100%;
-	height: calc(5vw + 1px);
-	background: var(--primary-color);
-}
-.Movie-area::before {
-	top: -5vw;
-	clip-path: polygon(0 100%, 100% 20%, 100% 100%);
-}
-.Movie-area::after {
-	bottom: -5vw;
-	clip-path: polygon(0 0, 100% 0, 0 80%);
-}
-.Movie-area a{
-	color: inherit;
-}
-
-/* Contents */
-.Contents-area {
-	background-size: cover;
-	width: 60%;
-	margin: 0 auto 10vh;
-	border-radius: 20px;
-	padding-top: 50px;
-}
-
-
-/*---------------------------------------
-  CONTAINER             
------------------------------------------*/
-/* img-container */
-.img-container {
-	background-image: url('https://t2biomod2024.github.io/2024/pics/team1.jpeg');
-    background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
-	position: relative;
-    width: 70%;
-    height: 50vh;
-	border-radius: 20px;
-	cursor: pointer;
-	display: inline-block;
-	margin: 0 auto;
-	text-align: center;
-	overflow: hidden;
-}
-.img-container::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    opacity: 0;
-    transition: opacity 0.3s ease;
-}
-.img-container:hover::after {
-    opacity: 1;
-}
-
-/* solution-container */
-.solution-container {
-	margin: 0 auto 10vh;
-	padding-top: 100px;
-	width: 84%;
-}
-
-/* contents-text-container */
-.contents-text-container {
-    display: flex;
-    flex-direction: column;
-}
-/* video-container */
-.video-container {
-    width: 50%;
-    max-width: 800px;
-    aspect-ratio: 16 / 9;
-    margin: 0 auto;
-    position: relative;
-}
-.video-container iframe {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-/*---------------------------------------
-  Div              
+  DIV              
 -----------------------------------------*/
 /*　Hero-area_down　*/
 .Hero-area_down{
