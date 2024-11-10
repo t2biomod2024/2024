@@ -93,7 +93,7 @@ $('.ddmenu').on('touchstart', function(e) {
 window.addEventListener("scroll", () => {
     const header = document.querySelector("header");
     const scrollY = window.scrollY;
-    const opacity = Math.min(scrollY / 300, 0.9);
+    const opacity = Math.min(scrollY / 200, 0.9);
     header.style.backgroundColor = `rgba(238, 238, 238, ${opacity})`;
 });
 
@@ -216,14 +216,12 @@ $(function(){
 var demoButtons;
 
 function start () {
-  
-  // Add event "click" to "demo buttons"
+
   demoButtons = document.querySelectorAll ('.js-modify');
   for (var i = 0; i < demoButtons.length; i++) {
     demoButtons[i].addEventListener ('click', toggleEffect);
   }
-  
-  // Add event "click" to "save buttons"
+
   var saveButtons = document.querySelectorAll ('.js-save');
   for (var i = 0; i < saveButtons.length; i++) {
     saveButtons[i].addEventListener ('click', toggleActive);
