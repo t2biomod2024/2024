@@ -26,33 +26,41 @@
 <body>
     <div id="container">
         <aside id="sub-mainimg">
-            <h2>MODELING</h2>
+            <h2>DESIGN</h2>
         </aside>
         <div id="contents">
         <main>
         <div class="shapedividers_com-1753"></div>
 
         <section class="topic-section">
-        <div id="design">
-            <div class="topic-title"><h3>DESIGN</h3></div>
+        <div id="overview">
+            <div class="topic-title"><h3>OVERVIEW</h3></div>
                 <p>&nbsp;&nbsp;&nbsp;&nbsp;The "Nano Pill Bug" we are developing is a device focused on protecting unmodified miRNA from RNase. This device is inspired by pill bugs, and when it captures miRNA, it rolls up and protects it. <br>
                     &nbsp;&nbsp;&nbsp;&nbsp;This structure consists of two DNA origami sheets and several stopper DNAs that connect them. One sheet has a double-layered structure, which bends due to the difference in the number of base pairs, forming a tubular structure. <br>
                 &nbsp;&nbsp;&nbsp;&nbsp;These bent sheets are held together by pre-arranged stopper DNAs, maintaining a flat structure by balancing the tension between them. When the stopper DNA is replaced by miRNA through strand displacement, the tension in each sheet is released, and the miRNA is enclosed inside the tubular structure. <br>
                 &nbsp;&nbsp;&nbsp;&nbsp;The functionality of this structure can be extended, and by applying it to small molecules such as DNA or proteins, various applications are expected.</p>
 
-                <div class="align-items-center">
-                    <div class="f-img">
-                        <img src="https://t2biomod2024.github.io/2024/pics/31.png" alt="">
-                    </div>
-                    <p class="text-center">Fig.1. A</p>
-                </div>                       
+            <div class="align-items-center">
+                <div class="f-img">
+                    <img src="https://t2biomod2024.github.io/2024/pics/31.png" alt="">
+                </div>
+                                <p class="text-center">Fig.1. A</p>
+            </div>                       
         </div>
 
-        <div id="simulation">
-            <div class="topic-title"><h3>SIMULATION</h3></div>
-                <p>&nbsp;&nbsp;&nbsp;&nbsp;The design of the Nano Pill Bug was carried out entirely using caDNAno, and its structural simulations were performed using cando and oxDNA. Additionally, simulations of the strand displacement reaction and sequence design were carried out using NUPACK.</p>
+        <div id="principle">
+            <div class="topic-title"><h3>PRINCIPLE</h3></div>
+                <h4>1. Bending DNAorigami</h4>
+                <p>write me!</p>
+                <h4>2. Strand displacement reaction</h4>
+                <p>write me!</p>       
+        </div>
 
-                <h4>1. Design of the Rolled Sheet Structure</h4>
+        <div id="modeling">
+            <div class="topic-title"><h3>MODELING</h3></div>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;The modeling of the Nano Pill Bug was carried out entirely using caDNAno, and its structural simulations were performed using cando and oxDNA. Additionally, simulations of the strand displacement reaction and sequence design were carried out using NUPACK.</p>
+
+                <h4>1. Modeling of the Rolled Sheet Structure</h4>
                     <h5><i class="fa-solid fa-pen-nib"></i> Determining the Sheet Size</h5>
                         <p>&nbsp;&nbsp;&nbsp;&nbsp;In DNA origami, when the same scaffold strand is used, the volume of the resulting structure is approximately the same. Therefore, we selected and designed the optimal radius, width, and thickness for the Nano Pill Bug to function as a robot that protects miRNA from RNase.<br>
                           &nbsp;&nbsp;&nbsp;&nbsp;In addition to making the radius small to prevent RNase from entering the Nano Pill Bug, we designed it as a two-layer structure rather than a single layer to fill the gaps in the DNA origami. As a result, the structure has a radius of about 20 nm and a width of about 36 nm.</p>
@@ -95,7 +103,7 @@
                             <p class="text-center">Fig.5. A</p>
                         </div>
 
-                <h4>2. Design of the Two-Sheet Structure</h4>
+                <h4>2. Modeling of the Two-Sheet Structure</h4>
                     <h5><i class="fa-solid fa-pen-nib"></i> Stacking the Two Sheets</h5>
                         <p>&nbsp;&nbsp;&nbsp;&nbsp;When creating the two-sheet structure, we stacked the two sheets "back to back" to cancel out the bending stresses of each sheet. For each sheet, we extended certain staple strands to create single-stranded DNA (ssDNA) that could be used to link the sheets together, which were then connected using ssDNA. The length and number of the ssDNA used for the connections were determined through oxDNA simulations.<br>
                           &nbsp;&nbsp;&nbsp;&nbsp;For the purpose of capturing miRNA, it would be ideal to minimize the length and number of the input DNA strands. However, if the strand length and number are insufficient, the two sheets will not connect properly, and the two-sheet structure will collapse. Based on the simulation results, we determined the sequence for the most stable two-sheet structure.<br>
