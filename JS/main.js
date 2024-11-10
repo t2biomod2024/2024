@@ -90,21 +90,12 @@ $('.ddmenu').on('touchstart', function(e) {
 
 
 //scroll-header
-//window.addEventListener("scroll", () => {
-//    const header = document.querySelector("header");
-//    const scrollY = window.scrollY;
-//    const opacity = Math.min(scrollY / 300, 0.9);
-//    header.style.backgroundColor = `rgba(238, 238, 238, ${opacity})`;
-//});
-
-if (window.location.pathname === 'https://t2biomod2024.github.io/2024/index.html') {
-    window.addEventListener("scroll", () => {
-        const header = document.querySelector("header");
-        const scrollY = window.scrollY;
-        const opacity = Math.min(scrollY / 300, 0.9); 
-        header.style.backgroundColor = `rgba(238, 238, 238, ${opacity})`;
-    });
-}
+window.addEventListener("scroll", () => {
+    const header = document.querySelector("header");
+    const scrollY = window.scrollY;
+    const opacity = Math.min(scrollY / 300, 0.9);
+    header.style.backgroundColor = `rgba(238, 238, 238, ${opacity})`;
+});
 
 
 //scroll-stop
@@ -220,25 +211,7 @@ $(function(){
       $('body,html').animate({scrollTop:position}, speed, 'swing');
       return false;
     });
-  });  
-
-/*
-//slide-show
-$(function() {
-	var slides = $('#Hero-area .slide');
-	var slideCount = slides.length;
-	var currentIndex = 0;
-
-	slides.eq(currentIndex).css('opacity', 1).addClass('active');
-
-	setInterval(function() {
-		var nextIndex = (currentIndex + 1) % slideCount;
-		slides.eq(currentIndex).css('opacity', 0).removeClass('active');
-		slides.eq(nextIndex).css('opacity', 1).addClass('active');
-		currentIndex = nextIndex;
-	}, 4000);
-});
-*/
+  });
 
 var demoButtons;
 
