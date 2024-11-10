@@ -223,9 +223,10 @@ $(function(){
   });  
 
 
+/*
 //slide-show
 $(function() {
-	var slides = $('#mainimg .slide');
+	var slides = $('#Hero-area .slide');
 	var slideCount = slides.length;
 	var currentIndex = 0;
 
@@ -238,6 +239,7 @@ $(function() {
 		currentIndex = nextIndex;
 	}, 4000);
 });
+*/
 
 var demoButtons;
 
