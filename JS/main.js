@@ -230,16 +230,16 @@ $(function() {
 	}, 4000);
 });
 
-//var demoButtons;
-//function start () {
-//  demoButtons = document.querySelectorAll ('.js-modify');
-//  for (var i = 0; i < demoButtons.length; i++) {
-//    demoButtons[i].addEventListener ('click', toggleEffect);
-//  }
-//  var saveButtons = document.querySelectorAll ('.js-save');
-//  for (var i = 0; i < saveButtons.length; i++) {
-//    saveButtons[i].addEventListener ('click', toggleActive);
-//  }
+var demoButtons;
+function start () {
+  demoButtons = document.querySelectorAll ('.js-modify');
+  for (var i = 0; i < demoButtons.length; i++) {
+    demoButtons[i].addEventListener ('click', toggleEffect);
+  }
+  var saveButtons = document.querySelectorAll ('.js-save');
+  for (var i = 0; i < saveButtons.length; i++) {
+    saveButtons[i].addEventListener ('click', toggleActive);
+  }
   
 //}
 
