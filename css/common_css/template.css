@@ -244,7 +244,19 @@ ul {
 /*---------------------------------------
   SECTION              
 -----------------------------------------*/
-
+/* Blue-area */
+.Blue-area {
+	position: relative;
+	background: var(--primary-color);
+	color: var(--primary-text-color);
+	padding-bottom: 5vw;
+	padding-left: var(--global-space);
+	padding-right: var(--global-space);
+	margin-left: calc(-1 * var(--global-space));
+	margin-right: calc(-1 * var(--global-space));
+	padding-top: 0;
+	color: inherit;
+}
 
 /*sub-mainimg*/
 #sub-mainimg {
@@ -264,22 +276,7 @@ ul {
 	letter-spacing: 0.1em;
 }
 
-
-
-/*background*/
-.bg2 {
-	position: relative;
-	background: var(--primary-color);
-	color: var(--primary-text-color);
-	padding-bottom: 5vw;
-	padding-left: var(--global-space);
-	padding-right: var(--global-space);
-	margin-left: calc(-1 * var(--global-space));
-	margin-right: calc(-1 * var(--global-space));
-	padding-top: 0;
-	color: inherit;
-}
-
+/* Topic-area */
 .topic-section {
 	background-color: #fff;
 	background-size: cover;
@@ -398,9 +395,6 @@ main h2 {
 	letter-spacing: 0.1em;
 	color: var(--text-color);
 }
-.bg2 h2, .bg3 h2 {
-	color: var(--primary-text-color);
-}
 main h2 .hosoku {
 	display: block;font-weight: normal;
 	font-size: 0.3em;
@@ -409,7 +403,11 @@ main h3 {
 	display: inline-block;
 	border-bottom: 3px solid var(--text-color);
 }
-.bg2 h3,.bg3 h3 {
+
+.Blue-area h2{
+	color: var(--primary-text-color);
+}
+.Blue-area h3{
 	display: inline-block;
 	border-bottom: 3px solid var(--primary-text-color);
 }
