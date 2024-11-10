@@ -533,43 +533,6 @@ main h3 {
 }
 
 
-/*table*/
-.ta1 caption {
-	font-weight: bold;
-	padding: 0.5rem 1rem;
-	background: var(--primary-color);
-	margin-bottom: 1rem;
-	border-radius: 5px;
-}
-
-.ta1 {
-	table-layout: fixed;
-	border-top: 1px solid #ccc;
-	width: 100%;
-	margin-bottom: 5rem;
-}
-
-.ta1 tr {
-	border-bottom: 1px solid #ccc;
-}
-
-.ta1 th, .ta1 td {
-	padding: 1rem;
-	word-break: break-all;
-}
-
-.ta1 th {
-	width: 30%;
-	text-align: left;
-}
-
-	@media screen and (min-width:900px) {
-		.ta1 th {
-			width: 20%;
-		}
-	}
-
-
 /*button*/
 .btn a,
 .btn-border-radius a {
