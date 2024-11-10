@@ -699,12 +699,14 @@ main h3 {
 
 .f-img{
 	width: 50%;
+	height: auto;
 	border: 1px solid #ccc;
+	margin-right: auto;
+  	margin-left: auto;
 }
 
 .f-img img{
     display: block;
-    height: 20vh;
     object-fit: cover;
     width: 100%;
 }
