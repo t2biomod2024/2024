@@ -621,7 +621,7 @@ main h3 {
 }
   
 .nav-tabs .nav-link {
-	border-radius: 0;
+	border-radius: 20px;
 	border-top: 0;
 	border-right: 0;
 	border-left: 0;
@@ -640,11 +640,15 @@ main h3 {
 .nav-tabs .nav-link.active,
 .nav-tabs .nav-link:focus, 
 .nav-tabs .nav-link:hover {
-	border-bottom-color: var(--primary-color);
+	border-color: var(--primary-color);
 	color: var(--primary-color);
 }
 
-  /*---------------------------------------
+.nav-tabs .nav-item {
+	margin-bottom: 3px;
+}
+
+/*---------------------------------------
   TOPICS               
 -----------------------------------------*/  
 .topics-listing-page .site-header {
