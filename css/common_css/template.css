@@ -699,9 +699,7 @@ main h3 {
 }
 
 .f-img{
-    display: flex;
-    justify-content: space-between;
-	width: 30%;
+	width: 50%;
 	border: 1px solid #ccc;
 }
 
