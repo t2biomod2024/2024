@@ -88,14 +88,14 @@ $('.ddmenu').on('touchstart', function(e) {
 
 });
 
-//scroll-header
-window.addEventListener("scroll", () => {
-    const header = document.querySelector("header");
-    const scrollY = window.scrollY;
-    const opacity = Math.min(scrollY / 300, 0.9);
-    header.style.backgroundColor = `rgba(238, 238, 238, ${opacity})`;
-});
 
+//scroll-header
+//window.addEventListener("scroll", () => {
+//    const header = document.querySelector("header");
+//    const scrollY = window.scrollY;
+//    const opacity = Math.min(scrollY / 300, 0.9);
+//    header.style.backgroundColor = `rgba(238, 238, 238, ${opacity})`;
+//});
 
 
 //scroll-stop
@@ -230,40 +230,35 @@ $(function() {
 	}, 4000);
 });
 
-var demoButtons;
-
-function start () {
+//var demoButtons;
+//function start () {
+//  demoButtons = document.querySelectorAll ('.js-modify');
+//  for (var i = 0; i < demoButtons.length; i++) {
+//    demoButtons[i].addEventListener ('click', toggleEffect);
+//  }
+//  var saveButtons = document.querySelectorAll ('.js-save');
+//  for (var i = 0; i < saveButtons.length; i++) {
+//    saveButtons[i].addEventListener ('click', toggleActive);
+//  }
   
-  // Add event "click" to "demo buttons"
-  demoButtons = document.querySelectorAll ('.js-modify');
-  for (var i = 0; i < demoButtons.length; i++) {
-    demoButtons[i].addEventListener ('click', toggleEffect);
-  }
-  
-  // Add event "click" to "save buttons"
-  var saveButtons = document.querySelectorAll ('.js-save');
-  for (var i = 0; i < saveButtons.length; i++) {
-    saveButtons[i].addEventListener ('click', toggleActive);
-  }
-  
-}
+//}
 
 // Toggle "effect" classes
-function toggleEffect () {
-  var target = document.querySelector (this.dataset.target);
-      target.dataset.effect = this.dataset.effect;
+//function toggleEffect () {
+//  var target = document.querySelector (this.dataset.target);
+//      target.dataset.effect = this.dataset.effect;
   
-  for (var i= 0; i < demoButtons.length; i++) {
-    demoButtons[i].classList.remove ('active');
-  }
+//  for (var i= 0; i < demoButtons.length; i++) {
+//    demoButtons[i].classList.remove ('active');
+//  }
   
-  toggleActive.call (this);
-}
+//  toggleActive.call (this);
+//}
 
 // Toggle "active" class
-function toggleActive () {
-  this.classList.toggle ('active');
-}
+//function toggleActive () {
+//  this.classList.toggle ('active');
+//}
 
 // Invoke "start ()" function
-window.addEventListener ('load', start);
+//window.addEventListener ('load', start);
