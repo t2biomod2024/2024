@@ -381,7 +381,7 @@ main h3 {
 	padding-left: auto;
 }
 .nav-tabs {
-	border-bottom: 1px solid #606060;
+	border-bottom: 1px solid #b0a9a9;
 	margin-bottom: 30px;
 	justify-content: center;
 	width: 90%;
@@ -391,7 +391,7 @@ main h3 {
 	border-top: 0;
 	border-right: 0;
 	border-left: 0;
-	color: var(--p-color);
+	color: #beb2b2;
 	font-size: var(--btn-font-size);
 	font-weight: var(--font-weight-medium);
 	padding: 15px 25px;
@@ -405,10 +405,10 @@ main h3 {
 .nav-tabs .nav-link:focus, 
 .nav-tabs .nav-link:hover {
 	color: var(--primary-color);
-	outline: none;
+	border-bottom: 1px solid #1C3177;
+	background: var(--white-color);
 }
 .nav-tabs .nav-item {
-	margin-bottom: 3px;
 	line-height: 1.5;
 }
 table {

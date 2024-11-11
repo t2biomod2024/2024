@@ -54,9 +54,8 @@ header {
 /* CONTENTS */
 .Contents-area {
 	background-size: cover;
-	width: 75%;
+	width: 100%;
 	margin: 0 auto 10vh;
-	border: 1px solid #303030;
 	padding: 20px;
 }
 
