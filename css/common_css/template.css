@@ -255,10 +255,10 @@ main h3 {
 }
 .topic-section h3, .topic-section h4 {
     line-height: 1.5;
-	font-family: "Open Sans", sans-serif;
+	font-family: "Montserrat", sans-serif;
 	font-optical-sizing: auto;
-	font-weight: 700;
-	letter-spacing: 0.1em;
+	font-weight: 500;
+	letter-spacing: 0.05em;
 }
 .topic-section h3{
 	line-height: 1;
