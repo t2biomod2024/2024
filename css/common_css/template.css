@@ -417,7 +417,9 @@ table {
 	font-family: sans-serif;
 	font-size: 0.8rem;
 	letter-spacing: 1px;
-	margin: auto;
+	width: 70%;
+	margin-right: auto;
+  	margin-left: auto;
 }
 caption {
 	caption-side: bottom;
