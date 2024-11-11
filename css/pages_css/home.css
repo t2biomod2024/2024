@@ -195,6 +195,9 @@ header {
 	transform: translateY(-3px);
 	text-decoration: none;
 }
+.contents-block:hover * {
+    text-decoration: none;
+}
 .contents-block > a {
 	width: 100%;
 }
