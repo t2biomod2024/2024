@@ -99,8 +99,9 @@ header {
 .solution-container {
 	margin: 0 auto 10vh;
 	padding-top: 100px;
-	width: 84%;
+	width: 100%;
 	color: var(--white-color);
+	padding-left: 70px;
 }
 .solution-container a {
 	color: var(--white-color);
