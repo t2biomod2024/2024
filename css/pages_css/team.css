@@ -37,20 +37,17 @@
 	box-shadow: 5px 5px 20px rgba(0,0,0,0.1);
 }
 
-.list-grid1 .list figure img {
-	margin-bottom: 0.5rem;
-}
-
 .AI{
   width: 100%;
   height: 30vh;
   object-fit: cover;
+  margin-bottom: 0.5rem;
 }
 
 /* BANNO */
 .banno{
-  position: absolute; /* 親要素 .f-img を基準に絶対位置を設定 */
-  top: 20px;      /* 上から20pxの位置 */
+  position: absolute;
+  top: 20px;
   left: 30px;
   z-index: 2;
 }
