@@ -41,9 +41,14 @@
 	margin-bottom: 0.5rem;
 }
 
+/* BANNO */
 .banno{
   text-align: left;
   justify-content: end;
+}
+.banno img{
+  width: 100px;
+  height: auto;
 }
 
 /* GLOBAL VARIABLES */
