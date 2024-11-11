@@ -381,9 +381,10 @@ main h3 {
 	padding-left: auto;
 }
 .nav-tabs {
-	border-bottom: 1px solid #000000;
+	border-bottom: 1px solid #606060;
 	margin-bottom: 40px;
 	justify-content: center;
+	width: 90%;
 } 
 .nav-tabs .nav-link {
 	border-radius: 20px;
