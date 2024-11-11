@@ -136,7 +136,7 @@ header {
 
 
 /*---------------------------------------
-  IMG              
+  IMG
 -----------------------------------------*/
 .img-contain {
     position: absolute;
@@ -149,6 +149,7 @@ header {
     transition: opacity 0.3s ease;
     text-align: center;
 	z-index: 2;
+	margin-bottom: 1em;
 }
 
 .img-container:hover .img-contain {
