@@ -264,8 +264,8 @@ main h3 {
 	line-height: 1;
 	color: var(--primary-color);
 }
-.topic-section h4 {
-	padding: 1rem 2rem;
+.topic-section h5 {
+	padding: 0.6rem 1rem;
 	border-left: 4px solid var(--text-color);
 }
 .topic-section p{
