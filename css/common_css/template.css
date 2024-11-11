@@ -264,7 +264,7 @@ main h3 {
 	line-height: 1;
 	color: var(--primary-color);
 }
-.topic-section h5 {
+.topic-section h4 {
 	padding: 1rem 2rem;
 	border-left: 4px solid var(--text-color);
 }
@@ -274,7 +274,7 @@ main h3 {
 .topic-title{
 	width: 100%;
 	border-bottom: dashed 2px var(--secondary-color);
-	margin-bottom: 10px;
+	margin-bottom: 20px;
 }
 
 /*---------------------------------------
