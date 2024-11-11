@@ -417,11 +417,11 @@ table {
 	font-family: sans-serif;
 	font-size: 0.8rem;
 	letter-spacing: 1px;
+	margin: auto;
 }
 caption {
 	caption-side: bottom;
-	padding: 10px;
-	font-weight: bold;
+	padding: 4px;
 } 
 thead,
 tfoot {
