@@ -41,6 +41,11 @@
 	margin-bottom: 0.5rem;
 }
 
+.AI{
+  width: 100%;
+  height: 30vh;
+  object-fit: cover;
+}
 /* BANNO */
 .banno{
   text-align: left;
