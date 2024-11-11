@@ -387,11 +387,11 @@ main h3 {
 	width: 90%;
 } 
 .nav-tabs .nav-link {
-	border-radius: 20px;
+	border-bottom: 1px solid #b0a9a9;
 	border-top: 0;
 	border-right: 0;
 	border-left: 0;
-	color: #beb2b2;
+	color: var(--text-color);
 	font-size: var(--btn-font-size);
 	font-weight: var(--font-weight-medium);
 	padding: 15px 25px;
