@@ -15,9 +15,7 @@
 }
 
 /*footer*/
-.grid {
-	display: grid;
-	grid-template-columns: repeat(2, minmax(0, 3fr));
+.Grrid {
 	gap: 1rem;
 	margin-bottom: 1.5rem;
 }
