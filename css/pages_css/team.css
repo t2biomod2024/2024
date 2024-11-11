@@ -49,8 +49,10 @@
 
 /* BANNO */
 .banno{
-  text-align: left;
-  justify-content: end;
+  position: absolute; /* 親要素 .f-img を基準に絶対位置を設定 */
+  top: 20px;      /* 上から20pxの位置 */
+  left: 30px;
+  z-index: 2;
 }
 .banno img{
   width: 100px;
