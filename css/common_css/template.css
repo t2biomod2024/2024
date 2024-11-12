@@ -527,11 +527,11 @@ tfoot td {
 	border: 1px solid #ccc;
 	margin-right: auto;
   	margin-left: auto;
+	  object-fit: cover;
 }
 
 .f-img img{
     display: block;
     object-fit: cover;
     width: 100%;
-    object-fit: cover;
 }
