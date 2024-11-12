@@ -527,7 +527,7 @@ tfoot td {
 	border: 1px solid #ccc;
 	margin-right: auto;
   	margin-left: auto;
-	  object-fit: cover;
+	object-fit: cover;
 }
 
 .f-img img{

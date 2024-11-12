@@ -16,6 +16,10 @@
 	font-size: 0.85rem;
 }
 
+.list-grid1 .list h4 {
+	font-size: 0.85rem;
+}
+
 	@media screen and (min-width:500px) {
 	.list-grid1 {
 		grid-template-columns: repeat(2, 1fr);
