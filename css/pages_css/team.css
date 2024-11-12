@@ -33,13 +33,12 @@
 .list-grid1 .list {
 	padding: 1rem;
 	background: #eee;
-    grid-template-rows: auto 1fr;
+  grid-template-rows: auto 1fr;
 	box-shadow: 5px 5px 20px rgba(0,0,0,0.1);
 }
 
 .AI{
   width: 100%;
-  height: 54vh;
   object-fit: cover;
   margin-bottom: 0.5rem;
 }
