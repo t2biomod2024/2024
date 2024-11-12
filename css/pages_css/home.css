@@ -197,7 +197,7 @@ header {
 	color: #6f6f6f;
 	display: inline-block;
 	font-size: 24px;
-	font-weight: 100;
+	font-weight: 300;
 	transition: color 0.3s;
 }
 .contents-block:hover {
