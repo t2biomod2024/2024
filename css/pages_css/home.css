@@ -143,7 +143,7 @@ header {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: white;
+    color: #eee;
     font-size: 20px;
     opacity: 0;
     transition: opacity 0.3s ease;
@@ -155,7 +155,11 @@ header {
 .img-container:hover .img-contain {
     opacity: 1;
 }
-
+.hometeam-text{
+	color: #eee;
+	font-size: 20px;
+	padding-top: 20px;
+}
 
 /*---------------------------------------
   CONTENTS-BLOCK              
