@@ -186,6 +186,15 @@ main h3 {
 	display: inline-block;
 }
 
+/* span */
+.highlight {
+    font-weight: bold;
+    color: var(--primary-color);
+}
+.bold {
+    font-weight: bold;
+}
+
 /*---------------------------------------
   SECTION              
 -----------------------------------------*/
