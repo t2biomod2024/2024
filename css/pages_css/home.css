@@ -161,6 +161,10 @@ header {
 	padding-top: 20px;
 }
 
+.contents-title{
+	font-weight: 500;
+}
+
 /*---------------------------------------
   CONTENTS-BLOCK              
 -----------------------------------------*/
