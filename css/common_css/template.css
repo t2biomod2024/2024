@@ -407,6 +407,10 @@ main h3 {
 	color: var(--primary-color);
 	border-bottom: 1px solid #1C3177;
 	background: var(--white-color);
+	outline: none;
+}
+nav a:focus {
+    outline: none;
 }
 .nav-tabs .nav-item {
 	line-height: 1.5;
