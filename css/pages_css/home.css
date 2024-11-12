@@ -160,9 +160,11 @@ header {
 	font-size: 20px;
 	padding-top: 20px;
 }
-
 .contents-title{
 	font-weight: 500;
+}
+.lead {
+	font-size: 1.1rem;
 }
 
 /*---------------------------------------
