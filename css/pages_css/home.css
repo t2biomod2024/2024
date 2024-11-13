@@ -108,7 +108,7 @@ header {
 .solution-container h4 {
 	position: relative;
 	padding: 1rem 2rem calc(1rem + 8px);
-	background: #eee;
+	background: #7f96c2;
 } 
 .solution-container h4:before {
 	position: absolute;
@@ -117,7 +117,7 @@ header {
 	width: 100%;
 	height: 100%;
 	content: '';
-	border: 4px solid #1C3177;
+	border: 4px solid #eee;
 	;
 }
   
