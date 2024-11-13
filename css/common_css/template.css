@@ -543,3 +543,18 @@ tfoot td {
     object-fit: cover;
     width: 100%;
 }
+
+.f2-img{
+	width: auto;
+	height: 500px;
+	border: 1px solid #ccc;
+	margin-right: auto;
+  	margin-left: auto;
+	object-fit: cover;
+}
+
+.f2-img img{
+    display: block;
+    object-fit: cover;
+    height: 100%;
+}
