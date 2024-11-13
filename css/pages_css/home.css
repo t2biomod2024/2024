@@ -105,13 +105,11 @@ header {
 .solution-container a {
 	color: var(--white-color);
 }
-
 .solution-container h4 {
 	position: relative;
 	padding: 1rem 2rem calc(1rem + 8px);
 	background: #eee;
-  }
-  
+} 
 .solution-container h4:before {
 	position: absolute;
 	top: -5px;
@@ -121,7 +119,7 @@ header {
 	content: '';
 	border: 4px solid #1C3177;
 	;
-  }
+}
   
 
 
