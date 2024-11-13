@@ -252,6 +252,7 @@ main h3 {
 /* Topic-area */
 .topic-section {
 	background-color: #fff;
+	color: var(--text-color);
 	background-size: cover;
 	font-size: 	0.9em;
 	width: 80%;
