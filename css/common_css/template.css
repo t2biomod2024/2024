@@ -287,6 +287,16 @@ main h3 {
 	margin-bottom: 20px;
 }
 
+.topic-sectionul {
+	color: #1e366a;
+	border: dotted #1e366a 1px;
+	padding: 0.5em 0.5em 0.5em 2em;
+  }
+.topic-section ul li {
+	line-height: 1.5;
+	padding: 0.5em 0;
+}
+
 /*---------------------------------------
   Scrolldown Arrow           
 -----------------------------------------*/
