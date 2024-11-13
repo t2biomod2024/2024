@@ -362,8 +362,7 @@ main h3 {
 	text-align: center;
 	background: var(--primary-color);
 	color: var(--primary-text-color);
-	padding: 0.5rem;
-	margin-top: 1rem;
+	margin-top: 0.2rem;
 }
 .btn-border-radius a {
 	display: inline-block;
