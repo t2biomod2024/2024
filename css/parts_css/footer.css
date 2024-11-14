@@ -59,6 +59,8 @@
 	.md-justify-between {
 	  justify-content: space-between;
 	}
-  
-	.Grrid {display:none}
+}
+
+@media (max-width:767px){
+	.Grrid{display:none} 
 }
