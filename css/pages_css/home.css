@@ -253,7 +253,6 @@ header {
 	overflow:hidden;
 	position:relative;
 	margin-left: calc(-1 * var(--global-space));
-	margin-right: calc(-1 * var(--global-space));
 	height: 100px;
 	}
 .Hero-area_down::before{ 
