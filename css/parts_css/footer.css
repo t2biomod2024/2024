@@ -48,7 +48,7 @@
 }
   
 .footer__social a:not(:last-child) {
-	margin-right: 16px;
+	margin-right: 72px;
 }
   
 @media (min-width: 768px) {
