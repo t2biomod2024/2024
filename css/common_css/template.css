@@ -530,7 +530,7 @@ tfoot td {
 
 /* Figure-image */
 .f-img-con{
-	height: 500px;
+	max-height: 500px;
 	margin-right: auto;
   	margin-left: auto;
 	text-align: center;
