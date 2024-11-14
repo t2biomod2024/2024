@@ -307,7 +307,7 @@ main h3 {
 	margin-right: auto;
 	margin-left: auto;
 }
-@media (min-width:1025px){
+@media (max-width:1024px){
 	.topic-section{ 
 		width: 90%;
 	}
