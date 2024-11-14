@@ -241,6 +241,10 @@ header {
 	transition: color 0.3s;
 	margin-top: 1px;
 }
+.pink {
+	color: #FF4838;
+	font-weight: bold;
+}
 
 
 /*---------------------------------------
