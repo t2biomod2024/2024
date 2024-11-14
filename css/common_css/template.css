@@ -398,6 +398,11 @@ main h3 {
     background: var(--custom-btn-bg-hover-color);
 }
 
+.pink {
+	color: #FF4838;
+	font-weight: bold;
+}
+
 
 /*---------------------------------------
   CONTENTS MENU              
