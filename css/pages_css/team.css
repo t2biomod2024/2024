@@ -3,23 +3,20 @@
 	display: grid;
 	color: #555;
 }
-
 .list-grid1 .list {
     display: grid;
 }
-
 .list-grid1 .list * {
 	margin: 0;padding: 0;
 }
-
-.list-grid1 .list p {
-	font-size: 0.85rem;
+.teamh4 {
+	font-size: 1.2rem;
+  font-weight: 700;
 }
-
-.list-grid1 .list h4 {
-	font-size: 0.85rem;
+.teamp {
+	font-size: 1.2rem;
+  font-weight: 400;
 }
-
 	@media screen and (min-width:500px) {
 	.list-grid1 {
 		grid-template-columns: repeat(2, 1fr);
