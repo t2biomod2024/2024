@@ -166,7 +166,6 @@ header {
 	z-index: 2;
 	margin-bottom: 1em;
 }
-
 .img-container:hover .img-contain {
     opacity: 1;
 }

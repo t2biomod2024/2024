@@ -152,6 +152,11 @@ body:not(.home) #container {
 	flex-direction: column;
 	justify-content: space-between;
 }
+.B-container{
+	width: 80%;
+	margin-top: 10vh;
+	margin-bottom: 5vh;
+}
 
 /* CONTENTS */
 #contents {
