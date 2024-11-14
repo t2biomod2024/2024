@@ -535,9 +535,8 @@ tfoot td {
 
 /* Figure-image */
 .f-img{
-	width: auto;
-	height: 100%;
-	max-height: 40vh;
+	width: 80%;
+	height: 40vh;
 	margin-left: auto;
 	margin-right: auto;
 	overflow: hidden;
@@ -546,5 +545,5 @@ tfoot td {
 .f-img img{
 	border: 1px solid #ccc;
     max-width: 100%;
-	object-fit: cover;
+	object-fit: contain;
 }
