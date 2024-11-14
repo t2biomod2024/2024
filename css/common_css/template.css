@@ -539,14 +539,13 @@ tfoot td {
 }
 
 .f-img{
-	height:100%;
 	border: 1px solid #ccc;
 	margin-right: auto;
   	margin-left: auto;
 }
 
 .f-img img{
-    display: block;
-    object-fit: cover;
-    width: 100%;
+    max-width: 100%;
+	height: auto;
+	object-fit: cover;
 }
