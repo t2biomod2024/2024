@@ -19,15 +19,15 @@ header {
     align-items: center;
     height: 100vh;
 }
-@media (max-width:767px){
-	#Hero-area {
-		background-image: url('https://t2biomod2024.github.io/2024/pics/home/1-title.gif'), url('https://t2biomod2024.github.io/2024/pics/1000png');  
-	}  
-}
 @media (max-width:1024px){
 	#Hero-area {
 	background-image: url('https://t2biomod2024.github.io/2024/pics/home/1-title.gif'), url('https://t2biomod2024.github.io/2024/pics/home/734.png'); 
 	}
+}
+@media (max-width:767px){
+	#Hero-area {
+		background-image: url('https://t2biomod2024.github.io/2024/pics/home/1-title.gif'), url('https://t2biomod2024.github.io/2024/pics/1000png');  
+	}  
 }
 
 /* MOVIE */
