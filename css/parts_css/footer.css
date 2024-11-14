@@ -60,7 +60,5 @@
 	  justify-content: space-between;
 	}
   
-	.Grrid {
-	  grid-template-columns: repeat(3, minmax(0, 1fr));
-	}
+	.Grrid {display:none}
 }
