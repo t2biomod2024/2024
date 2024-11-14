@@ -545,6 +545,5 @@ tfoot td {
 .f-img img{
 	border: 1px solid #ccc;
     max-width: 100%;
-	height: auto;
 	object-fit: cover;
 }
