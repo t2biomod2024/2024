@@ -68,6 +68,9 @@ header {
 	margin: 0 auto 10vh;
 	padding: 20px;
 }
+@media (max-width:767px){
+	.Contents-Area{display:none} 
+}
 
 
 /*---------------------------------------
