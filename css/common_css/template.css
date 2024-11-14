@@ -295,6 +295,9 @@ main h3 {
 	line-height: 1.5;
 	padding: 0.5em 0;
 }
+.listtt{
+	width: 80%;
+}
 
 /*---------------------------------------
   Scrolldown Arrow           
