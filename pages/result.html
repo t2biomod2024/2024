@@ -9,11 +9,10 @@
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Sorts+Mill+Goudy:ital@0;1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,700;1,700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Sen:wght@400..800&family=Sorts+Mill+Goudy:ital@0;1&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
     <!-- CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://t2biomod2024.github.io/2024/css/common_css/bootstrap.min.css">
     <link rel="stylesheet" href="https://t2biomod2024.github.io/2024/css/parts_css/header.css">
     <link rel="stylesheet" href="https://t2biomod2024.github.io/2024/css/parts_css/footer.css">
     <link rel="stylesheet" href="https://t2biomod2024.github.io/2024/css/parts_css/accordion.css">
@@ -33,46 +32,340 @@
             <main>
             <div class="shapedividers_com-1753"></div>
             <section class="topic-section">
-                <div id="experiment">
-                    <h3>EXPERIMENT</h3>
-                        <!--<h4>Introduction</h4>
-                            <p>&nbsp;&nbsp;&nbsp;&nbsp;このプロジェクトの焦点は一枚の丸まったシート構造体の作成です。設計した曲げエネルギーにより丸まったシート構造の実現可能性を実験的に証明します。<br>
-                                実際に丸まったシートであることを証明するためにシートの中央部分を構成しているステープル鎖を外した開いたシート構造と
-                                すべてのステープル鎖をいれ丸まったシート構造それぞれを作成しそれぞれの大きさを比較しました。</p>
 
-                        <h4>アニーリング</h4>
-                            <p>&nbsp;&nbsp;&nbsp;&nbsp;フォールディングに重要な塩濃度と温度条件は元論文[1]と経験則に基づいて決定されたものを用いました。鎖の濃度については2パターン行い決定されました。
-                                アニーリング結果を観察するためにAFMとQsepを行いました。</p>
-                            <h5>鎖濃度の決定</h5>
-                                <p>&nbsp;&nbsp;&nbsp;&nbsp;A,Bはそれぞれ開いたシート構造を作成するためのアニーリングレシピです。BはAに比べ鎖濃度が3倍になっています。
-                                    A,BそれぞれのQsepの結果を比較し、よりはっきりとしたバンドが確認できるBの鎖濃度で実験を行うことにしました。</p>
+                <div id="simulation">
+                    <div class="topic-title"><h3>SIMULATION</h3></div>
+                        <h4>1. Simulation of a Single Rolled Sheet Structure</h4>
+                            <p>&nbsp;&nbsp;&nbsp;&nbsp;We used CanDo to simulate whether the single rolled sheet structure could actually be achieved. The simulation shows that the structure is as expected. (Fig.1,2)</p>
 
-                        <h4>AFM</h4>
-                            <p>&nbsp;&nbsp;&nbsp;&nbsp;原子間力顕微鏡では試料をうまくマイカ基盤上に設置するために塩濃度とインキュベートする時間が重要です。インキュベート時間は30分、
-                                マグネシウムイオン濃度は12.5mMと18mMで比較し、より構造がはっきり観察できた18mMで観察しました。<br>
-                                &nbsp;&nbsp;&nbsp;&nbsp;開いたシート構造の作成により得られたサンプルでは図のようにひょうたん型の構造が観察できました。
-                                閉じたシート構造の作成により得られたサンプルでは開いたシート構造の半分程度の球状の構造が観察できました。
-                                これらの結果は私たちの設計通り一匹のNano Pill Bugが誕生していることを示しています。</p>-->
+                            <div class="d-flex align-items-center">
+                                <div class="align-items-center">
+                                    <div class="f-img">
+                                        <img src="https://t2biomod2024.github.io/2024/pics/rmsf_view1.png" alt="">
+                                    </div>
+                                    <p class="text-center">Fig.1 Simulation of the Structure<br>from the front in CanDo</p>
+                                </div>
+                                <div class="align-items-center">
+                                    <div class="f-img">
+                                        <img src="https://t2biomod2024.github.io/2024/pics/rmsf_view3.png" alt="">
+                                    </div>
+                                    <p class="text-center">Fig.2 Simulation of the Structure<br> from the side in CanDo</p>
+                                </div>
+                            </div>
+
+                        <h4>2. Simulation of Back-to-back Construction of Double Sheets</h4>
+                            <p>&nbsp;&nbsp;&nbsp;&nbsp;We used oxDNA to simulate whether the back-to-back structure is actually achieved.<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;Two important parameters in the simulation to determine whether a back-to-back structure can be achieved are the number of pieces to be joined and the size of each adhesive area.<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;In the first model, the four corners of the sheet were tested with eight bases of adhesive ends. (Fig.3) In this model, the adhesive ends were quickly removed and a stable two-piece structure could not be obtained. (Mov.1)</p>
+                                <div class="d-flex">
+                                    <div class="align-items-center">
+                                        <div class="f2-img">
+                                            <img src="https://t2biomod2024.github.io/2024/pics/1-1-1.png" alt="">
+                                        </div>
+                                        <p class="text-center">Fig.3 Modeling in caDNAno</p>
+                                    </div>
+                                    <div class="align-items-center">
+                                        <div class="f2-img">
+                                            <img src="https://t2biomod2024.github.io/2024/pics/tr1.gif" alt="">
+                                        </div>
+                                        <p class="text-center">Mov.1 Simulation results for oxDNA</p>
+                                    </div>
+                                </div>
+
+                            <p>&nbsp;&nbsp;&nbsp;&nbsp;Next, the four corners of the sheet were tested with two staple strands at each of the eight nucleotide adhesive ends.(Fig.4) Similar to the previous model, no stable bipartite structure was observed in this model. (Mov.2)</p>
+                            <div class="d-flex">
+                                <div class="align-items-center">
+                                    <div class="f2-img">
+                                        <img src="https://t2biomod2024.github.io/2024/pics/1-1-2.png" alt="">
+                                    </div>
+                                    <p class="text-center">Fig.4 Modeling in caDNAno</p>
+                                </div>
+                                <div class="align-items-center">
+                                    <div class="f2-img">
+                                        <img src="https://t2biomod2024.github.io/2024/pics/tr2.gif" alt="">
+                                    </div>
+                                    <p class="text-center">Mov.2 Simulation results for oxDNA</p>
+                                </div>
+                            </div>
+
+                            <p>&nbsp;&nbsp;&nbsp;&nbsp;In the next model, all staple ends of the sheet ends were used for adhesion.(Fig.5) In this model, the stable bipartite structure lasted longer than in the previous models, but eventually collapsed, which was not the result we were looking for.</p>
+                            <div class="d-flex">
+                                <div class="align-items-center">
+                                    <div class="f2-img">
+                                        <img src="https://t2biomod2024.github.io/2024/pics/1-1-3.png" alt="">
+                                    </div>
+                                    <p class="text-center">Fig.5 Modeling in caDNAno</p>
+                                </div>
+                                <div class="align-items-center">
+                                    <div class="f2-img">
+                                        <img src="https://t2biomod2024.github.io/2024/pics/tr3.gif" alt="">
+                                    </div>
+                                    <p class="text-center">Mov.3 Simulation results for oxDNA</p>
+                                </div>
+                            </div>
+
+                            <p>&nbsp;&nbsp;&nbsp;&nbsp;In the last model, the adhesive region of the previous model was extended from 8 bases to 16 bases to enhance the adhesive strength.(Fig. 6) In this model, the staple, which was unable to withstand the stress and pulled out earlier, was able to maintain hybridization, and the bipartite structure was stabilized. (Mov.4)</p>
+                            <div class="d-flex">
+                                <div class="align-items-center">
+                                    <div class="f2-img">
+                                        <img src="https://t2biomod2024.github.io/2024/pics/1-1-4.png" alt="">
+                                    </div>
+                                    <p class="text-center">Fig.6 Modeling in caDNAno</p>
+                                </div>
+                                <div class="align-items-center">
+                                    <div class="f2-img">
+                                        <img src="https://t2biomod2024.github.io/2024/pics/tr4.gif" alt="">
+                                    </div>
+                                    <p class="text-center">Mov.4 Simulation results for oxDNA</p>
+                                </div>
+                            </div>
+
+                        <h4>3. Simulation of signal response mechanism using chain displacement reaction</h4>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;Initially, when the target molecule is not present, the ends are held together by Smile. (Fig.7,8)</p>
+                        <div class="align-items-center">
+                            <div class="f2-img">
+                                <img src="https://t2biomod2024.github.io/2024/pics/846.png" alt="">
+                            </div>
+                            <p class="text-center">Fig.7 Graph of Smile and Edge bonding</p>
+                        </div>
+                        <div class="align-items-center">
+                            <div class="f-img">
+                                <img src="https://t2biomod2024.github.io/2024/pics/847.png" alt="">
+                            </div>
+                            <p class="text-center">Fig.8 The binding of Smile and Edge</p>
+                        </div>
                         
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;When a target molecule is present here, a chain displacement reaction occurs and the ends are separated from each other, thus supplementing the target molecule. (Fig.9,10)</p>
+                        <div class="align-items-center">
+                            <div class="f-img">
+                                <img src="https://t2biomod2024.github.io/2024/pics/848.png" alt="">
+                            </div>
+                            <p class="text-center">Fig.9 Graph of dissociation by Target</p>
+                        </div>
+                        <div class="align-items-center">
+                            <div class="f-img">
+                                <img src="https://t2biomod2024.github.io/2024/pics/849.png" alt="">
+                            </div>
+                            <p class="text-center">Fig.10 Dissociation by Target</p>
+                        </div>
+
+                        <h4>4. Kinetic simulation of chain displacement reactions</h4>
+                            <p>&nbsp;&nbsp;&nbsp;&nbsp;We used Visual DSD to simulate the time scale over which the designed signal response mechanism proceeds. Visual DSD does not allow us to consider chain sequences, so we used sequence lengths created using NUPACK to perform the simulation.</p>
+                            <div class="d-flex">
+                                <div class="align-items-center">
+                                    <div class="f2-img">
+                                        <img src="https://t2biomod2024.github.io/2024/pics/727272.png" alt="">
+                                    </div>
+                                    <p class="text-center">Fig.11 Reaction Pathway</p>
+                                </div>
+                                <div class="align-items-center">
+                                    <div class="f2-img">
+                                        <img src="https://t2biomod2024.github.io/2024/pics/272727.png" alt="">
+                                    </div>
+                                    <p class="text-center">Fig.12 Graph of Visual DSD results</p>
+                                </div>
+                            </div>
+                            <p>&nbsp;&nbsp;&nbsp;&nbsp;In the above graph, we can see that the concentration of edgeandsmile decreases due to the strand displacement reaction between miRNA and miRNA, while the concentration of miRNAand edge increases. This indicates that the strand displacement reactions in NUPACK, as designed by Wadatashi and his colleagues, are causing the release of the bipartite structure and the supplementation of miRNAs. We can also see that these reactions are completed in about 5 minutes. This indicates the possibility that some miRNAs are supplemented by the Nano Pill Bug before the miRNAs are completely degraded.</p>
+                </div>
+
+                <div id="experiment">
+                    <div class="topic-title"><h3>EXPERIMENT</h3></div>
                         <h4>Introduction</h4>
                             <p>&nbsp;&nbsp;&nbsp;&nbsp;The focus of this project is the creation of a single rolled sheet structure. We experimentally demonstrate the feasibility of achieving a rolled sheet structure through the designed bending energy. <br>
-                            To prove that the sheet is indeed rolled, we created both an unfolded sheet structure, where the staple strands that form the central part of the sheet are removed, and a rolled sheet structure with all staple strands in place, then compared their sizes.</p>
-                                
-                        <h4>Annealing</h4>
-                            <p>&nbsp;&nbsp;&nbsp;&nbsp;The important salt concentration and temperature conditions for folding were determined based on the original paper [1] and empirical rules. Two different chain concentrations were tested to decide on the appropriate one. AFM and Qsep were conducted to observe the results of the annealing process.</p>
-                            <h5>Determining Chain Concentration</h5>
-                                <p>&nbsp;&nbsp;&nbsp;&nbsp;A and B are the annealing recipes for creating the unfolded sheet structure. B has three times the chain concentration compared to A. After comparing the Qsep results for A and B, we decided to conduct the experiment with the chain concentration of B, as clearer bands were observed.</p>
-                                
-                        <h4>AFM</h4>
-                            <p>&nbsp;&nbsp;&nbsp;&nbsp;In atomic force microscopy (AFM), it is crucial to properly place the sample on the mica substrate, and both salt concentration and incubation time are important. The incubation time was set to 30 minutes, and magnesium ion concentrations of 12.5 mM and 18 mM were compared. The structure was more clearly observed at 18 mM. <br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;In the sample obtained by creating the unfolded sheet structure, a gourd-shaped structure was observed as shown in the figure. In the sample obtained by creating the rolled sheet structure, a spherical structure about half the size of the unfolded sheet structure was observed. These results indicate that a single Nano Pill Bug has been successfully created, as per our design.</p>
-                                
-
-                        <h4>Qsep</h4>
-                            <p>write me!</p>
+                            &nbsp;&nbsp;&nbsp;&nbsp;To prove that the sheet is indeed rolled, we created both an unfolded sheet structure, where the staple strands that form the central part of the sheet are removed, and a rolled sheet structure with all staple strands in place, then compared their sizes.</p>
                             
+                        <h4>Annealing</h4>
+                            <p>&nbsp;&nbsp;&nbsp;&nbsp;The salt concentration and temperature conditions important for folding were determined based on the original paper [1] and empirical data. AFM was performed to observe the annealing results.<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;The annealing solutions and annealing times were adjusted according to the table below.</p>
+                            <div class="align-items-center">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Annealing Protocol</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th>85℃ for 3 min, from 65 ℃ to 45 ℃ at a rate of 1 ℃/min, from 45 ℃  to 25 ℃ at a rate of 0.5℃/min,  25℃ forever</th>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <p class="text-center">Tab.1</p>
+                            </div>
+
+                            <div class="align-items-center">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                          <th scope="col">First concentration</th>
+                                          <th scope="col">Amount</th>
+                                          <th scope="col">Final concentration</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>x50 TAE</td>
+                                            <td>40 µL</td>
+                                            <td>x10</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1M Mg2+</td>
+                                            <td>25 µL</td>
+                                            <td>125 mM</td>
+                                        </tr>
+                                        <tr>
+                                            <td>MiliQ</td>
+                                            <td>135 µL</td>
+                                            <td></td>
+                                        </tr>
+                                    </tbody>
+                                    <tfoot>
+                                        <tr>
+                                            <td>x10 Folding Buffeer</td>
+                                            <td>200 µL</td>
+                                            <td></td>
+                                        </tr>
+                                    </tfoot>
+                                </table>
+                                <p class="text-center">Tab.2</p>
+                            </div>
+
+                            <div class="align-items-center">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">First concentration</th>
+                                            <th scope="col">Amount</th>
+                                            <th scope="col">Final concentration</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Staple Mix(100 nM)</td>
+                                            <td>99 µL</td>
+                                            <td>99 nM</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Scaff(990 nM)</td>
+                                            <td>1 µL</td>
+                                            <td>9.9 nM</td>
+                                        </tr>
+                                    </tbody>
+                                    <tfoot>
+                                        <tr>
+                                            <td>Strand Mix(Sc : St = 1: 10)</td>
+                                            <td>100 µL</td>
+                                            <td></td>
+                                        </tr>
+                                    </tfoot>
+                                </table>
+                                <p class="text-center">Tab.3</p>
+                            </div>
+
+                            <div class="align-items-center">
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td>Strand Mix(Sc : St = 1: 10)</td>
+                                            <td>18 µL</td>
+                                        </tr>
+                                        <tr>
+                                            <td>x10 Folding Buffeer</td>
+                                            <td>2 µL</td>
+                                        </tr>
+                                    </tbody>
+                                    <tfoot>
+                                        <tr>
+                                            <td>Annealing Sample</td>
+                                            <td>20 µL</td>
+                                        </tr>
+                                    </tfoot>
+                                </table>
+                                <p class="text-center">Tab.4</p>
+                            </div>
+                           
                         <h4>Agarose gel electrophoresis</h4>
-                            <p>write me!</p>
+                            <p>&nbsp;&nbsp;&nbsp;&nbsp;Electrophoresis experiments using agarose gels were performed to confirm the annealing results. Annealing with different concentrations of magnesium ions (7.5-15.0 mM) showed bands that were considered to be good origami structures. However, at higher ion concentrations (17.5 mM and 20.0 mM), bands were observed at positions with larger molecular weights than the origami bands. This is thought to be due to the folding of the folded paper due to too high magnesium ion concentrations. In the two annealing runs with different strand concentrations, bands that could be origami were observed in both annealing runs. From these results, the solution composition during annealing was determined to be 12.5 mM magnesium ions, 10.0 nM scaffold strand, and 100 nM staple mix. However, no difference in band position could be identified between the open and closed structures. Therefore, the difference between these two structures was confirmed by AFM.</p>
+                            <div class="align-items-center">
+                                <div class="f-img">
+                                    <img src="https://t2biomod2024.github.io/2024/pics/iyiy.png" alt="">
+                                </div>
+                                <p class="text-center">Fig.13 Agarose electrophoresis results</p>
+                            </div>
+
+                        <h4>AFM</h4>
+                            <p>&nbsp;&nbsp;&nbsp;&nbsp;The AFM observation was performed by adding 20 µL of folding buffer (12.5 mM magnesium ions) to 10 µL of sample, incubating for 30 minutes, and adding 40 µL of folding buffer immediately before observation.
+                                &nbsp;&nbsp;&nbsp;&nbsp;A gourd-shaped structure was observed in the sample obtained by creating an open sheet structure, as shown in the figure. The closed sheet sample showed a spherical structure.</p>
+                            <div class="d-flex">
+                                <div class="align-items-center">
+                                    <div class="f2-img">
+                                        <img src="https://t2biomod2024.github.io/2024/pics/afm1.png" alt="">
+                                    </div>
+                                    <p class="text-center">Fig.14 AFM Results</p>
+                                </div>
+                                <div class="align-items-center">
+                                    <div class="f2-img">
+                                        <img src="https://t2biomod2024.github.io/2024/pics/afm2.png" alt="">
+                                    </div>
+                                    <p class="text-center">Fig.15 AFM Results</p>
+                                </div>
+                            </div>
+                            <div class="d-flex">
+                                <div class="align-items-center">
+                                    <div class="f2-img">
+                                        <img src="https://t2biomod2024.github.io/2024/pics/rrrr1.png" alt="">
+                                    </div>
+                                    <p class="text-center">Fig.16 Comparison with simulation model</p>
+                                </div>
+                                <div class="align-items-center">
+                                    <div class="f2-img">
+                                        <img src="https://t2biomod2024.github.io/2024/pics/riri3.png" alt="">
+                                    </div>
+                                    <p class="text-center">Fig.17 Comparison with simulatiopn model</p>
+                                </div>
+                            </div>
+
+                            <p>&nbsp;&nbsp;&nbsp;&nbsp;This structure is lower in height than the closed sheet structure we designed, and is more spread out horizontally. As shown in the following figure, this is thought to be the result of the closed sheet structure collapsing due to the interaction between mica and origami, which caused it to stick to the mica perfectly.</p>
+                            
+                            <div class="align-items-center">
+                                <div class="f-img">
+                                    <img src="https://t2biomod2024.github.io/2024/pics/12.png" alt="">
+                                </div>
+                                <p class="text-center">Fig.18 Our consideration</p>
+                            </div>
+                </div>
+
+                <div id="achievement">
+                    <div class="topic-title"><h3>ACHIEVEMENT</h3></div>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;We checked off the items for which the set goals were met. Of course, we also have to face the new problems that arise in the synthesis of the last two sheets.</p>
+                    <div class="listtt">
+                <ul>
+                <li>
+                    <i class="fa-regular fa-square-check"></i> Design of "Nano Pill Bug", a single rounded sheet structure.
+                </li>
+                <li>
+                    <i class="fa-regular fa-square-check"></i> Simulation of "Nano Pill Bug".
+                </li>
+                <li>
+                    <i class="fa-regular fa-square-check"></i> Synthesis of "Nano Pill Bug".
+                </li>
+                <li>
+                    <i class="fa-regular fa-square-check"></i> Design of a pair of "Nano Pill Bug", 2-sheet structure.
+                </li>
+                <li>
+                    <i class="fa-regular fa-square-check"></i> Simulation of a pair of "Nano Pill Bug".
+                </li>
+                <li>
+                    <i class="fa-regular fa-square-check"></i> Simulation of miRNA molecules responding to signals.
+                </li>
+                <li>
+                    <i class="fa-regular fa-square-check"></i> Design of a pair of "Nano Pill Bug".
+                </li>
+                <li>
+                    <i class="fa-regular fa-square"></i> Synthesis of a pair of "Nano Pill Bug". 
+                </li>
+                </ul>
+                </div>
                 </div>
 
                 <div class="section s_06">
@@ -83,31 +376,22 @@
         
                                 <ul>
                                     <li>
-                                        <strong>Abdelaal, A.M., Sohal, I.S., Iyer, S., et al.</strong> 2023. A first-in-class fully modified version of miR-34a with outstanding stability, activity, and anti-tumor efficacy. Oncogene, 42, pp. 2985-2999.
+                                        [1]<strong>Dietz H, Douglas SM, Shih WM.</strong> Folding DNA into twisted and curved nanoscale shapes. Science. 2009 Aug 7;325(5941):725-30. doi: 10.1126/science.1174251. PMID: 19661424; PMCID: PMC2737683.
                                     </li>
                                     <li>
-                                        <strong>Ahmed M Abdelaal, Andrea L Kasinski,</strong> Ligand-mediated delivery of RNAi-based therapeutics for the treatment of oncological diseases, NAR Cancer, Volume 3, Issue 3, September 2021, zcab030, https://doi.org/10.1093/narcan/zcab030
+                                        [2]<strong>oxDNA</strong>https://academic.oup.com/nar/article/48/12/e72/5843822
                                     </li>
                                     <li>
-                                        <strong>Kim, T. & Croce, C.M.</strong> 2023. MicroRNA: trends in clinical trials of cancer diagnosis and therapy strategies. Experimental & Molecular Medicine, 55, pp. 1314-1321.
+                                        [3]<strong>Bohlin, J., Matthies, M., Poppleton, E. et al.</strong> Design and simulation of DNA, RNA and hybrid protein-nucleic acid nanostructures with oxView. Nat Protoc 17, 1762-1788 (2022). https://doi.org/10.1038/s41596-022-00688-5
                                     </li>
                                     <li>
-                                        <strong>Iorio MV, Croce CM.</strong> MicroRNAs in cancer: small molecules with a huge impact. J Clin Oncol. 2009 Dec 1;27(34):5848-56. doi: 10.1200/JCO.2009.24.0317. Epub 2009 Nov 2. PMID: 19884536; PMCID: PMC2793003.
-                                    </li>
-                                    <li>
-                                        <strong>Lee RC, Feinbaum RL, Ambros V.</strong> The C. elegans heterochronic gene lin-4 encodes small RNAs with antisense complementarity to lin-14. Cell. 1993 Dec 3;75(5):843-54. doi: 10.1016/0092-8674(93)90529-y. PMID: 8252621.
-                                    </li>
-                                    <li>
-                                        <strong>Wightman B, Ha I, Ruvkun G.</strong> Posttranscriptional regulation of the heterochronic gene lin-14 by lin-4 mediates temporal pattern formation in C. elegans. Cell. 1993 Dec 3;75(5):855-62. doi: 10.1016/0092-8674(93)90530-4. PMID: 8252622.
-                                    </li>
-                                    <li>
-                                        <strong>Pasquinelli, A.E., Reinhart, B.J., Slack, F., et al.</strong> 2000. Conservation of the sequence and temporal expression of let-7 heterochronic regulatory RNA. Nature, 408, pp. 86-89.
+                                        [4]<strong>CanDo</strong>https://cando-dna-origami.org/#:~:text=CanDo%20%E2%80%93%20Computer-aided%20engineering%20forhttps://cando-dna-origami.org/#:~:text=CanDo%20%E2%80%93%20Computer-aided%20engineering%20for
                                     </li>
                                 </ul>                        
         
                             </div>
                         <div class="closeArea">
-                            <div class="close_box"><a href="#ac1_b" class="close_btn">閉じる<div class="i_box"><i class="one_i"></i></div></a></div>
+                            <div class="close_box"><a href="#ac1_b" class="close_btn">Close<div class="i_box"><i class="one_i"></i></div></a></div>
                         </div>
                         </div>
                     </div>
@@ -122,7 +406,7 @@
     <script src="https://t2biomod2024.github.io/2024/JS/common.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/protonet-jquery.inview/1.1.2/jquery.inview.min.js"></script>
     <script src="https://t2biomod2024.github.io/2024/JS/jquery_inview.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="https://t2biomod2024.github.io/2024/JS/bootstrap.min.js"></script>
     <script src="https://t2biomod2024.github.io/2024/JS/main.js"></script>
 </body>
 </html>
