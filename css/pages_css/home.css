@@ -19,16 +19,6 @@ header {
     align-items: center;
     height: 100vh;
 }
-@media (max-width:1024px){
-	#Hero-area {
-		background-image: url('https://t2biomod2024.github.io/2024/pics/home/1-title.gif'), url('https://t2biomod2024.github.io/2024/pics/1000.png'); 
-	}
-}
-@media (max-width:767px){
-	#Hero-area {
-		background-image: url('https://t2biomod2024.github.io/2024/pics/home/1-title.gif'), url('https://t2biomod2024.github.io/2024/pics/734.png');  
-	}  
-}
 
 /* MOVIE */
 .Movie-area {
@@ -67,9 +57,6 @@ header {
 	width: 100%;
 	margin: 0 auto 10vh;
 	padding: 20px;
-}
-@media (max-width:767px){
-	.Contents-Area{display:none} 
 }
 
 

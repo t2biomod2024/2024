@@ -307,11 +307,7 @@ main h3 {
 	margin-right: auto;
 	margin-left: auto;
 }
-@media (max-width:1024px){
-	.topic-section{ 
-		width: 90%;
-	}
-}
+
 /*---------------------------------------
   Scrolldown Arrow           
 -----------------------------------------*/
